@@ -28,11 +28,11 @@ There is really no way to learn fullstack programming in 4 days. Even more impor
 Learning coding can be pretty hard at the beginning especially if you have never been exposed to it. Read the lectures notes before each classes will help you understand faster key concepts that will be taught in class.
 
 **Ask as many questions as you like**
-After you have done some research through gogole, don't be afraid to ask questions when you are stuck. If you don't understand something, you will most likely not be the only one. Don't hesitate to raise you hand and ask, I can't stress this enough.
+After you have done some research through google, don't be afraid to ask questions when you are stuck. If you don't understand something, you will most likely not be the only one. Don't hesitate to raise you hand and ask, I can't stress this enough.
 
 
 ### Initial Setup
-You will need two tools to get set up for the class. Make sure to create an account on Cloud 9 and Github before class. You should receive an invite from your Program Manager to both these tools.
+You will need two tools to get set up for the class. Make sure to create an account on Cloud 9 and Github before class. You should have received an invite
 * [Cloud9](https://c9.io)
 * [Github](https://github.com)
 
@@ -119,7 +119,6 @@ Let's create a menu file: `$ touch pages/products.html`
   </body>
 </html>
 ```
-*Exercise: add another product to the list*
 
 
 #### Form:
@@ -188,7 +187,7 @@ Let's create an about file: `$ touch pages/about.html`
   </head>
   <body>
     <div class="image_container">
-      <img src="https://imgs.xkcd.com/comics/code_quality_2.png"/>
+      <img src="https://upload.wikimedia.org/wikipedia/en/0/00/IBM_Watson_Logo_2017.png"/>
     </div>
   </body>
 </html>
@@ -207,18 +206,9 @@ In order for your user to have a smooth navigation into your website, you will n
 <nav>
   <a href="index.html">Home</a> |
   <a href="pages/about.html">About</a> |
-  <a href="pages/products.html">Products</a> |
   <a href="pages/contact_us.html">Contact Us</a>
 </nav>
 ```
 *Exercise: add this to each page at the top of the body and test it out. Something is broken - why?*
 
-**Resources:**
 
-- For more information on CSS selectors: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
-
-- For an example of a styleguide: https://developer.mozilla.org/en-US/docs/MDN/Contribute/Guidelines/CSS_style_guide
-
-**Other Resource for Practice**
-
-- https://www.codecademy.com/

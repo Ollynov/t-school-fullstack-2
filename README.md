@@ -6,8 +6,8 @@ Schedule:
 
 | Class | Topic |
 |-----|------|
-| Week 1A | [Intro and HTML](intro/lecture-notes.md)
-| Week 1B | [CSS I](css-1)
+| Day 1 Session 1| [Intro, HTML, and Git](intro/lecture-notes.md)
+| Day 1 Session 2 | [Page Styling- CSS + Bootstrap](css-1/lecture-notes.md)
 | Week 2A | [CSS II](css-2)
 | Week 2B | [Git](git)
 | Week 3A | [Review I](review-1)

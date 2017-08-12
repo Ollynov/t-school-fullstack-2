@@ -1,6 +1,16 @@
 # Intro to CSS
 CSS stands for Cascading Style Sheets. It tells the browser how to display HTML elements. In other words, this language allows you to style your webpage. CSS is quite nuanced but extremely powerful.
 
+CSS Overview (10 mins)
+Let’s Try It! CSS bento box activity (15 mins)
+Bootstrap Intro (15 mins)
+Grid system
+Buttons
+Let’s Try It! (25 mins) BootStrap to build a responsive form with styled buttons
+CSS Intro to FlexBox (10 mins)
+Let’s Try It! Flexbox Froggy (15 mins)
+
+
 ## What you will learn in this course
 * Start styling your page with CSS
   * Add inline styling
@@ -46,7 +56,7 @@ An id works the same as a class. However ONE id can be given to ONLY ONE element
   * select: `#profile_picture`
 
 ## Embedded
-You can embed styling within the `<head>` tags of your webpage. It's useful when your webpage doesn't need much styling but you need to apply several properties to one element.  
+You can embed styling within the `<head>` tags of your webpage. It's useful when your webpage doesn't need much styling but you need to apply several properties to one element.
 ```html
 <head>
   <style type="text/css">
