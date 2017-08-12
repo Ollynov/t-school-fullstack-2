@@ -6,7 +6,7 @@ Schedule:
 
 | Class | Topic |
 |-----|------|
-| Week 1A | [Intro and HTML](intro)
+| Week 1A | [Intro and HTML](intro/lecture-notes.md)
 | Week 1B | [CSS I](css-1)
 | Week 2A | [CSS II](css-2)
 | Week 2B | [Git](git)

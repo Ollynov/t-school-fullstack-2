@@ -1,4 +1,4 @@
-# <img src="https://www.research.ibm.com/university/cas/benelux/images/eye-bee-m.gif >
+<img src="https://www.research.ibm.com/university/cas/benelux/images/eye-bee-m.gif" >
 
 # TIME FOR SOME FULLSTACK PROGRAMMING
 
