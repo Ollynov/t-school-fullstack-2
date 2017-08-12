@@ -2,9 +2,9 @@
 
 # TIME FOR SOME FULLSTACK PROGRAMMING
 
-The goal of this first session is to get to know each other, provide some context on what we will be building, and to quickly build an initial frontend skeleton for our app. The
+The goal of this first session is to get to know each other, provide some context on what we will be building, and to quickly build an initial frontend skeleton for our app. The assumption is that you already know the fundamentals of programming, and html, so we will quickly go over that, and onwards to the interesting stuff!!
 
-## What you will learn in this course
+## What you will learn in this first section
 * Use basic commands of the Terminal
 * Use the browser development tool / inspector
 * Structure a webpage with HTML
@@ -16,20 +16,19 @@ The goal of this first session is to get to know each other, provide some contex
 
 ## Introductions
 ### Our Project
-Our project throughout the whole program will be to build a  blog where you'll be able to write articles, have an about page, sign in and sign up. Click on the link below to have an overview of what it will look like.
-* [What are we going to build?](http://p-school-blog.herokuapp.com)
+We are going to be building the framework for a fullstack app. We will move rapidly, but will be covering more or less everything that constitutes a one-page CRUD app. This stands for 'CREATE, READ, UPDATE, DELETE' - essentially we want our app to have database persistence, and functionality to update portions of the page as we navigate, perform actions, etc. The idea is that if you can get comfortable implementing the most crucial components, you can always replace with different technologies, different APIs, different styles, etc. for the future app of your choice. We want you to get creative both during the course, and afterwards when you go home, and have this app to play around with.
 
-### Best practices
+### Some Course Themes
 Some good rules of thumbs to remember during the class are:
 
 **Google when you don't know**
-No software engineers have everything in mind when they are coding. Google is a very powerful resource to find what you are looking for.
+There is really no way to learn fullstack programming in 4 days. Even more important than any one specific technical skill to walk away from this class with, is the ability to be resourceful. One of the secrets of engineers that non-engineers may not know, is that we hardly ever expect the code to work the first time we run it. Embrace that, and get in the habit of using stack overflow, docs, and whatever else you can quickly google search.
 
 **Read the lectures notes before class**
 Learning coding can be pretty hard at the beginning especially if you have never been exposed to it. Read the lectures notes before each classes will help you understand faster key concepts that will be taught in class.
 
 **Ask as many questions as you like**
-Don't be afraid to ask questions during class. If you don't understand something, you will most likely not be alone in that case. Don't hesitate to raise you hand and ask.
+After you have done some research through gogole, don't be afraid to ask questions when you are stuck. If you don't understand something, you will most likely not be the only one. Don't hesitate to raise you hand and ask, I can't stress this enough.
 
 
 ### Initial Setup
