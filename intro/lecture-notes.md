@@ -2,7 +2,7 @@
 
 # TIME FOR SOME FULLSTACK PROGRAMMING
 
-The goal of this first session is to get to know each other, provide some context on what we will be building, and to quickly build an initial frontend skeleton for our app. The assumption is that you already know the fundamentals of programming, and html, so we will quickly go over that, and onwards to the interesting stuff!!
+The goal of this first session is to get to know each other, provide some context on what we will be building, and to see if there are certain holes in our understanding of fullstack. We will structure the course about 30% lecture, and 70% hacking, because we are firm believers that the best way to learn, is by doing. Also- in case you are solid in certain portions of the stack, yet weak on others, you can be sure to put extra emphasis on those. The assumption is that you already know the fundamentals of programming, and html, so we can quickly move onwards to the interesting stuff!!
 
 ## What you will learn in this first section
 * Use basic commands of the Terminal
@@ -16,7 +16,9 @@ The goal of this first session is to get to know each other, provide some contex
 
 ## Introductions
 ### Our Project
-We are going to be building the framework for a fullstack app. We will move rapidly, but will be covering more or less everything that constitutes a one-page CRUD app. This stands for 'CREATE, READ, UPDATE, DELETE' - essentially we want our app to have database persistence, and functionality to update portions of the page as we navigate, perform actions, etc. The idea is that if you can get comfortable implementing the most crucial components, you can always replace with different technologies, different APIs, different styles, etc. for the future app of your choice. We want you to get creative both during the course, and afterwards when you go home, and have this app to play around with.
+We are going to be building a fullstack app, with extra emphasis on the portions that can be duplicated for any web app (authentication, responsive design, etc.). We will move rapidly, but will be covering more or less everything that constitutes a one-page CRUD app. This stands for 'CREATE, READ, UPDATE, DELETE' - essentially we want our app to have database persistence, and functionality to update portions of the page as we navigate, perform actions, etc. If you can get comfortable implementing the most crucial components, you can always replace with different technologies, different APIs, different styles, etc. for the future app of your choice. We want you to get creative both during the course, and afterwards when you go home, and have this app to play around with.
+
+We will be building a simple blog, but feel free to build whatever app you would like. We ask that you follow along in the first two days where we will cover basics that should apply to any app- server setup, responsive navbar, database integration, authentication, etc. but feel free to get creative, especially during the hacking sessions!
 
 ### Some Course Themes
 Some good rules of thumbs to remember during the class are:
@@ -27,13 +29,22 @@ There is really no way to learn fullstack programming in 4 days. Even more impor
 **Read the lectures notes before class**
 Learning coding can be pretty hard at the beginning especially if you have never been exposed to it. Read the lectures notes before each classes will help you understand faster key concepts that will be taught in class.
 
-**Ask as many questions as you like**
+**Ask questions!**
 After you have done some research through google, don't be afraid to ask questions when you are stuck. If you don't understand something, you will most likely not be the only one. Don't hesitate to raise you hand and ask, I can't stress this enough.
+
+**Imposter Syndrome is Real**
+In case you feel lost... you're not the only one. Because of the nature of programming (oftentimes staring at a screen for prolonged times), we may be tempted to think that everyone else is just hacking away without any errors, everyone except for us. The truth is that when an experienced developer runs new code for the first time, they usually _don't expect it to work_; they know that most of the time as a developer you are fixing bugs, researching, and just "figuring it out" as you go along. Being in a state of uncertainty is a natural feeling for a developer, you just need to develop the habit of knowing that there almost always is _some_ sort of solution and path forward (even if it isn't clear). 
 
 
 ### Initial Setup
-You will need two tools to get set up for the class. Make sure to create an account on Cloud 9 and Github before class. You should have received an invite
-* [Cloud9](https://c9.io)
+You will need to have 3 things installed on your computers already:
+- Node
+- NPM
+- Git (almost all computers come with git already)
+
+To check if any of the 3 are installed, you can run 'which node', and you should get the path where it is installed. Typically they are installed within our bin folder. If they are located somewhere else, no need for immediate action, but something to keep in mind. 
+
+* [Install Git](https://git-scm.com/book/id/v2/Getting-Started-Installing-Git)
 * [Github](https://github.com)
 
 ### IDE/CLI
