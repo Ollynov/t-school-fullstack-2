@@ -69,7 +69,7 @@ We are going to get an introduction to Shell Commands, while cloning down the re
 ### Network Requests 
 - How does the client and backend communicate?
 - What is a network request? 
-- What is HTTP? (briefly mention the alternatives, but focus on HTTP)
+- What is HTTP?
 - Can we make this communication between client and server faster? 
 
 /// SLIDES ///
