@@ -44,10 +44,13 @@ You will need to have 3 things installed on your computers already:
 To check if any of the 3 are installed, you can run 'which node', and you should get the path where it is installed. Typically they are installed within our bin folder. If they are located somewhere else, no need for immediate action, but something to keep in mind. 
 
 * [Install Git](https://git-scm.com/book/id/v2/Getting-Started-Installing-Git)
-* [Github](https://github.com)
+
+You also should already have an account on * [Github](https://github.com)
 
 
 **Getting our Repo Locally**
+
+We are going to get an introduction to Shell Commands, while cloning down the remote repo that I have up and running here: LINK
 
 [Here](http://www.galvanize.com/learn/learn-to-code/programming-101-how-to-use-the-terminal-command-line/) is a video that explains more in depth the use of the command line.
 
