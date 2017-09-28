@@ -36,13 +36,15 @@ In case you feel lost... you're not the only one. Because of the nature of progr
 ### Initial Setup 
 **Dependencies**
 
-You will need to have 3 things installed on your computers already:
+You will need to have 3 things already installed on your computers:
 - Node
 - NPM
 - Git (almost all computers come with git already)
 
 To check if any of the 3 are installed, you can run 'which node', and you should get the path where it is installed. Typically they are installed within our bin folder. If they are located somewhere else, no need for immediate action, but something to keep in mind. 
 
+* [Install Node](https://nodejs.org/en/)
+* [Install NPM](https://www.npmjs.com/)
 * [Install Git](https://git-scm.com/book/id/v2/Getting-Started-Installing-Git)
 
 You also should already have an account on * [Github](https://github.com)
@@ -52,18 +54,38 @@ You also should already have an account on * [Github](https://github.com)
 
 We are going to get an introduction to Shell Commands, while cloning down the remote repo that I have up and running here: LINK
 
-[Here](http://www.galvanize.com/learn/learn-to-code/programming-101-how-to-use-the-terminal-command-line/) is a video that explains more in depth the use of the command line.
-
 * Shell Commands ([POSIX](http://pubs.opengroup.org/onlinepubs/9699919799/)/[UNIX](https://upload.wikimedia.org/wikipedia/commons/c/cd/Unix_timeline.en.svg))
     * `ls` (`-t`, `-a`)
     * `pwd`
-    * `man`
     * `mkdir`
     * `cd`
     * `touch`
     * `mv`
     * `rm`
+[Here](http://www.galvanize.com/learn/learn-to-code/programming-101-how-to-use-the-terminal-command-line/) is a video that explains more in depth the use of the command line.
 
-*> Exercise: follow along with me to learn some command line basics*
+*> Let's Try it!: follow along with me to learn some command line basics*
+
+### Network Requests 
+- How does the client and backend communicate?
+- What is a network request? 
+- What is HTTP? (briefly mention the alternatives, but focus on HTTP)
+- Can we make this communication between client and server faster? 
+
+/// SLIDES ///
+ 
+
+Advanced: 
+look into GraphQL http://graphql.org/learn/
+
+*> Let's Try it!: Let’s try it! Let’s make a request to the weather API!* 
+
+HINT: There are websites that give you demo environments to send out API calls to other servers.
+
+Advanced: 
+- Get back the current hurricane info from around the world
+- Write the same request from postman
+- Write the same request from the terminal (using curl)
+- What other responses can you get? Reddit, Spotify, and Google Places are some ideas.
 
 
