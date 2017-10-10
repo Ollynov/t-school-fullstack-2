@@ -1,5 +1,16 @@
 # Exercises
 
+If you want to practice CSS, here are some exercices related to the lecture you had.
+
+[Style](https://www.w3schools.com/html/exercise.asp?filename=exercise_styles2)
+
+[Embedded styling](https://www.w3schools.com/html/exercise.asp?filename=exercise_css2)
+
+[Classes](https://www.w3schools.com/html/exercise.asp?filename=exercise_classes2)
+
+[Id](https://www.w3schools.com/html/exercise.asp?filename=exercise_css5)
+
+
 ## Box Positioning
 1. create a ``<div>`` element and give it a class "box"
 2. duplicate that three times
