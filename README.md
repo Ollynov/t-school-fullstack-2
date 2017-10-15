@@ -19,7 +19,7 @@ Schedule:
 
 | Class | Topic |
 |-----|------|
-| Day 1 Session 1| [Welcome! + Network Requests](intro/lecture-notes.md)
+| Day 1 Session 1| [Welcome! Setup, Command Line, & Network Requests](intro/lecture-notes.md)
 | Day 1 Session 2 | [Git, Web APIs, and Page Rendering](css-1/lecture-notes.md)
 | Day 2 Session 1 | [Styling with Bootstrap + CSS](css-2)
 | Day 2 Session 2 | [Server + Backend](git)
