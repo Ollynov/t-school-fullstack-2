@@ -10,5 +10,22 @@ HTML Exercises:
 - "Add dropdown menu item" - 3 mins
 - "Add Navigation" - 10 mins
 
+BREAK - 5 mins
 
+1:50PM
 
+CSS 1 Lecture - 20 mins
+
+CSS Exercises: 
+- Inline: "add a color and font-family to the heading on your home page" - 3 mins
+- Embedded: "Do the same, but embedded" - 2 mins
+- External: Move everything to external stylesheet, and add background color - 5 mins
+- Style it up! 10 mins
+
+CSS 1 Solution to 'Style it Up' - 10 mins
+
+2:40PM
+
+BREAK - 5 mins
+
+CSS II Lecture - 20 mins
