@@ -20,11 +20,11 @@ Schedule:
 | Class | Topic |
 |-----|------|
 | Day 1 Session 1| [Welcome! Setup, Command Line, & Network Requests](intro/lecture-notes.md)
-| Day 1 Session 2 | [HTML + CSS](html-css/lecture-notes-html.md)
-| Day 2 Session 1 | [Bootstrap + Git](bootstrap-git/lecture-notes-git.md)
+| Day 1 Session 2 | [HTML + CSS](html-css)
+| Day 2 Session 1 | [Bootstrap + Git](bootstrap-git)
 | Day 2 Session 2 | [Javascript](javascript/lecture-notes.md)
 | Day 2 Session 3 | [Server - Node + Express](server/lecture-notes.md)
-| Day 3 Session 1| [Authentication + Databases](authentication-databases/lecture-notes-authentication.md)
+| Day 3 Session 1| [Authentication + Databases](authentication-databases)
 | Day 3 Session 2 | [React](react/lecture-notes-react-1.md)
 | Day 3 Session 3 | [React II](react/lecture-notes-react-2.md)
 | Day 4 Session 1 | [Web APIs](webapis/lecture-notes.md)
