@@ -94,6 +94,8 @@ Pseudo Selectors: styling that is assigned to a state of a page element or speci
 - E:first-child {}: Any E element that is the first child of its parent
 - B + E {}: Any E element that is the next sibling of a B element (that is: the next child of the same parent)
 
+*Exercise: Go ahead and style up your page a bit. Add an h1 and whatever styling you might like. Some tips would be to change the font family (checkout Google fonts), and remove the default underline on the nav links, as well as the purple color for visited links. 
+
 
 **Resources:**
 
