@@ -28,7 +28,7 @@ Commonly Used Tags:
   - inspect FB page with Chrome Dev Tools (cmd + alt + i)
 
 ##### Dev Tool
-Now that you have a first experience with Chrome dev tool let's explain a little bit what it is. Dev tool is something in your web browser where you will be able to inspect elements or write directly some code on a webpage. This is very useful and powerful as it can help you writing or testing your code.
+Let's play around with your browser's Dev Tool. Dev tool is something in your web browser where you will be able to inspect elements or write directly some code on a webpage. This is very useful and powerful as it can help you writing or testing your code.
 
 *> Exercise: Change the title. Then add a heading of whatever size you want within the body and put one of the words into a span*
 
