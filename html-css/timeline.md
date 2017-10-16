@@ -39,3 +39,7 @@ CSSII Exercises:
 - Box Positioning + Computer Gallery - 35 mins
 
 DONE 4:30PM
+
+LEFT TO DO: 
+- CSS II Lecture (part II) Build the blog
+- Verify that Box Positioning + Computer Gallery are good to go
