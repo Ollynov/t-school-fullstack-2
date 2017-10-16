@@ -22,16 +22,14 @@ The basic functionality of Git allows developers to track specific versions of t
 
 ## Getting started with Git
 
-- Let's create a new project in Cloud 9
-- Erase all the generated files in your directory
+- Make sure you are in the root of your directory with `pwd` in the terminal
+- Hit `ls` to verify that you have index.html, pages, and styles
 - Check to see if git is installed `$ git --version`
 - Create a git repository: `$ git init`
-- Create a file `$ touch hello.rb`
-- Write your first line of Ruby in hello.rb `puts "hello world!"`
-- Write your first line of Ruby in hello.rb: `puts "hello world!"`
-
-**Exercise: use the command `ruby` to run `hello.rb`. Similar to other commands, the syntax is `<command> <filename>`**
-- Check out the status of your git repository: `$ git status`
+- Add a README.md file with `touch README.md` 
+- See what happens when you hit `git status`
+- Add your changes with `git add .`
+- Commit your changes with `git commit -m "added a readme"`
 
 ### Staging and committing
 
