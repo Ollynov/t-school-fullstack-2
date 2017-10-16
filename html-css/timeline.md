@@ -28,4 +28,14 @@ CSS 1 Solution to 'Style it Up' - 10 mins
 
 BREAK - 5 mins
 
-CSS II Lecture - 20 mins (interactive Flexbox demo)
+CSS II Lecture - 20 mins (interactive Flexbox demo on our nav)
+
+CSS II Exercises: 
+- Flexbox Froggy + Tower Defense - 30 mins
+
+CSS II Lecture - 20 mins (build out our blog page)
+
+CSSII Exercises: 
+- Box Positioning + Computer Gallery - 35 mins
+
+DONE 4:30PM
