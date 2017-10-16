@@ -38,11 +38,11 @@ Committing means that you are actually making and saving your changes. Each comm
 - To add individual files: `$ git add file_name`
 - Make your first commit: `$ git commit -m “Some descriptive notes surrounded by quotation marks"`
 
-**Exercise: change your README.md file, check the status of the repo. Then stage it. Finally, commit it. **
+**Exercise: change your README.md file, check the status of the repo. Then stage it. Finally, commit it.**
 
 - Use `$ git log` to look back at the history of this branch
 
-**Exercise: Try Git (10 mins): https://try.github.io/levels/1/challenges/1
+**Exercise: Try Git (10 mins): https://try.github.io/levels/1/challenges/1**
 
 ### Branching
 
