@@ -80,27 +80,9 @@ function updateName(event) {
 }
  ```
 
-#### JS Syntax
-
-Javascript is similar to Ruby with some notable exceptions:
-* instead of using the `end` keyword to the delimit the bounds of a function, conditional or loop, JS makes heavy use of curly braces `{}`.
-* in a conditional statement, the condition (that evaluates to true/false) must go inside of parentheses `()`.
-* JS uses the `var` keyword to define a variable and the `function` keyword to define a function.
-
-Example conditional:
-
-```js
-var dayIndex = new Date().getDay();
-if (dayIndex === 1){
-  console.log("Have the Monday blues?! Write some JavaScript and it'll make everything better :)")
-} else {
-  console.log("Don't worry, Friday is only", 5 - dayIndex, "days away!")
-}
-```
-
 #### JS Functions
 
-Similar to Ruby function, JS functions take optional arguments and return values. The default return value is `undefined` and we must explicitly use the `return` keyword to return anything else. There are several ways to define a function:
+JS functions take optional arguments and return values. The default return value is `undefined` and we must explicitly use the `return` keyword to return anything else. There are several ways to define a function:
 
 ```js
    var multiplyByThree = function(num) {
