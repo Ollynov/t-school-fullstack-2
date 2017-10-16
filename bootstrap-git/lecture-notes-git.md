@@ -82,9 +82,10 @@ Github is a platform that enables developers to store their codebase online, rev
 This is one of the most powerful thing Git and Github have to offer. Each time you make changes locally on your computer, you can send those changes to github through git and they will be automatically updated on your repo in the Github website.
 
 - Visit your Github page and create a new repo with a name like `my-website`
-- Copy the “HTTPS Clone URL”. Enter `$ git clone [git clone url]` in tour terminal on Cloud 9
+- Navigate into your project directory in terminal. Confirm you are in the right place with `pwd`
+- Copy the “HTTPS Clone URL”. Enter `$ git clone [git clone url]` 
 
-**Exercise: Copy the “HTTPS Clone URL”. Enter `$ git clone [git clone url]` in tour terminal on Cloud 9. Enter the your directory using `cd` and then add a new file to the empty repo and make your first commit.**
+**Exercise: make your first commit.**
 - See your remote by typing `git remote -v`
 - Push your first commit to github: `$ git push origin master`
 - View your code on github
