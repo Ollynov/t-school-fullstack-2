@@ -203,6 +203,9 @@ while (start < 10) {
 
 Using a `while` loop, create a number guessing game. You will need two variables, one for the guess and one for the answer. To supercharge your game, give the user hints about whether their number is high or low depending on their guess - you can use conditionals and comparison operators for this. *Hint: The computer can choose a starting number between 0-100 by using `Math.round(Math.random()*100)`*
 
+**Bonus**
+Complete 'Javascripting' (feel free to skip over the first few challenges) https://github.com/workshopper/javascripting
+
 #### Extra Resources
 * https://www.codecademy.com/learn/javascript
 * https://www.tutorialspoint.com/javascript/
