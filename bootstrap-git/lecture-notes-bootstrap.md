@@ -64,7 +64,8 @@ Add the viewport meta tag and the <a href="http://getbootstrap.com/getting-start
 3. Make sure your three columns stack vertically when you are on mobile (xs) devices.
 4. Add content to your columns (or make them each a different color).
 
-NOTE: You might notice that 
+NOTE: You might notice that this time around we had much less introductory lecture. That is intentional. It is important to get accostumed to googling the right way. We will go over the solution afterwards so give it your best. 
+
 ## Further Reading
 
 * <a href="https://scotch.io/tutorials/understanding-the-bootstrap-3-grid-system">Understanding the Bootstrap System</a><br>
@@ -92,39 +93,8 @@ NOTE: You might notice that
 
 From here I would go to a website like: https://bootswatch.com/ in order to look at different styling elements. You can follow the source code and integrate it into your application.
 
-Luckily, Bootswatch has a gem for us to use to easily implement different themes into our page. We can use the initial steps from http://stackoverflow.com/questions/14796962/mongoose-schema-reference as a guide for how to use that gem.
-
-1. Install `gem 'bootswatch-rails'` into your Gemfile.
-2. Edit your `application.css.scss` to look like this:
-```rb
-// Example using 'Cerulean' bootswatch
-
-//Import bootstrap-sprockets
-@import "bootstrap-sprockets";
-
-// Import cerulean variables
-@import "bootswatch/cerulean/variables";
-
-// Then bootstrap itself
-@import "bootstrap";
-
-// Bootstrap body padding for fixed navbar
-body { padding-top: 60px; }
-
-// And finally bootswatch style itself
-@import "bootswatch/cerulean/bootswatch";
-```
-In this case we're using the 'Cerulean' theme by Bootswatch.
-
-3. You can easily edit/overwrite styles the theme within your `application.css.scss` file to adjust the look of your application.
-4. Once you have the them you want you will be able to use the source code in the examples provided by Bootswatch in order to customize you page.
-
 
 ### Resources:
 https://www.railstutorial.org/book/filling_in_the_layout
 https://bootswatch.com/
 https://github.com/maxim/bootswatch-rails
-
-## Where we are going from here:
-
-Up to this point you have now created your application, added the associated models, routes, and views.  You have also integrated authentication and authorization for the users of your application.  Now your application has the elements of style that you can edit to give it a more personal and professional touch. In our review class, we'll be adding a landing page as well as improving some functionality on the rails side.
