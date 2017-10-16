@@ -59,11 +59,12 @@ Add the viewport meta tag and the <a href="http://getbootstrap.com/getting-start
 
 ## Challenges
 
-1. Create an ```index.html``` file and add the Bootstrap CDN (or use this boilerplate to get started).
+1. Create an ```tester.html``` file and add the Bootstrap CDN.
 2. Add one container, one row, and three col-** classes (your columns can be any width that add up to 12).
 3. Make sure your three columns stack vertically when you are on mobile (xs) devices.
-4. Add content to your columns.
+4. Add content to your columns (or make them each a different color).
 
+NOTE: You might notice that 
 ## Further Reading
 
 * <a href="https://scotch.io/tutorials/understanding-the-bootstrap-3-grid-system">Understanding the Bootstrap System</a><br>
@@ -76,50 +77,6 @@ Add the viewport meta tag and the <a href="http://getbootstrap.com/getting-start
 
 * <a href="https://www.youtube.com/watch?v=gqOEoUR5RHg">YouTube Bootstrap Tutorial</a>
 
-# Adding Bootstrap to Rails
-
-## How to add Bootstrap to your existing application:
-In this lesson we will explore two ways with which you can import Bootstrap into your code.  The first way is by integrating Bootstrap itself.  The second way is by using the `bootswatch-rails` gem in order to bring in different themes to your website.
-
-1. Add the necessary gems to our Gemfile.
-
-Much like in our last lesson, we will be making use of installing gems into our application.  In order to use Bootstrap for our blogs in this class we will be adding two different gems:  `bootstrap-sass` and `autoprefixer-rails`.  The `bootstrap-sass` gem will integrate all of the components of Bootstrap.  The `autoprefixer-rails` gem will automatically add the proper vendor (browser) prefixes when our CSS code is compiled.
-
-```rails
-  # Gemfile
-  gem 'bootstrap-sass'
-  gem 'autoprefixer-rails'
-```
-
-Follow this with the `bundle install` command in your C9 terminal.
-
-2. Import Bootstrap CSS and Javascript Assets.
-
-At this point we will want to import the various CSS and Javascript assets into our applications.  This will allow us to customize the Bootstrap style.  The Javascript assets will help make our page more dynamic and user friendly.  For this we will need to alter two existing files into our application.
-
-First, you will rename `app/assets/stylesheets/application.css` to `app/assets/stylesheets/application.css.scss`.
-
-Then, you will add this code to the bottom of your renamed file:
-```rb
-
-@import "bootstrap-sprockets";
-@import "bootstrap";
-```
-This will help render the assets needed for your Bootstrap components to work.
-
-Next, you will add the following code to `app/assets/javascripts/application.js`:
-```rb
-//= require bootstrap-sprockets
-```
-
-It is important to note that placement of this line is important.  You will want the structure of the file to look like this:
-```rb
-//= require jquery
-//= require jquery_ujs
-//= require turbolinks
-//= require bootstrap-sprockets
-//= require_tree .
-```
 
 ### Let's add in some Bootstrap styling to our blog app
 
