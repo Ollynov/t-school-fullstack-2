@@ -212,6 +212,10 @@ If you want to align one item in a specific way, align self is the property you 
 
 * [Flexbox Froggy](http://flexboxfroggy.com/)  
 
+*Bonuse Exercise: If you have extra time try and beat FlexBox Defense!*
+
+* [Flexbox Defense](http://www.flexboxdefense.com/)
+
 #### Adding Flexbox to our website
 
 Let's create a blog file: `$ touch pages/blog.html`
