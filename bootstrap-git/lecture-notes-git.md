@@ -22,16 +22,11 @@ The basic functionality of Git allows developers to track specific versions of t
 
 ## Getting started with Git
 
-- Let's create a new project in Cloud 9
-- Erase all the generated files in your directory
+- Make sure you are in the root of your directory with `pwd` in the terminal
+- Hit `ls` to verify that you have index.html, pages, and styles
 - Check to see if git is installed `$ git --version`
 - Create a git repository: `$ git init`
-- Create a file `$ touch hello.rb`
-- Write your first line of Ruby in hello.rb `puts "hello world!"`
-- Write your first line of Ruby in hello.rb: `puts "hello world!"`
 
-**Exercise: use the command `ruby` to run `hello.rb`. Similar to other commands, the syntax is `<command> <filename>`**
-- Check out the status of your git repository: `$ git status`
 
 ### Staging and committing
 
@@ -43,24 +38,11 @@ Committing means that you are actually making and saving your changes. Each comm
 - To add individual files: `$ git add file_name`
 - Make your first commit: `$ git commit -m “Some descriptive notes surrounded by quotation marks"`
 
-**Exercise: change your hello.rb file on your own or by adding the lines below and run the code**
-
-```ruby
-  gift = [
-          "half of a leftover burrito",
-          "a day-old cup of coffee",
-          "a tesla",
-          "a life-size quadrocopter",
-          "a slice of stale wedding cake",
-          "a medium-sized island off the coast of Sumatra",
-          "a visual prosthesis",
-         ]
-  puts "All I got for valentine's day was #{gift.sample}."
-```
-
-- **Exercise: check the status of the repo. Then stage it. Finally, commit it.**
+**Exercise: change your README.md file, check the status of the repo. Then stage it. Finally, commit it.**
 
 - Use `$ git log` to look back at the history of this branch
+
+**Exercise: Try Git (10 mins): https://try.github.io/levels/1/challenges/1**
 
 ### Branching
 
@@ -100,9 +82,10 @@ Github is a platform that enables developers to store their codebase online, rev
 This is one of the most powerful thing Git and Github have to offer. Each time you make changes locally on your computer, you can send those changes to github through git and they will be automatically updated on your repo in the Github website.
 
 - Visit your Github page and create a new repo with a name like `my-website`
-- Copy the “HTTPS Clone URL”. Enter `$ git clone [git clone url]` in tour terminal on Cloud 9
+- Navigate into your project directory in terminal. Confirm you are in the right place with `pwd`
+- Copy the “HTTPS Clone URL”. Enter `$ git clone [git clone url]` 
 
-**Exercise: Copy the “HTTPS Clone URL”. Enter `$ git clone [git clone url]` in tour terminal on Cloud 9. Enter the your directory using `cd` and then add a new file to the empty repo and make your first commit.**
+**Exercise: make your first commit.**
 - See your remote by typing `git remote -v`
 - Push your first commit to github: `$ git push origin master`
 - View your code on github
