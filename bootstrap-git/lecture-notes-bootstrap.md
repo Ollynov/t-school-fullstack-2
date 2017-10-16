@@ -80,13 +80,10 @@ NOTE: You might notice that this time around we had much less introductory lectu
 
 ### Let's add in some Bootstrap styling to our blog app
 
-**Exercise: add the `table` and `table-hover` classes to the table of posts in your posts `index.html` file.**
+**Exercise: add a `table` with a `table-hover` class(a bootstrap class) to your `blog.html` file.**
 
-**Exercise: add a `bg-warning` to your alert in your `application.html.erb` file.**
+**Exercise: add a 'new post' button with `btn-primary` to your `blog.html`.**
 
-**Exercise: add a `nav` around your sign in logic in your `application.html.erb` file. Give that div the following two classes: `nav navbar-inverse`.**
-
-**Exercise: add the classes `btn btn-default navbar-btn` to the links in your nav. Change the defualt styling of a few of the buttons by using this guide: http://getbootstrap.com/css/#buttons-options**
 
 ### Using themes for inspiration:
 
