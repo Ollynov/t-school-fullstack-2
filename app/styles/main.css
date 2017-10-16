@@ -10,34 +10,53 @@ h1 {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
 }
-nav a {
+
+/* NAV STYLES
+*/
+
+.navContainer a {
 	text-decoration: none;   
 	border-bottom: 2px solid transparent;    
-  width: 0px;
   transition: 0.5s ease;
-  white-space: nowrap;
-  height: 25px;
+  color: rgb(91, 91, 91);
 }
 
-nav a:hover {
+.navContainer a:hover {
   border-bottom: 2px solid rgb(1, 209, 178);
-  width: 50px;
+  color: rgb(0, 0, 0);
 }
 
-nav a:visited {
-  color: inherit;
+.navContainer a:visited {
+  color: rgb(91, 91, 91);
 }
 
-/*.sliding-u-l-r {
-    text-decoration: none;
-    display: inline-block;
-    border-bottom: 3px solid transparent;    
-    width: 0px;
-    transition: 0.5s ease;
-    white-space: nowrap;
-    height: 25px;
+nav {
+	display: flex;
+	width: 400px;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
-.sliding-u-l-r:hover {
-    border-bottom: 3px solid blue;
-    width: 200px;
-}*/
+
+/*END OF NAV STYLES
+*/
+
+/* TOP PORTION
+*/
+#topPortion {
+	display: flex;
+	width: 90%;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: baseline;
+	margin: auto;
+}
+
+#loginContainer {
+	display: flex;
+	width: 200px;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+/* END OF TOP PORTION
+*/

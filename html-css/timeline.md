@@ -28,4 +28,4 @@ CSS 1 Solution to 'Style it Up' - 10 mins
 
 BREAK - 5 mins
 
-CSS II Lecture - 20 mins
+CSS II Lecture - 20 mins (interactive Flexbox demo)
