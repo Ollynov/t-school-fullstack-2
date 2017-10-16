@@ -42,7 +42,8 @@ Committing means that you are actually making and saving your changes. Each comm
 
 - Use `$ git log` to look back at the history of this branch
 
-**Exercise: Try Git (10 mins): https://try.github.io/levels/1/challenges/1**
+**Exercise: Try Git (30 mins): https://github.com/jlord/git-it-electron**
+NOTE: In this interactive git tutorial be sure that you do all of the exercises in a separate repo that is not associated with what we have built so far. 
 
 ### Branching
 
