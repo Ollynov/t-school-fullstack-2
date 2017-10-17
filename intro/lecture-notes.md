@@ -67,7 +67,7 @@ We are going to get an introduction to Shell Commands, while cloning down the re
     * `rm`
 [Here](http://www.galvanize.com/learn/learn-to-code/programming-101-how-to-use-the-terminal-command-line/) is a video that explains more in depth the use of the command line.
 
-*> Let's Try it!: follow along with me to learn some command line basics*
+*> Let's Try it!: follow along with me to learn some command line basics, and let's create the repo for our project*
 
 ### Network Requests 
 - How does the client and backend communicate?
