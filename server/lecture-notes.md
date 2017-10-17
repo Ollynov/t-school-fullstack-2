@@ -80,22 +80,10 @@ We will also need to incnclude the following script tags for React and React DOM
 <script src="https://fb.me/react-dom-15.1.0.js"></script>
 ```
 
-To transform JSX code to JavaScript, you'll need babel, a JavaScript compiler. Include babel in the index.html page. JSX is a special kind of javascript code that mimics html. It looks almost exactly like html- so we can write our components directly in our javascript files, to form our components. Later, we will need this JSX to be compiled to a language that our browser understands- javascript. For this there is some setup, but the heavy lifting is done by Babel or other similar libraries.
+To transform JSX code to JavaScript, you'll need babel, a JavaScript compiler. Include babel in the index.html page. JSX is a special kind of javascript code that mimics html. It looks almost exactly like html- so we can write our components directly in our javascript files, to form our components. Later, we will need this JSX to be compiled to a language that our browser understands- javascript. For this there is some setup, but the heavy lifting is done by Babel or other similar libraries. Don't worry too much about JSX or anything React related quite yet- there will be two entire sessions dedicated to React (the frontend); for now we want to make sure we have everything setup correctl on our server.
 	
 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 
-Create a new repo called "components" and for now create a file called main.jsx and place it into that components directory. This file will contain the React UI components. 
-
-A component is the main building block of a React app. Every small portion of a React site that you can see as a user is either an individual component, or makes up a larger component. For example, our navbar can be a single component, or may be composed of several smaller components (one component for each button for example)- the actual details are dependent on how you choose to structure your components. The great thing about these components is that they are encapsulated code, meaning that you can re-use them in multiple places in our app, without having to rewrite the code each time. This not only means less code that you need to actually write, but is crucial for maintaining the app, since when you make an update to a component, it will automatically update in all areas of your app where you use that component, and you are less likely to forget about one of them, which can lead to bugs. 
-
-
-
-Let's create a new React component called Signin inside the main.jsx file. 
-
-	
-class Signin extends React.Component {
- 
-}
 
 
 
