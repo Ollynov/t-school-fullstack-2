@@ -67,7 +67,7 @@ What is the DOM? The DOM is the Document Object Model. Basically, the entire web
 
 JavaScript allows us to interact with HTML/CSS by directly manipulating items on the DOM - we can select DOM elements by using CSS/Element selectors and change them dynamically. We can also create elements on the fly. All of this functionality is accessed off of the `document` object in the browser. Let's check it out in our chrome developer console.
 
-Event listeners are one of the most important components of interactivity on a webpage. They allow us to execute code when a certain user action takes place, like a `click`. Add the following code into the `script` section in your HTML file:
+Event listeners are one of the most important components of interactivity on a webpage. They allow us to execute code when a certain user action takes place, like a `click`. Let's get our "Player App" working. Add the following code into the `script` section in your HTML file:
 
  ```js
 var playerTitleElement = document.getElementById('player_title');
