@@ -23,3 +23,4 @@ BOOTSTRAP LECTURE - Let's create our blog page
 
 Needs to be done: 
 - The Bootstrap "tester.html" exercise to verify
+- Perhaps one or two more tables for our blog posts
