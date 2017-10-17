@@ -21,10 +21,44 @@ Let's get straight into it. I want everyone to follow along, and install LearnYo
 - Run `npm install learnyounode -g` (the -g stands for 'global')
 - We will go ahead and complete the first activity together, then move onto the next
 
-
-
-
 **Practice 1: Setting Everything Up**
+
+- Navigate to your project directory (confirm with `pwd`)
+- "Initiate" your project with `npm init`
+
+Fill in the required details and you should have the package.json file created. It should look something like this:
+
+`	
+{
+  "name": "myReactBlog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yosh",
+  "license": "MIT"
+}
+`
+
+You'll be using the express framework for serving your application. Install express using the following command (the --save automatically throws express into our package.json for later reference on the dependency):
+
+`npm install express --save`
+
+Express is a framework that abstracts a lot of the work out of setting up a node server. Technically almost all of what we will be doing with express, we can achieve with pure Node, but it would take many more lines of code. Just how bootstrap makes our lives easier on the frontend with design, Express makes things more simple on the server side. 
+
+Using the express framework, let's have our app listen on a port address. Inside the project directory, create a file called `app.js.` Require the express module inside the app.js and create the app! Set the static path of the application where it can find the static files. Here is how it looks:
+
+`
+var express = require("express");
+var path = require("path");
+ 
+var app = express();
+app.use(express.static(path.join(__dirname,"/html")));
+`
+
+
 
 #### Pulling in dependencies with the package.json file
 
@@ -71,6 +105,14 @@ Let's get straight into it. I want everyone to follow along, and install LearnYo
 
 ```
 
+
+
+
+
+
+
+
+
 **Practice 2: Interacting with the DOM directly through Javascript**
 
 
@@ -79,115 +121,35 @@ Let's get straight into it. I want everyone to follow along, and install LearnYo
 
 **Exercise 1:**
 
-Add another user prompt into the `updateName()` function. It should ask the user to enter a color. Store that color into a new variable called `color`. Then use that variable to change the color of the playerTitle element's background. *Hint: you can access an element's css through its `.style` property. You can change it by simply reassigning the value to the new color*
 
 **Linking to external JavaScript files:**
 
 ```html
- <script src="/path-to-a-javascript-file"></script>
  ```
 
 **Exercise 2:**
 
-Let's move our JavaScript into an external file. Name it `script.js`. Reference it in the `<script>` tag by defining the relative path of the file in the `src` property. Make sure it's working by testing out the functionality of the `player` button.
+
 
 #### Data Types, Arithmetic Operators, & Comparisons
-JavaScript has many of the same datatypes as Ruby:
 
-* Number: 1, 23452345
-* String: 'Hello World', "Hi there'
-* Boolean: true, false
-* Array: [1, 2, 3]
-* Null, Undefined
 
 #### Making Comparisons: JavaScript evaluates the comparison, returning true or false
 
-* Greater than: `>`
-* Less than: `<`
-* Equality: `==`; Converts operands if they aren't the same type, then applies strict equality; Eg: 1 == "1"
-* Strict Equality: `===` Two operands are equal without type conversion: Eg: 1 === 1
-* Not equal: !=
-* Strict not equal: !==
-* Greater or equal: >=
-* Less or equal: <=
-
-#### Arithmetic Operators: 5 operators with the same order of operations as your traditional arithmetic
-
-* Multiplication: `*`. Eg: 5 * 10 = 50;
-* Division: `/`. Eg: 10/5 = 2;
-* Addition: `+`. Eg: 5 + 7 = 12;
-* Subtraction: `-`. Eg: 7 - 5 = 2;
-* Modulus: `%`: Performs division and returns the remainder. Eg: 6 % 3 = 0; Eg: 7 % 3 = 1;
 
 **Exercise 3:**
 
-Let's create a simple tip calculator. Under the `player_title` `div`, let's add:
 
 ```html
-<br/>
-<input id="meal_cost" type="number"/>
-<br/>
-<button id="add_tip">Add Tip</button>
-<br/>
-<div id="total_cost"></div>
+
 ```
 
-Create a function called `AddTip` that has a `prompt` in it that asks the user what percent tip they want to leave. The prompt should store the value into a variable called `tipAmount`. You can get the meal price from the input box by selecting the element using its ID and then accessing the `value` property. Save this amount into another variable called `mealPrice`. Try doing some simple arithmetic and update the `textContent` of the `total_cost` div with the total amount. Finally, add a `click` listener onto the `add_tip` button and specify your `AddTip` function as the callback. *Your solution will have a small but critical issue - what is it any why is it happening?*
 
-#### JS Objects:
 
-JS objects are similar to hashes in Ruby. One critical difference is that a JS object can have a functions as a value. The `this` keyword refers to the object itself, much like in ruby when `self` is used to refer to current Class or Instance.
-
-```js
-var harry = {};
-harry.height = "6 feet";
-harry.weight = "190 lbs";
-harry.profession = "Barber";
-harry.children = ["Jack", "Jill", "Gretta"];
-harry.praiseChildren = function(){
-  var praises = ["kind", "curious", "adventurous", "hard working", "musically gifted"];
-  for (var i = 0; i < this.children.length; i++){
-    console.log(this.children[i], "is so", praises[Math.floor(Math.random()*3)])
-  }
-}
-```
-
-* Methods: JavaScript objects, arrays and functions each have their own unique properties and methods available to them
-• Full list of built in JavaScript methods: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Methods_Index
-
-#### Loops/Iterators
-**Loops allow you to execute a block of code multiple times until a condition is met**
-
-* For Loops: executed until a specific condition returns false.
-```js
-for (initialization; condition; increment) {
-  // statements
-}
-
-var ages = [30, 35, 10, 22, 18, 12];
-
-for (var i = 0; i < ages.length; i++) {
-  console.log(ages[i] + " years old");
-}
-```
-
-* While Loops: Executed while a condition is true.
-```js
-var start = 1;
-while (start < 10) {
-  console.log("start: " + start);
-  start++; // shorthand for start = start + 1
-}
-```
-
-**Exercise 4:**
-
-Using a `while` loop, create a number guessing game. You will need two variables, one for the guess and one for the answer. To supercharge your game, give the user hints about whether their number is high or low depending on their guess - you can use conditionals and comparison operators for this. *Hint: The computer can choose a starting number between 0-100 by using `Math.round(Math.random()*100)`*
 
 **Bonus**
 Complete 'Javascripting' (feel free to skip over the first few challenges) https://github.com/workshopper/javascripting
 
 #### Extra Resources
 * https://www.codecademy.com/learn/javascript
-* https://www.tutorialspoint.com/javascript/
-* https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics
+
