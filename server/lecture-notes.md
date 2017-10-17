@@ -28,7 +28,7 @@ Let's get straight into it. I want everyone to follow along, and install LearnYo
 
 Fill in the required details and you should have the package.json file created. It should look something like this:
 
-`	
+```
 {
   "name": "myReactBlog",
   "version": "1.0.0",
@@ -40,7 +40,7 @@ Fill in the required details and you should have the package.json file created. 
   "author": "Yosh",
   "license": "MIT"
 }
-`
+```
 
 You'll be using the express framework for serving your application. Install express using the following command (the --save automatically throws express into our package.json for later reference on the dependency):
 
@@ -50,13 +50,13 @@ Express is a framework that abstracts a lot of the work out of setting up a node
 
 Using the express framework, let's have our app listen on a port address. Inside the project directory, create a file called `app.js.` Require the express module inside the app.js and create the app! Set the static path of the application where it can find the static files. Here is how it looks:
 
-`
+```
 var express = require("express");
 var path = require("path");
  
 var app = express();
 app.use(express.static(path.join(__dirname,"/html")));
-`
+```
 
 
 
