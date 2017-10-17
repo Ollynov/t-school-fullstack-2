@@ -6,8 +6,9 @@ GIT LECTURE - 15 MINUTES
 
 GIT EXERCISE: 
 - Git It! - 30 mins
+- Let's make our first project commit - 10 mins
 
-10:45AM
+10:55AM
 
 10 Min Break
 
@@ -17,9 +18,10 @@ Bootsrap Exercise:
 - Build columns on the "tester.html document" 20 mins
 - Solution - 5 mins
 
-11:30AM
+11:40AM
 
-BOOTSTRAP LECTURE - Let's create our blog page
+BOOTSTRAP LECTURE - Let's create our blog page - 20 mins
 
 Needs to be done: 
 - The Bootstrap "tester.html" exercise to verify
+- Perhaps one or two more tables for our blog posts

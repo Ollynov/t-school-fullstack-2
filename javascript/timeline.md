@@ -7,13 +7,14 @@ Intro to Javascript Lecture - 15 mins
 JS Exercises:
 - "Update Name" - 5 mins
 - "Update color" - 15 mins
+- Move to external JS file - 5 mins
 
 JS Lecture continued - 15 mins (with solutions from above)
 
 JS Exercises:
-- Tip Calculator - 10 mins
+- Tip Calculator - 15 mins
 
-2:00PM
+2:10PM
 
 BREAK - 5 mins
 
