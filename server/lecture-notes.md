@@ -87,7 +87,59 @@ To transform JSX code to JavaScript, you'll need babel, a JavaScript compiler. I
 
 
 
+Let's create a signin method on the Node.js side to validate the user sign-in process. In the app.js file, create a method called signin.
+1
+2
+3
+  
+app.post('/signin', function (req, res) {
+  
+})
 
+You'll be making use of the body-parser module to parse the request posted from the React client side. Install the body-parser module in the project. 
+1
+  
+npm install body-parser --save
+
+Require the body-parser module in the app.js file.
+1
+  
+var bodyParser = require("body-parser");
+
+Add the following line of code to enable JSON parsing.
+1
+  
+app.use(bodyParser.json());
+
+Inside the signin method, you can parse the request as shown:
+1
+2
+  
+var user_name=req.body.email;
+var password=req.body.password;
+
+Modify the signin method as shown to validate the user sign-in.
+01
+02
+03
+04
+05
+06
+07
+08
+09
+10
+  
+app.post('/signin', function (req, res) {
+  var user_name=req.body.email;
+  var password=req.body.password;
+  if(user_name=='admin' && password=='admin'){
+      res.send('success');
+  }
+  else{
+    res.send('Failure');
+  }
+})
 
 
 
