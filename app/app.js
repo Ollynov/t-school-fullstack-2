@@ -1,5 +1,9 @@
 var express = require("express");
 var path = require("path");
+const webpackDevMiddleware = require('webpack-dev-middleware');
+const webpack = require('webpack');
+const webpackConfig = require('./webpack.config.js');
+const compiler = webpack(webpackConfig);
  
 var app = express();
 app.use(express.static(path.join(__dirname,"/static")));
@@ -9,6 +13,16 @@ app.use(express.static(path.join(__dirname,"/static")));
 var bodyParser = require("body-parser");
 
 app.use(bodyParser.json());
+
+app.use(webpackDevMiddleware(compiler, {
+  hot: true,
+  filename: 'bundle.js',
+  publicPath: '/',
+  stats: {
+    colors: true,
+  },
+  historyApiFallback: true,
+}));
 
 
 app.post('/signin', function (req, res) {

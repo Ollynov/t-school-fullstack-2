@@ -1,4 +1,6 @@
-class Signin extends React.Component {
+import React from 'react';
+
+class SignIn extends React.Component {
     render() {
         return (
             <form className="form-signin">
@@ -14,3 +16,6 @@ class Signin extends React.Component {
         )
     }
 }
+
+export default SignIn;
+

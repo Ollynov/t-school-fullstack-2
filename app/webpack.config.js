@@ -1,7 +1,7 @@
 const path = require('path');
  
 module.exports = {
-  context: path.join(__dirname, 'components'),
+  context: path.join(__dirname, 'src'),
   entry: [
     './index.js',
   ],
@@ -14,10 +14,9 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loader: 'babel-loader',
-        query: {
-                presets: ['es2015', 'react']
-            }
+        use: [
+          'babel-loader',
+        ],
       },
     ],
   },
