@@ -1,3 +1,18 @@
+Config stuff I did to get our app ready: 
+- Added these scripts to package.json   
+```
+"scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/server.js",
+    "compile-dev": "webpack --watch"
+  }
+```
+- npm installed react, react-dom, body-parser, babel, and webpack
+- Made a static directory where I moved index.html and where webpack will compile everything into bundle.js
+- Added a webpack.config.js file
+- Changed line 5 of app.js to do app.use on '/static' now
+
+
 Create a new repo called "components" and for now create a file called main.jsx and place it into that components directory. This file will contain the React UI components. 
  
 A component is the main building block of a React app. Every small portion of a React site that you can see as a user is either an individual component, or makes up a larger component. For example, our navbar can be a single component, or may be composed of several smaller components (one component for each button for example)- the actual details are dependent on how you choose to structure your components. The great thing about these components is that they are encapsulated code, meaning that you can re-use them in multiple places in our app, without having to rewrite the code each time. This not only means less code that you need to actually write, but is crucial for maintaining the app, since when you make an update to a component, it will automatically update in all areas of your app where you use that component, and you are less likely to forget about one of them, which can lead to bugs. 
