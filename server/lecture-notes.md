@@ -58,55 +58,21 @@ var app = express();
 app.use(express.static(path.join(__dirname,"/html")));
 ```
 
-
-
-#### Pulling in dependencies with the package.json file
-
-
-```package.json
-{
-  "name": "react-universal-blog",
-  "version": "1.0.0",
-  "engines": {
-    "node": "4.1.2",
-    "npm": "3.5.2"
-  },
-  "description": "",
-  "main": "app-server.js",
-  "dependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-loader": "^7.1.2",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-preset-es2017": "^6.24.1",
-    "babel-preset-react": "^6.24.1",
-    "babel-register": "^6.26.0",
-    "cosmicjs": "^2.4.0",
-    "flux": "^3.1.3",
-    "history": "1.13.0",
-    "hogan-express": "^0.5.2",
-    "html-webpack-plugin": "^2.30.1",
-    "path": "^0.12.7",
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1",
-    "react-router": "1.0.1",
-    "webpack": "^3.5.6",
-    "webpack-dev-server": "^2.7.1"
-  },
-  "scripts": {
-    "webpack-dev-server": "NODE_ENV=development PORT=8080 webpack-dev-server --content-base public/ --hot --inline --devtool inline-source-map --history-api-fallback",
-    "development": "cp views/index.html public/index.html && NODE_ENV=development webpack && npm run webpack-dev-server"
-  },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "react-hot-loader": "^1.3.0"
-  }
-}
-
+Assign a port number for the application to listen on. The following code is what creates the server:
+```
+app.listen(8000,function(){
+    console.log("Listening on Port: ", 8000);
+})
 ```
 
+Now we are ready to check out the app running on our server! 
+First run the following command to download all of our dependencies such as Express: 
+- `npm install`
 
+Then we should be good to go, run the following command: 
+	- `node app.js`
 
+Go to http://localhost:8000/index.html and you will see your homepage.
 
 
 
