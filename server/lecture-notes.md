@@ -80,7 +80,7 @@ We will also need to incnclude the following script tags for React and React DOM
 <script src="https://fb.me/react-dom-15.1.0.js"></script>
 ```
 
-To transform JSX code to JavaScript, you'll need babel, a JavaScript compiler. Include babel in the index.html page.
+To transform JSX code to JavaScript, you'll need babel, a JavaScript compiler. Include babel in the index.html page. JSX is a special kind of javascript code that mimics html. It looks almost exactly like html- so we can write our components directly in our javascript files, to form our components. Later, we will need this JSX to be compiled to a language that our browser understands- javascript. For this there is some setup, but the heavy lifting is done by Babel or other similar libraries.
 	
 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 
