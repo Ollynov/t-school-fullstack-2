@@ -87,49 +87,30 @@ To transform JSX code to JavaScript, you'll need babel, a JavaScript compiler. I
 
 
 
-Let's create a signin method on the Node.js side to validate the user sign-in process. In the app.js file, create a method called signin.
-1
-2
-3
-  
+Let's create an 'endpoint' on the Node.js side to validate the user sign-in process. In the app.js file, create the following:
+```
 app.post('/signin', function (req, res) {
   
 })
+```
 
-You'll be making use of the body-parser module to parse the request posted from the React client side. Install the body-parser module in the project. 
-1
-  
-npm install body-parser --save
+You'll be making use of the body-parser module to parse the request sent from the React client side. Install the body-parser module in the project. 
+ 
+`npm install body-parser --save`
 
 Require the body-parser module in the app.js file.
-1
   
-var bodyParser = require("body-parser");
+`var bodyParser = require("body-parser");`
 
 Add the following line of code to enable JSON parsing.
-1
   
-app.use(bodyParser.json());
+`app.use(bodyParser.json());`
 
-Inside the signin method, you can parse the request as shown:
-1
-2
-  
-var user_name=req.body.email;
-var password=req.body.password;
+These requests that we are referring to are the HTTP requests we learned about at the start of T-School. They are the primary form of communication between the client and server, and each request comes with an "HTTP Verb" that indicates what intention the request has- GET, POST, etc. You have to accomodate for these requests by creating endpoints.
 
 Modify the signin method as shown to validate the user sign-in.
-01
-02
-03
-04
-05
-06
-07
-08
-09
-10
-  
+
+```
 app.post('/signin', function (req, res) {
   var user_name=req.body.email;
   var password=req.body.password;
@@ -140,6 +121,8 @@ app.post('/signin', function (req, res) {
     res.send('Failure');
   }
 })
+```
+
 
 
 
