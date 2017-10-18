@@ -8,8 +8,13 @@ Config stuff I did to get our app ready:
   }
 ```
 - npm installed react, react-dom, body-parser, babel, and webpack
+- npm installed the following: 
+npm install --save babel-core
+npm install --save babel-preset-latest
+npm install --save babel-preset-react
 - Made a static directory where I moved index.html and where webpack will compile everything into bundle.js
 - Added a webpack.config.js file
+- Added a .babelrc file
 - Changed line 5 of app.js to do app.use on '/static' now
 
 
