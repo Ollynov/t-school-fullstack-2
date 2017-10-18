@@ -21209,39 +21209,64 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var SignIn = function (_React$Component) {
     _inherits(SignIn, _React$Component);
 
-    function SignIn() {
+    function SignIn(props) {
         _classCallCheck(this, SignIn);
 
-        return _possibleConstructorReturn(this, (SignIn.__proto__ || Object.getPrototypeOf(SignIn)).apply(this, arguments));
+        var _this = _possibleConstructorReturn(this, (SignIn.__proto__ || Object.getPrototypeOf(SignIn)).call(this, props));
+
+        _this.state = {
+            email: '',
+            password: ''
+        };
+
+        _this.handleEmailChange = _this.handleEmailChange.bind(_this);
+        _this.handlePasswordChange = _this.handlePasswordChange.bind(_this);
+        _this.signIn = _this.signIn.bind(_this);
+        return _this;
     }
 
     _createClass(SignIn, [{
-        key: "render",
+        key: 'handleEmailChange',
+        value: function handleEmailChange(e) {
+            this.setState({ email: e.target.value });
+        }
+    }, {
+        key: 'handlePasswordChange',
+        value: function handlePasswordChange(e) {
+            this.setState({ password: e.target.value });
+        }
+    }, {
+        key: 'signIn',
+        value: function signIn() {
+            alert('Email address is ' + this.state.email + ' Password is ' + this.state.password);
+        }
+    }, {
+        key: 'render',
         value: function render() {
             return _react2.default.createElement(
-                "form",
-                { className: "form-signin" },
+                'form',
+                { className: 'form-signin' },
                 _react2.default.createElement(
-                    "h2",
-                    { className: "form-signin-heading" },
-                    " Please sign in "
+                    'h2',
+                    { className: 'form-signin-heading' },
+                    'Please sign in'
                 ),
                 _react2.default.createElement(
-                    "label",
-                    { "for": "inputEmail", className: "sr-only" },
-                    " Email address"
+                    'label',
+                    { className: 'sr-only' },
+                    'Email address'
                 ),
-                _react2.default.createElement("input", { type: "email", id: "inputEmail", className: "form-control", placeholder: "Email address", required: true, autofocus: true }),
+                _react2.default.createElement('input', { type: 'email', id: 'inputEmail', className: 'form-control', placeholder: 'Email address' }),
                 _react2.default.createElement(
-                    "label",
-                    { "for": "inputPassword", className: "sr-only" },
-                    " Password"
+                    'label',
+                    { className: 'sr-only' },
+                    'Password'
                 ),
-                _react2.default.createElement("input", { type: "password", id: "inputPassword", className: "form-control", placeholder: "Password", required: true }),
+                _react2.default.createElement('input', { type: 'password', id: 'inputPassword', className: 'form-control', placeholder: 'Password', required: true }),
                 _react2.default.createElement(
-                    "button",
-                    { className: "btn btn-lg btn-primary btn-block", type: "button" },
-                    " Sign in"
+                    'button',
+                    { className: 'btn btn-lg btn-primary btn-block', onClick: this.signIn, type: 'button' },
+                    'Sign in'
                 )
             );
         }
