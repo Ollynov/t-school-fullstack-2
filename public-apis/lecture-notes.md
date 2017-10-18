@@ -22,57 +22,6 @@ Now that you've gotten a unique API key, let's add that to your rails project.
 ### Environment Variables
 Environment variable are usually small pieces of configuration data that you want accessible everywhere (globally) within your application. Often, these are API keys, passwords, email addresses and URLs. This is a good DRY convention and helps developers centralize important information in a single place.
 
-Add the following line to your `development.rb` config file with your unique API key:
-
-```rb
-ENV["DARK_SKY_API_KEY"] = "your dark sky api key"
-```
-
-Let's see how we can access that in our Rails app.
-
-`$ rails c`  
-`> ENV["DARK_SKY_API_KEY"]`
-
-### Custom Routing in Rails
-Custom routing in rails is as easy as specifying an HTTP method (`GET`, `POST` etc.), a request url string (`properties/ranches/`), and a corresponding controller and action combo (`properties#show_ranches`) in the routes file.
-
-Let's create a custom route for our weather service in `routes.rb`. Since this is part of our API, we put it in a versioned API namespace.
-
-```rb
-get "api/v1/weather" => "api/v1/weather#get_weather"
-```
-
-We need to make the corresponding controller and action for this route to work.
-
-Create a new directory in the `controllers` directory named `api` and inside of that create another directory named `v1`. Inside of the `v1` directory, add a controller file named `weather_controller.rb` and add the following lines:
-
-```rb
-class Api::V1::WeatherController < ApplicationController
-  skip_before_action :authenticate_user!, only: [:get_weather]
-
-  def get_weather
-    render :json => Weather.get_weather_at_coordinates(params[:lat], params[:lng])
-  end
-end
-```
-
-Where's the Weather class coming from? We need to make it. Let's create a new `Weather` model that will handle the application logic for our weather service. In the models directory add a file names `weather.rb`. Let's add the following code to the file:
-
-```ruby
-class Weather
-  def self.get_weather_at_coordinates(lat, lng)
-    lat ||= "37.7767"
-    lng ||= "-122.4233"
-
-    uri = URI.parse("https://api.darksky.net/forecast/#{ENV["DARK_SKY_API_KEY"]}/#{lat},#{lng}")
-    http = Net::HTTP.new(uri.host, uri.port)
-    http.use_ssl = true
-
-    data = http.get(uri.request_uri)
-    data.body
-  end
-end
-```
 
 ### Making an HTTP request
 Let's step through the code above in our console to learn about the various parts of an HTTP (Hyper Text Transport Protocol) request.
