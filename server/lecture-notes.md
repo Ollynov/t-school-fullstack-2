@@ -128,28 +128,3 @@ app.post('/signin', function (req, res) {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-**Practice 2: Interacting with the DOM directly through Javascript**
-
-
-#### JS Functions
-
-
-**Bonus**
-Complete 'Javascripting' (feel free to skip over the first few challenges) https://github.com/workshopper/javascripting
-
-#### Extra Resources
-* https://www.codecademy.com/learn/javascript
-

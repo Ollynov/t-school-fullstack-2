@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="./../styles/main.css">
+  </head>
+  <body>
+    <header id="topPortion">
+      <h1>Our App</h1>
+      <nav class='navContainer'>
+        <a href="./../index.html">Home</a> |
+        <a href="about.html">About</a> |
+        <a href="blog.html">Blog</a> |
+        <a href="contact_us.html">Contact</a>
+      </nav>
+      <div id='loginContainer' class='navContainer'>
+        <a href="#">Sign Up</a> |
+        <a href="#">Login</a>
+      </div>
+    </header>
+    <form>
+      <div>
+        <label>Email</label> <input required="required" type="email"/>
+      </div>
+      <div>
+        <label>Image</label> <input required="false" type="file"/>
+      </div>
+      <div>
+        <label>Compress Photo?</label>
+        <input type="checkbox" value="1"/>
+      </div>
+      <br>
+      <div>
+        <label>Category</label>
+        <select>
+          <option value="1">Compliment</option>
+          <option value="2">Complaint</option>
+          <option value="3">General Inquiry</option>
+        </select>
+      </div>
+      <hr>
+      <div>
+        <input type="submit" value="Submit"/>
+      </div>
+    </form>
+  </body>
+</html>
