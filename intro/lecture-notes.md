@@ -75,3 +75,27 @@ We are going to get an introduction to Shell Commands, while cloning down the re
 *> Let's Try it!: follow along with me to learn some command line basics, and let's create the repo for our project*
 
 
+
+### Network Requests 
+- How does the client and backend communicate?
+- What is a network request? 
+- What is HTTP?
+- Can we make this communication between client and server faster? 
+
+/// SLIDES ///
+ 
+
+Advanced: 
+look into GraphQL http://graphql.org/learn/
+
+*> Let's Try it!: Let’s try it! Let’s make a request to the weather API!* 
+
+HINT: There are websites that give you demo environments to send out API calls to other servers.
+
+Advanced: 
+- Get back the current hurricane info from around the world
+- Write the same request from postman
+- Write the same request from the terminal (using curl)
+- What other responses can you get? Reddit, Spotify, and Google Places are some ideas.
+
+
