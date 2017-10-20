@@ -1,14 +1,19 @@
 # Technical Interview
 
-As a manager, you might be interested in applying for technical companies. In that case, you have a chance of being confronted by technical questions. That's why today we will learn about what a technical interview looks like and what you should be prepared for as a manager.
+This may be overlooked (and something we've neglected up until now), but communication is one of the most important skills for a developer. Speaking precisely is crucial not only so that all of the engineers on your team are on the same page about what you are building, but for clients and other stakeholders. 
+
+It's very likely that you may want to continue to pursue programming, and soon will be applying for technical projects within IBM, or that you'll even be conducting your own interviews. In either case, it is important to understand top-level application architecture and to know how to talk through it. 
 
 ## What you will learn today
 * What is an engineer technical interview
-* What to expect from a technical interview as a manager
-* Practice one typical exercise
+* A review on top-level product architecture and diagrams
+* Whiteboarding
 
 ## Typical engineer interview
-A typical on-site interview can range from 1-5 hours; but is typically divided into 2 parts. An introduction/cultural fit portion, and the technical portion. The technical portion can be pair programming, an online coding challenge, whiteboarding, architecture overview, high-level conceptual questions, or a live demo and conversation of a project the candidate has previously worked on. We will cover each part so that you have a good overview of what an engineer interview looks like.
+A typical on-site interview at a company for a full-time role can range from 1-5 hours. An introduction/cultural fit portion, and the technical portion. The technical portion can be pair programming, an online coding challenge, whiteboarding, architecture overview, high-level conceptual questions, or a live demo and conversation of a project the candidate has previously worked on. 
+
+The good news is that internally for projects within IBM it is most likely only going to be a conversation, no longer than 20 minutes. This is your opportunity to distinguish yourself, even from some of the developers who may have more on their resume. 
+
 
 ### Introduction / Cultural fit
 This is an engineer's or manager's opportunity to demonstrate their soft skills, which many would argue are just as crucial as technical ability. Companies want a team player who knows how to communicate well, and who people enjoy working alongside with. Also, more and more companies (especially startups) look for candidates who are mission-driven.
@@ -51,16 +56,6 @@ Each software engineering candidate, or even product manager, should have at lea
 - Write a program to solve a Rubik's cube in any programming language.
 
 
-#### Interviewee questions
-The final 5 minutes are reserved for the interviewee to ask questions. Some examples of good ones:
-- How does the typical production workflow look? How often is code pushed to production (live)?
-- What is the project management process you use - do you use Agile or Scrum?
-- How is the test coverage?
-- How is the engineering team organized/structured? Are there sub-teams?
-
-## What to expect as a manager
-As a manager, you won't have questions that are that technically complicated. However it might happen that your interviewer asks you questions about your technical background and want to verify it.
-
 ### Easier technical questions
 
 - Write a maxNum function that accepts an array of integers, and returns the largest integer
@@ -68,7 +63,7 @@ As a manager, you won't have questions that are that technically complicated. Ho
 - Write a function add, that accepts two numbers, and returns the sum.
 - Write a function that takes a string, and returns that string in snake format. snakeFormat('examplestring') => 'eXaMpLeStRiNg'
 
-### Advice
+### Advice for technical questions
 - Ask clarifying questions before you just jump into the code, make sure you understand your challenge 100% before starting. Some interviewers will keep their instructions vague, to see if the interviewee will ask good clarifying questions.
 - Never get frustrated or angry. Show persistance, and only give up if you absolutely are stuck.
 - Always talk through your thoughts. Even if you had initial thoughts on how to solve a problem, which you realize are not correct, be sure to mention them to your interviewer and demonstrate an understanding of _why_ they are not an ideal solution.
@@ -76,5 +71,10 @@ As a manager, you won't have questions that are that technically complicated. Ho
 - Always try to get the most simple solution down first. _Then_ go for optimizations, and handle for edge cases. Edge cases are strange inputs that are different in format, and may result in an error. For example, if your input expects an array of integers, what happens when your array is [], or when it is [-1,-1,-1,-1]... will your function still work?
 
 ## Challenge
+
+We are going to split into three groups. Then we will round robin it and each of you will have a chance to answer technical questions in front of your group. There will be three categories: 
+- conceptual
+- whiteboarding
+- architecture
 
 Good Luck!
