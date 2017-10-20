@@ -54,6 +54,7 @@ $.ajax({
 });
 ```
 
+
 **Exercise 1**
 Inside of our success function in the above AJAX object, we have access to the data that was sent from our server. Instead of just console logging our result, let's show it to our users. Use JQuery to select an element (maybe `.title-2`) and update its text to be either the current weather description, the current temperature, or a forecast.
 
