@@ -30,8 +30,12 @@ Oftentimes the interviewer will share a link to a platform where the candidate w
 #### Whiteboarding
 Did you know that code can also be written on a piece of paper, or even a whiteboard? Whiteboarding challenges are oftentimes the most feared coding challenges, since you have no syntax highlighting, and the environment is much different from your every day routine. Again, this is another opportunity for the interviewer to get a grasp of how well the candidate communicates, and how well her or she understands high level concepts, and how they go about reasoning with a problem. Certain companies have even been known to given candidates a problem with no possible solution, with the objective of seeing how they go about trying to obtain a solution, and to see how they react when they do not find one. Do they keep trying different strategies, or do they break down and start getting frustrated?
 
+**DEMO**
+
 #### Architecture Overview
 Typically a candidate can best express the architecture of an app through drawing a diagram. The initial question might be "Give me a top level diagram of how you would design an e-commerce platform." From there the candidate is expected to draw a diagram that shows how the client and server interact, along with the database, a cache (if you choose to include one), and any other services or web API integrations. A candidate who truly understands the big picture, can clearly talk through the process as they draw the diagram.
+
+**DEMO**
 
 #### Conceptual Questions
 What is the difference between Angular and React? In what situations would you use a relational database vs a non-relational database? What is an ORM? What is dirty checking in Angular? The list goes on...
