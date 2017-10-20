@@ -48,12 +48,14 @@ You will need to have 3 things already installed on your computers:
 - Node
 - NPM
 - Git (almost all computers come with git already)
+- Sublime Text (or similar text editor)
 
-To check if any of the 3 are installed, you can run 'which node', and you should get the path where it is installed. Typically they are installed within our bin folder. If they are located somewhere else, no need for immediate action, but something to keep in mind. 
+To check if any of the 4 are installed, you can run 'which node', and you should get the path where it is installed. Typically they are installed within our bin folder. If they are located somewhere else, no need for immediate action, but something to keep in mind. 
 
 * [Install Node](https://nodejs.org/en/)
 * [Install NPM](https://www.npmjs.com/)
 * [Install Git](https://git-scm.com/book/id/v2/Getting-Started-Installing-Git)
+* [Install Sublime](https://www.sublimetext.com/3)
 
 You also should already have an account on * [Github](https://github.com)
 
