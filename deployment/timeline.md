@@ -5,7 +5,7 @@ TOTAL: 2 Hours
 Deployment overview - 10 mins
 
 EXERCISE
-- Let's deploy! - 15 mins
+- Let's deploy! - 15 mins + 10 mins to add Mongo service
 - Walking around the class to help with deployment - 10 mins
 
 1:35PM
