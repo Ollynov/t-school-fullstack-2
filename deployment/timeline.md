@@ -12,4 +12,4 @@ EXERCISE
 
 5 min break
 
-1 hour and 20 mins of free time to work on an app
+1 hour and 10 mins of free time to work on an app
