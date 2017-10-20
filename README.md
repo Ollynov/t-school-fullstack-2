@@ -1,6 +1,6 @@
 # <img src="https://www.research.ibm.com/university/cas/benelux/images/eye-bee-m.gif" >
 
-# INTRO TO FULLSTACK PROGRAMMING
+# INTRO TO FULLSTACK PROGRAMMING [Detail Agenda](https://ibm.box.com/s/d62vpz1j2cjfu3wlhh5nxqnc5u33445p)
 
 - Day 1 Session 1: 11:00AM - 12:30PM
 - Day 1 Session 2: 1:30PM - 4:00PM
