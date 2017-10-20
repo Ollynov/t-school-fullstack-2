@@ -37,7 +37,7 @@ In case you feel lost... you're not the only one. Because of the nature of progr
 
 
 
-### Get to know each other activity! 
+### Get to know each other activity! [Link to Activity](https://ibm.box.com/s/n9h9ls4eixi79co3ezo1dnw7qj2ewtzq)
 
 
 
