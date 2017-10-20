@@ -36,6 +36,11 @@ With so many students, from a range of backgrounds, it's impossible to make the 
 In case you feel lost... you're not the only one. Because of the nature of programming (oftentimes staring at a screen for prolonged times), we may be tempted to think that everyone else is just hacking away without any errors, everyone except for us. The truth is that when an experienced developer runs new code for the first time, they usually _don't expect it to work_; they know that most of the time as a developer you are fixing bugs, researching, and just "figuring it out" as you go along. Being in a state of uncertainty is a natural feeling for a developer, you just need to develop the habit of knowing that there almost always is _some_ sort of solution and path forward (even if it isn't clear). 
 
 
+
+### Get to know each other activity! 
+
+
+
 ### Initial Setup 
 **Dependencies**
 
@@ -68,27 +73,5 @@ We are going to get an introduction to Shell Commands, while cloning down the re
 [Here](http://www.galvanize.com/learn/learn-to-code/programming-101-how-to-use-the-terminal-command-line/) is a video that explains more in depth the use of the command line.
 
 *> Let's Try it!: follow along with me to learn some command line basics, and let's create the repo for our project*
-
-### Network Requests 
-- How does the client and backend communicate?
-- What is a network request? 
-- What is HTTP?
-- Can we make this communication between client and server faster? 
-
-/// SLIDES ///
- 
-
-Advanced: 
-look into GraphQL http://graphql.org/learn/
-
-*> Let's Try it!: Let’s try it! Let’s make a request to the weather API!* 
-
-HINT: There are websites that give you demo environments to send out API calls to other servers.
-
-Advanced: 
-- Get back the current hurricane info from around the world
-- Write the same request from postman
-- Write the same request from the terminal (using curl)
-- What other responses can you get? Reddit, Spotify, and Google Places are some ideas.
 
 
