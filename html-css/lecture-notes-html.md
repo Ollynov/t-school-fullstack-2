@@ -32,7 +32,7 @@ Let's play around with your browser's Dev Tool. Dev tool is something in your we
 
 *> Exercise: Change the title. Then add a heading of whatever size you want within the body and put one of the words into a span*
 
-Let's create a page directory: `$ mkdir pages`
+**Let's create a page directory: `$ mkdir pages`**
 
 #### Lists:
 Lists are often used in HTML. For example, you can easily create navigation menu thanks to lists. There are two types of lists:
@@ -40,7 +40,7 @@ Lists are often used in HTML. For example, you can easily create navigation menu
 - Unordered list: `<ul> [list items] </ul>`
 - List item: `<li> item </li>`
 
-Let's create a menu file: `$ touch pages/products.html`
+**Let's create a menu file: `$ touch pages/products.html`**
 
 ```html
 <!DOCTYPE html>
