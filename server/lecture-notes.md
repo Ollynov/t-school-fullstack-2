@@ -55,7 +55,7 @@ var express = require("express");
 var path = require("path");
  
 var app = express();
-app.use(express.static(path.join(__dirname,"/html")));
+app.use(express.static(path.join(__dirname,"/static")));
 ```
 
 Assign a port number for the application to listen on. The following code is what creates the server:
