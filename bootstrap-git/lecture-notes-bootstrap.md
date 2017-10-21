@@ -68,6 +68,8 @@ It actually doesn't look as good as it did before. Can anyone think of why this 
 - <b><a href="https://www.lyft.com/">Lyft</a></b><br>
 - <b><a href="https://www.meteor.com/">Meteor</a></b>
 
+_Exercise: Follow along as we upgrade our navbar and make it mobile friendly with bootstrap_
+
 ## Challenges
 
 1. Create an ```tester.html``` file and add the Bootstrap CDN.
