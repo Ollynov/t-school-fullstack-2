@@ -43,31 +43,6 @@ _Exercise Go ahead and add the dependencies to your index.html file. Does our pa
 
 It actually doesn't look as good as it did before. Can anyone think of why this is? How can we fix it back to how it was before, while still keeping bootstrap? 
 
-### Bootstrap Grid System
-
-1.  `.container` class holds `.row` classes
-2.  Rows create horizontal groups of columns, based on a system of 12 columns
-```
-<body>
-	<div class="container-fluid">
-	  <div class="row">
-	    <div class="col-xs-12 col-sm-6 col-md-3">
-	      <p>I take up a quarter of the page on a medium device and above.</p>
-	    </div>
-	    <div class="col-xs-12 col-sm-6 col-md-3">
-	      <p>I take up half the page on a small device</p>
-	    </div>
-	  </div>
-	</div>
-</body>
-```
-4.  `xs-*`, `sm-*`, `md-*`, `lg-*` refer to targeted device sizes ([spec reference](http://getbootstrap.com/css/#buttons-options))
-5.  The best way to learn about the Bootstrap grid system is to see it in action:
-
-- <b><a href="https://www.instacart.com/">Instacart</a></b><br>
-- <b><a href="https://www.lyft.com/">Lyft</a></b><br>
-- <b><a href="https://www.meteor.com/">Meteor</a></b>
-
 _Exercise: Follow along as we upgrade our navbar and make it mobile friendly with bootstrap_
 
 [crazy coding happens now...]
@@ -96,7 +71,32 @@ Looks better, but let's fix up the spacing.
 
 _Excercise: pop open your Developer Tools in the browser and let's make it look cleaner. HINT: Check out the tab that says "computed"
 
+Cool, now that looks good, but how else can we improve the spacing? Notice that when you drag the browser to mobile width the blog posts become very narrow. The 50% width looks great on desktops but not so good on mobile. Enter the grid system. 
 
+### Bootstrap Grid System
+
+1.  `.container` class holds `.row` classes
+2.  Rows create horizontal groups of columns, based on a system of 12 columns
+```
+<body>
+	<div class="container-fluid">
+	  <div class="row">
+	    <div class="col-xs-12 col-sm-6 col-md-3">
+	      <p>I take up a quarter of the page on a medium device and above.</p>
+	    </div>
+	    <div class="col-xs-12 col-sm-6 col-md-3">
+	      <p>I take up half the page on a small device</p>
+	    </div>
+	  </div>
+	</div>
+</body>
+```
+4.  `xs-*`, `sm-*`, `md-*`, `lg-*` refer to targeted device sizes ([spec reference](http://getbootstrap.com/css/#buttons-options))
+5.  The best way to learn about the Bootstrap grid system is to see it in action:
+
+- <b><a href="https://www.instacart.com/">Instacart</a></b><br>
+- <b><a href="https://www.lyft.com/">Lyft</a></b><br>
+- <b><a href="https://www.meteor.com/">Meteor</a></b>
 
 
 
