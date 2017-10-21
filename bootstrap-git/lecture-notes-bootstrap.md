@@ -90,6 +90,14 @@ Now that we have our navbar in place, let's put in a placeholder that will repre
     </div>
 ```
 
+It looks pretty good because it's responsive, but let's go ahead and make it more narrow. Cards come with a built in class adjusters such as `w-75` or `w-50` which will automatically modify the width of our cards. I'm going to go ahead and add `w-50` but you can already start to play around with alternatives if you think something else would look better.
+
+Looks better, but let's fix up the spacing. 
+
+_Excercise: pop open your Developer Tools in the browser and let's make it look cleaner. HINT: Check out the tab that says "computed"
+
+
+
 
 
 ## Challenges
