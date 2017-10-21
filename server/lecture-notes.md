@@ -21,7 +21,7 @@ Let's get straight into it. I want everyone to follow along, and install LearnYo
 - Run `npm install learnyounode -g` (the -g stands for 'global')
 - We will go ahead and complete the first activity together, then move onto the next
 
-**Practice 1: Setting Everything Up**
+## Setting Everything Up
 
 - Navigate to your project directory (confirm with `pwd`)
 - "Initiate" your project with `npm init`
@@ -81,9 +81,9 @@ Then we should be good to go, run the following command:
 Go to http://localhost:8000/index.html and you will see your homepage. Boom! It doesn't look anymore exciting than before, but now an actual server is 'serving' up our html files. Previously we were just observing our site locally because we had the html files on our computer, and the browser can run html. Now we have a server sending over this html, which means that technically we are ready to deploy our app if we want; but we want to actually get it working first, so let's get right to it.
 
 
-#
+## Endpoints
 
-
+Server endpoints dictate what the server should do when it gets a particular request to that 'endpoint' which is just a url. Aside from the path/url, there is also an HTTP verb associated to each endpoint. For example, we may want to perform different actions for a 'GET' request to 'www.myapp.com/user' vs. a 'DELETE' request to 'www.myapp.com/user'. 
 
 
 Let's create an 'endpoint' on the Node.js side to validate the user sign-in process. In the app.js file, create the following:
@@ -121,6 +121,8 @@ app.post('/signin', function (req, res) {
   }
 })
 ```
+
+Right now our logic is very hard-coded- it will simply check to see if we have entered 'admin' as both the username and password, and then will send over a success message if that's the case. There's nothing wrong with starting functions with basic logic like this, because it will verify whether we have the first steps going. If we try to build out everything at once, it will be more difficult to figure out what it is that is breaking it. 
 
 
 
