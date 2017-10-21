@@ -65,6 +65,12 @@ app.listen(8000,function(){
 })
 ```
 
+We are having our app serve up (`app.use`) everything from the 'static' directory so we need to make a new directory 'static' with the command `mkdir`. Then we can move our 'index.html' and 'styles' directory into our new 'static' directory:
+- `mkdir static`
+- `mv styles static`
+- `mv index.html static`
+
+
 Now we are ready to check out the app running on our server! 
 First run the following command to download all of our dependencies such as Express: 
 - `npm install`
