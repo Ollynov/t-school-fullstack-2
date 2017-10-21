@@ -115,9 +115,11 @@ app.post('/signin', function (req, res) {
   var password=req.body.password;
   if(user_name=='admin' && password=='admin'){
       res.send('success');
+      console.log('success!);
   }
   else{
     res.send('Failure');
+    console.log('something went wrong')
   }
 })
 ```
@@ -125,7 +127,7 @@ app.post('/signin', function (req, res) {
 Right now our logic is very hard-coded- it will simply check to see if we have entered 'admin' as both the username and password, and then will send over a success message if that's the case. There's nothing wrong with starting functions with basic logic like this, because it will verify whether we have the first steps going. If we try to build out everything at once, it will be more difficult to figure out what it is that is breaking it. 
 
 
-
+In the next lesson on authentication we will build the logic to have our login actually send over this request, to see if we can get the success message back!
 
 
 
