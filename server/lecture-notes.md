@@ -72,13 +72,8 @@ First run the following command to download all of our dependencies such as Expr
 Then we should be good to go, run the following command: 
 	- `node app.js`
 
-Go to http://localhost:8000/index.html and you will see your homepage.
+Go to http://localhost:8000/index.html and you will see your homepage. Boom! It doesn't look anymore exciting than before, but now an actual server is 'serving' up our html files. Previously we were just observing our site locally because we had the html files on our computer, and the browser can run html. Now we have a server sending over this html, which means that technically we are ready to deploy our app if we want; but we want to actually get it working first, so let's get right to it.
 
-We will also need to incnclude the following script tags for React and React DOM: 
-```
-<script src="https://fb.me/react-15.1.0.js"></script>
-<script src="https://fb.me/react-dom-15.1.0.js"></script>
-```
 
 To transform JSX code to JavaScript, you'll need babel, a JavaScript compiler. Include babel in the index.html page. JSX is a special kind of javascript code that mimics html. It looks almost exactly like html- so we can write our components directly in our javascript files, to form our components. Later, we will need this JSX to be compiled to a language that our browser understands- javascript. For this there is some setup, but the heavy lifting is done by Babel or other similar libraries. Don't worry too much about JSX or anything React related quite yet- there will be two entire sessions dedicated to React (the frontend); for now we want to make sure we have everything setup correctl on our server.
 	
