@@ -39,6 +39,8 @@ Then add the necessary javascript dependency right above the closing </body> tag
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 ```
 
+**Exercise** Go ahead and add the dependencies to your index.html file. Does our page look different? 
+
 ### Bootstrap Grid System
 
 1.  `.container` class holds `.row` classes
