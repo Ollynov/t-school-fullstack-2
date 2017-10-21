@@ -41,6 +41,8 @@ Then add the necessary javascript dependency right above the closing </body> tag
 
 _Exercise Go ahead and add the dependencies to your index.html file. Does our page look different?_
 
+It actually doesn't look as good as it did before. Can anyone think of why this is? How can we fix it back to how it was before, while still keeping bootstrap? 
+
 ### Bootstrap Grid System
 
 1.  `.container` class holds `.row` classes
