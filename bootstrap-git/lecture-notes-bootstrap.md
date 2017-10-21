@@ -69,7 +69,7 @@ It looks pretty good because it's responsive, but let's go ahead and make it mor
 
 Looks better, but let's fix up the spacing. 
 
-_Excercise: pop open your Developer Tools in the browser and let's make it look cleaner. HINT: Check out the tab that says "computed"
+_Excercise: pop open your Developer Tools in the browser and let's make it look cleaner. HINT: Check out the tab that says "computed"_
 
 Cool, now that looks good, but how else can we improve the spacing? Notice that when you drag the browser to mobile width the blog posts become very narrow. The 50% width looks great on desktops but not so good on mobile. Enter the grid system. 
 
@@ -100,16 +100,16 @@ Cool, now that looks good, but how else can we improve the spacing? Notice that 
 
 
 
-## Challenges
+## Challenge
 
-1. Create an ```tester.html``` file and add the Bootstrap CDN.
-2. Add one container, one row, and three col-** classes (your columns can be any width that add up to 12).
-3. Make sure your three columns stack vertically when you are on mobile (xs) devices.
-4. Add content to your columns (or make them each a different color).
+1. Make the blog posts stretch across the entire screen horizontally for mobile, but not for desktop
+2. Center the blog posts horizontally
+3. Add a top section on your homepage above the blog posts. This could be an image or header text with a color background. Sometimes this section is called a "hero."
 
-NOTE: You might notice that this time around we had much less introductory lecture. That is intentional. It is important to get accostumed to googling the right way. We will go over the solution afterwards so give it your best. 
+HINT: Bootstrap has a component called a "Jumbotron" that can help with Challenge #3
 
-## Further Reading
+
+## Some more resources
 
 * <a href="https://scotch.io/tutorials/understanding-the-bootstrap-3-grid-system">Understanding the Bootstrap System</a><br>
 
@@ -122,19 +122,6 @@ NOTE: You might notice that this time around we had much less introductory lectu
 * <a href="https://www.youtube.com/watch?v=gqOEoUR5RHg">YouTube Bootstrap Tutorial</a>
 
 
-### Let's add in some Bootstrap styling to our blog app
-
-**Exercise: add a `table` with a `table-hover` class(a bootstrap class) to your `blog.html` file.**
-
-**Exercise: add a 'new post' button with `btn-primary` to your `blog.html`.**
-
-
-### Using themes for inspiration:
+### BONUS: Using themes for inspiration:
 
 From here I would go to a website like: https://bootswatch.com/ in order to look at different styling elements. You can follow the source code and integrate it into your application.
-
-
-### Resources:
-https://www.railstutorial.org/book/filling_in_the_layout
-https://bootswatch.com/
-https://github.com/maxim/bootswatch-rails
