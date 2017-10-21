@@ -70,6 +70,28 @@ It actually doesn't look as good as it did before. Can anyone think of why this 
 
 _Exercise: Follow along as we upgrade our navbar and make it mobile friendly with bootstrap_
 
+[crazy coding happens now...]
+
+Now that we have our navbar in place, let's put in a placeholder that will represent a blog post. Bootstrap 4 recently came out, and one of the new features it includes are "cards." These are basically content containers that come with a lot of built-in responsive styling. Add the following after your closing header tag: 
+
+```
+    <div class="card text-center">
+      <div class="card-header">
+        Featured
+      </div>
+      <div class="card-body">
+        <h4 class="card-title">My First Blog Post</h4>
+        <p class="card-text">It is time to learn some fullstack programming. Are you ready?</p>
+        <a href="#" class="btn btn-primary">Read More</a>
+      </div>
+      <div class="card-footer text-muted">
+        2 days ago
+      </div>
+    </div>
+```
+
+
+
 ## Challenges
 
 1. Create an ```tester.html``` file and add the Bootstrap CDN.
