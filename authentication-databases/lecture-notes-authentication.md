@@ -15,4 +15,19 @@ There are different underlying hashing functions, but SHA256 is the most common 
 ## Sending an HTTP request
 
 
-We are going to use axios. 
+We are going to use axios, a library that makes it easy to send HTTP requests. Here is the basic format: 
+```
+axios.post('/signin', {
+               params: {
+               }
+             })
+             .then(function (response) {
+               console.log(response);
+             })
+             .catch(function (error) {
+               console.log(error);
+             });
+           })
+ ```
+ 
+This will send a POST request to our '/signin' route. You need also include some sort of params, in this case the email and password. The '.then' and '.catch' are callbacks which we briefly touched upon in the previous lesson in regards to the asynchronous nature of node. 
