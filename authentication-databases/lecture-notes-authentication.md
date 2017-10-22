@@ -36,3 +36,11 @@ This will send a POST request to our '/signin' route. You need also include some
 Get our app to give a console.log of "SUCCESS!!" when we login with the hardcoded 'admin@gmail.com' and 'admin' for password. 
 
 HINT: Take it in steps. When do we trigger this axios.post method? Let's first get a console.log triggering. Then let's confirm that we are successfully running our axios.post at the correct trigger point. Only then let's worry about getting the correct response back. 
+
+
+Awesome!! We officially have a very naive implementation of logins. What else can we do to improve our auth? 
+
+- Make it so that you can't have the same user sign up twice
+- Make all three fields mandatory: name, email, password
+- Give some basic restrictions to passwords, more than 5 characters at least
+- Encrypt the passwords
