@@ -44,3 +44,5 @@ Awesome!! We officially have a very naive implementation of logins. What else ca
 - Make all three fields mandatory: name, email, password
 - Give some basic restrictions to passwords, more than 5 characters at least
 - Encrypt the passwords
+
+Our app.js file is getting pretty big. In general we want to keep our primary server file small and organized. Let's decouple our code, and move our endpoint logic somewhere else. 
