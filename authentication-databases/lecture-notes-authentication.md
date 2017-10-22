@@ -12,7 +12,7 @@ One of the primary components to proper authentication is to have a proper hashi
 
 There are different underlying hashing functions, but SHA256 is the most common right now, and is the underlying hashing algorithm for bitcoin. Here you can play around with an actual SHA256 hashing algorithm: http://www.movable-type.co.uk/scripts/sha256.html
 
-## Sending an HTTP request
+## Sending an HTTP request to login
 
 
 We are going to use axios, a library that makes it easy to send HTTP requests. Here is the basic format: 
@@ -31,3 +31,8 @@ axios.post('/signin', {
  ```
  
 This will send a POST request to our '/signin' route. You need also include some sort of params, in this case the email and password. The '.then' and '.catch' are callbacks which we briefly touched upon in the previous lesson in regards to the asynchronous nature of node. 
+
+**Challenge**
+Get our app to give a console.log of "SUCCESS!!" when we login with the hardcoded 'admin@gmail.com' and 'admin' for password. 
+
+HINT: Take it in steps. When do we trigger this axios.post method? Let's first get a console.log triggering. Then let's confirm that we are successfully running our axios.post at the correct trigger point. Only then let's worry about getting the correct response back. 
