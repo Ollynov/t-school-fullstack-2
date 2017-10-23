@@ -76,7 +76,7 @@ let's create a stylesheet:
 
 `$ touch styles/main.css`
 
-*Exercise: link your stylesheet to your HTML pages and transfer all your styling into it. Now add a univeral style to your html like a background-color. Why might the styles not have been applied to your sub-pages?*
+_Exercise: link your stylesheet to your HTML pages and transfer all your styling into it. Now add a univeral style to your html like a background-color. Why might the styles not have been applied to your sub-pages?_
 
 
 Pseudo Selectors: styling that is assigned to a state of a page element or specific subset of elements:
@@ -94,7 +94,7 @@ Pseudo Selectors: styling that is assigned to a state of a page element or speci
 - E:first-child {}: Any E element that is the first child of its parent
 - B + E {}: Any E element that is the next sibling of a B element (that is: the next child of the same parent)
 
-*Exercise: Go ahead and style up your page a bit. Add an h1 and whatever styling you might like. Some tips would be to change the font family (checkout Google fonts), and remove the default underline on the nav links, as well as the purple color for visited links. 
+_Exercise: Go ahead and style up your page a bit. Add an h1 and whatever styling you might like. Some tips would be to change the font family (checkout Google fonts), and remove the default underline on the nav links, as well as the purple color for visited links._
 
 
 **Resources:**
@@ -229,7 +229,7 @@ Let's create a blog file: `$ touch pages/blog.html`
     </head>
     <body>
       <header>
-        Please spend a moment browsing my site. It'll be great!
+        Check out my awesome website
       </header>
       <div>
         <article>
@@ -244,7 +244,7 @@ Let's create a blog file: `$ touch pages/blog.html`
         </nav>
         <aside>Donate if you can. It'll keepme (and my blog) alive!</aside>
       </div>
-      <footer>Donations will primarily be spent on Soylent.</footer>
+      <footer>All rights reserved</footer>
     </body>
   </html>
   ```
@@ -330,7 +330,6 @@ Go on exercises.md, we are going to do:
 
 2) Computer Gallery
 
-After the exercises, we're going to be remaking our landing page from the HTML section because it's super bare-bones.
 
 ### Cross-Browser Compatibility
 Making sure a site displays properly across different platforms can be a major headache for developers. To mitigate this, we test on multiple devices/browsers and use CSS browser prefixes to add support for CSS features before they are natively supported by the browser.
@@ -343,6 +342,7 @@ Internet Explorer: `-ms-`
 iOS: `-webkit-`
 
 [This css auto-prefixer tool can make your life easier.](http://pleeease.io/play/)
+
 
 *Exercise: run your css through the auto-prefixer, save the new CSS and then view in another browser*
 
