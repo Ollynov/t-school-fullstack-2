@@ -94,6 +94,8 @@ A typical HTTP request has the following components:
 - Headers. Accept, Content-Type, and Date are some of the most common ones. These can be viewed as the standard config parameters. 
 - Body. This is data unique to the request. For example, if we send a request to login, we need to include the username and password in the body. 
 
+Exercise: 
+- Check out this site: https://www.hurl.it/
 
 Advanced: 
 look into GraphQL http://graphql.org/learn/
