@@ -85,9 +85,9 @@ If you want to practice your code, here are some exercices related to the lectur
   <body>
     <h1>Classic Computers!</h1>
     <div id="computer_gallery">
-      <img class="computer" src="assets/LearSiegler_ADM3A_System_1.jpg">
-      <img class="computer" src="assets/136242-16_Pet-OldComputers.jpg">
-      <img class="computer" src="assets/old-apple-computer.jpg">
+      <img class="computer" src="https://i.ytimg.com/vi/Nwj8nfsk2Hs/maxresdefault.jpg" height='300px' >
+      <img class="computer" src="http://geoffreymultimedia.com/wp-content/uploads/2008/12/old-computer-new-computer.jpg" height='300px'>
+      <img class="computer" src="https://www.dailydot.com/wp-content/uploads/b8e/54/e0b23b40a24e3f20208dbefd48cd0219.jpg" height='300px'>
     </div>
   </body>
 </html>
