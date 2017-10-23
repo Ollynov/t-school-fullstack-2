@@ -322,11 +322,13 @@ Let's create a blog file: `$ touch pages/blog.html`
 
 ## A little more practice
 
-Go on exercises.md, we are going to do:
+Go on [exercises.md](https://github.com/Ollynov/FullStack-TSchool/blob/master/html-css/exercises.md), we are going to do:
 
 1) Box Positioning
 
 2) Computer Gallery
+
+Bonus: Astronaut Challenge
 
 
 ### Cross-Browser Compatibility
