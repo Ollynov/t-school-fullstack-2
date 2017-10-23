@@ -31,7 +31,7 @@ Add the viewport meta tag and the <a href="http://getbootstrap.com/getting-start
 </head>
 ```
 
-Then add the necessary javascript dependency right above the closing </body> tag: 
+Then add the necessary javascript dependency right above the closing `</body>` tag: 
 
 ```
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
