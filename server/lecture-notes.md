@@ -14,12 +14,28 @@ Javascript is known as a browser-side language, and for good reason; it is the l
 
 Node is built on top of Chrome's V8 engine, which is the same used to execute javascript in the Chrome browser. One of the primary components of Node is that it runs asynchronously. This means it does not have to wait for the termination of a previous process/function to complete, before it continues to execute the code. This makes node incredibly efficient, and one of the only downsides to this asynchronous nature is that writing the code is a little more complicated. 
 
-**Exercise 1: LearnYouNode**
+**Lecture 1: helloWorld in NodeJS and require our first external module (15 min)
+converting our directory to a node app directory 
+use the moment library (practice looking at documentation)
 
-Let's get straight into it. I want everyone to follow along, and install LearnYouNode. There are a lot of different tutorial sites out there, and a ton of videos, but this style of learning I have found to be by far the most efficient. Slightly guided, but gets you writing code within minutes. 
-- Follow this link: https://github.com/workshopper/learnyounode
-- Run `npm install learnyounode -g` (the -g stands for 'global')
-- We will go ahead and complete the first activity together, then move onto the next
+**Exercise 1: Load a easy to use node module from NPM **
+setup your node directory with npm init
+check that you have a package.json file 
+
+write a node app that uses a very simple external NPM module
+
+I recommend this one to start
+https://www.npmjs.com/package/is-odd
+
+if more ambitious try
+https://www.npmjs.com/package/math-expression-evaluator
+
+run it and make sure it works 
+
+**Lecture 1.5: writing your own module and import it in your main app ***
+I suggest writing is-even to check if a number is even
+
+
 
 ## Setting Everything Up
 
