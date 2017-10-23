@@ -2,13 +2,13 @@
 
 body {
 	background-color: rgb(255, 255, 255);
-  font-family: 'Montserrat', sans-serif !important;
-  font-weight: 300 !important;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
 }
 
 h1 {
-	font-family: 'Montserrat', sans-serif !important;
-	font-weight: 700 !important;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
 }
 
 /* NAV STYLES
@@ -30,12 +30,6 @@ h1 {
   color: rgb(91, 91, 91);
 }
 
-nav {
-	display: flex;
-	width: 400px;
-	justify-content: space-between;
-	flex-wrap: wrap;
-}
 
 /*END OF NAV STYLES
 */
@@ -59,4 +53,32 @@ nav {
 }
 
 /* END OF TOP PORTION
+*/
+
+/*MAIN CONTENT AREA (BLOG POSTS)
+*/
+.card {
+	margin-top: 50px;
+}
+.card-title, .card-footer {
+	margin-top: 20px;
+}
+
+/*END OF MAIN CONTENT AREA (BLOG POSTS)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 */
