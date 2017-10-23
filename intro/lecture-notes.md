@@ -84,7 +84,6 @@ We are going to get an introduction to Shell Commands, while cloning down the re
 - What is HTTP?
 - Can we make this communication between client and server faster? 
 
-/// SLIDES ///
  
 
 Advanced: 
