@@ -20,7 +20,7 @@ Depending on your needs and your webpage complexity, you will go for one of thos
 ## In-line Styling
 Within an element, you can write some styling. This method is called in-line styling. It is pretty useful if you have small style changes you want to make. Here is an example:
 
-`css<tag style="attribute: value;">content</tag>`
+```css<tag style="attribute: value;">content</tag>```
 
 *Exercise: add a `color` and `font-family` to the heading on your home page*
 
