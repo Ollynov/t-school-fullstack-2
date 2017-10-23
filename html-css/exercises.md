@@ -52,9 +52,13 @@ If you want to practice your code, here are some exercices related to the lectur
     <link rel="stylesheet" href="main.css">
   </head>
   <body>
-    <div class="box">
+    <div id="a" class="box">
       <div class="box-text">MENU</div>
     </div>
+    <div id="b" class="box">
+      <div class="inner-box"></div>
+    </div>
+    <div id="c" class="box">
       FOOTER
     </div>
   </body>
