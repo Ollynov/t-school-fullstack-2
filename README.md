@@ -25,7 +25,7 @@ Schedule:
 | Day 2 Session 2 | [Javascript](javascript/lecture-notes.md)
 | Day 2 Session 3 | [Server - Node + Express](server/lecture-notes.md)
 | Day 3 Session 1| [Authentication + Databases](authentication-databases)
-| Day 3 Session 2 | [React](react/lecture-notes-react-1.md)
+| Day 3 Session 2 | [React](react-1)
 | Day 3 Session 3 | [React II](react/lecture-notes-react-2.md)
 | Day 4 Session 1 | [Web APIs](webapis/lecture-notes.md)
 | Day 4 Session 2 | [Deployment](deployment/lecture-notes.md)

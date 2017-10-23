@@ -31,7 +31,7 @@ Add the viewport meta tag and the <a href="http://getbootstrap.com/getting-start
 </head>
 ```
 
-Then add the necessary javascript dependency right above the closing </body> tag: 
+Then add the necessary javascript dependency right above the closing `</body>` tag: 
 
 ```
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
@@ -49,7 +49,7 @@ _Exercise: Follow along as we upgrade our navbar and make it mobile friendly wit
 
 Now that we have our navbar in place, let's put in a placeholder that will represent a blog post. Bootstrap 4 recently came out, and one of the new features it includes are "cards." These are basically content containers that come with a lot of built-in responsive styling. Add the following after your closing header tag: 
 
-```
+```html
     <div class="card text-center">
       <div class="card-header">
         Featured
@@ -77,7 +77,7 @@ Cool, now that looks good, but how else can we improve the spacing? Notice that 
 
 1.  `.container` class holds `.row` classes
 2.  Rows create horizontal groups of columns, based on a system of 12 columns
-```
+```html
 <body>
 	<div class="container-fluid">
 	  <div class="row">
@@ -108,6 +108,8 @@ Cool, now that looks good, but how else can we improve the spacing? Notice that 
 
 HINT: Bootstrap has a component called a "Jumbotron" that can help with Challenge #3
 
+
+**Bonus: [Wild + Wacky Vegetables](https://github.com/Ollynov/FullStack-TSchool/blob/master/bootstrap-git/exercises.md)**
 
 ## Some more resources
 
