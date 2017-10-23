@@ -49,7 +49,7 @@ _Exercise: Follow along as we upgrade our navbar and make it mobile friendly wit
 
 Now that we have our navbar in place, let's put in a placeholder that will represent a blog post. Bootstrap 4 recently came out, and one of the new features it includes are "cards." These are basically content containers that come with a lot of built-in responsive styling. Add the following after your closing header tag: 
 
-```
+```html
     <div class="card text-center">
       <div class="card-header">
         Featured
@@ -77,7 +77,7 @@ Cool, now that looks good, but how else can we improve the spacing? Notice that 
 
 1.  `.container` class holds `.row` classes
 2.  Rows create horizontal groups of columns, based on a system of 12 columns
-```
+```html
 <body>
 	<div class="container-fluid">
 	  <div class="row">
