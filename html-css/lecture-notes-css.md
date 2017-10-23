@@ -137,15 +137,13 @@ To make your website responsive, developers use media queries. Thanks to that to
 
 
   ```css
-  @media (max-width: 767px) and (min-width: 480px) { h2 {
-     font-size: 12px;
-
-   }
-  nav {
-  display: none; }
-  }
+    @media screen and (min-width: 480px) and (max-width: 767px){
+        body {
+            background-color: lightgreen;
+        }
+    }
   ```
-In this example: IF my screen has a width size between 480px and 767px THEN apply a font-size of 12px and don't display the navigation menu.
+In this example: IF my screen has a width size between 480px and 767px THEN apply a background color of lightgreen, otherwise default to normal.
 
 ## Flexbox
 Introduced by CSS3, Flexible Box, or flexbox, is a layout mode providing for the arrangement of elements on a page such that the elements behave predictably when the page layout must accommodate different screen sizes and different display devices.
