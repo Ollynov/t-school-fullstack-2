@@ -2,13 +2,18 @@
 
 React is one of the hottest web frameworks at the moment. It was created by developers at Facebook just a few years ago. Unlike many other popular web frameworks it is only concerned with the views. Many frameworks are considered MVC, which stands for Model-View-Controller, which means that the framework deals with essentially all aspects of an app. However, React is only concerned with the views (the part the user sees). The upside to this is that it is very fast because of how lightweight it is (much less code needed). The other reason that React is so popular is because of the order behind it... it gives structure to the way you organize your app. It certainly has a learning curve, but once you learn it, you will find yourself developing at a much faster pace than with pure html and javascript. 
 
-## Exercise- Learnyoureact
+***Exercise- Learnyoureact***
 
  run `npm install -g learnyoureact` in your terminal
  
  Follow along the instructons and try to get as far as possible. Don't hesitate to ask questions. 
  
 You may notice that the way that components are written in a strange way... almost like something in between javascript and html. It's a format called JSX. It is essentially javascript diguised as html. It makes it much more neat and ordered to write our "html" directly in our javascript files, and the JSX allows us to do this. The downside is that there is a little more configuration to be done beforehand, since we need a compiler (such as babel), to conver the JSX into pure javascript.  
+
+
+To transform JSX code to JavaScript, you'll need babel, a JavaScript compiler. Include babel in the index.html page. JSX is a special kind of javascript code that mimics html. It looks almost exactly like html- so we can write our components directly in our javascript files, to form our components. Later, we will need this JSX to be compiled to a language that our browser understands- javascript. For this there is some setup, but the heavy lifting is done by Babel or other similar libraries. Don't worry too much about JSX or anything React related quite yet- there will be two entire sessions dedicated to React (the frontend); for now we want to make sure we have everything setup correctly on our server.
+	
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 
 
 

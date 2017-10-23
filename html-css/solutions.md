@@ -222,59 +222,6 @@ p#special {
 
 # Solutions CSS Part II
 
-## Astronaut
-
-```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Exercise: Lost Astronaut</title>
-    <style>
-        #greeting {
-          background: slategray;
-          border: 2px solid black;
-          padding: 5px;
-          width: 262px;
-        }
-        #astronaut {
-            width:45px;
-            position:absolute;
-            left:129px;
-            top:50px;
-            z-index:0;
-        }
-        #spaceship {
-            z-index:1;
-            position: absolute;    
-        }
-        #landing_pad {
-          z-index:-1;
-          position: absolute;
-          width: 500px;
-          bottom: 0px;
-          right: 0px;
-        }
-
-        #ship{
-            position:absolute;
-            left:850px;
-            bottom:300px;
-        }
-      </style>
-  </head>
-  <body>
-    <div id="greeting">
-      <p>Hey CSS cadet! Rescue the astronaut!</p>
-    </div>
-    <img id="spaceship" src="../assets/spaceship.png" width="300">
-    <img id="astronaut" src="https://d13yacurqjgara.cloudfront.net/users/182160/screenshots/725814/ss-astronaut.png">
-    <img id="landing_pad" src="http://www.collectspace.com/review/spacex_spaceportdrone04-lg.jpg" alt="">
-  </body>
-</html>
-
-```
-
 ## Flexbox Froggy
 
 ### Level 1
@@ -627,3 +574,94 @@ align-self:flex-end;
 }
 ```
 
+
+## Astronaut
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Exercise: Lost Astronaut</title>
+    <style>
+        #greeting {
+          background: slategray;
+          border: 2px solid black;
+          padding: 5px;
+          width: 262px;
+        }
+        #astronaut {
+            width:45px;
+            position:absolute;
+            left:129px;
+            top:50px;
+            z-index:0;
+        }
+        #spaceship {
+            z-index:1;
+            position: absolute;    
+        }
+        #landing_pad {
+          z-index:-1;
+          position: absolute;
+          width: 500px;
+          bottom: 0px;
+          right: 0px;
+        }
+
+        #ship{
+            position:absolute;
+            left:850px;
+            bottom:300px;
+        }
+      </style>
+  </head>
+  <body>
+    <div id="greeting">
+      <p>Hey CSS cadet! Rescue the astronaut!</p>
+    </div>
+    <img id="spaceship" src="../assets/spaceship.png" width="300">
+    <img id="astronaut" src="https://d13yacurqjgara.cloudfront.net/users/182160/screenshots/725814/ss-astronaut.png">
+    <img id="landing_pad" src="http://www.collectspace.com/review/spacex_spaceportdrone04-lg.jpg" alt="">
+  </body>
+</html>
+```
+
+## Classic Computers
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Challenge: Classic Computer Gallery</title>
+    <style>
+      body {
+        background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+      }
+      img {
+        border: 4px groove blue;
+        margin: 4px;
+      }
+      #computer_gallery {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items:center;
+      }
+      h1 {
+        text-align: center;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>Classic Computers!</h1>
+    <div id="computer_gallery">
+      <img class="computer" src="https://i.ytimg.com/vi/Nwj8nfsk2Hs/maxresdefault.jpg" height='300px' >
+      <img class="computer" src="http://geoffreymultimedia.com/wp-content/uploads/2008/12/old-computer-new-computer.jpg" height='300px'>
+      <img class="computer" src="https://www.dailydot.com/wp-content/uploads/b8e/54/e0b23b40a24e3f20208dbefd48cd0219.jpg" height='300px'>
+    </div>
+  </body>
+</html>
+```

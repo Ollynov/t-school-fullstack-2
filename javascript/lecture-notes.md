@@ -29,8 +29,6 @@ JavaScript is powerful because it allows us to interact with the user through th
 
 #### Writing JavaScript directly within HTML files and linking to external scripts
 
-**Within the head or body of your HTML Files:**
-
 ```html
 <!DOCTYPE html>
 <html>
@@ -66,11 +64,15 @@ JavaScript is powerful because it allows us to interact with the user through th
 
 **Practice 2: Interacting with the DOM directly through Javascript**
 
+Create a new file called tester.html
+
 What is the DOM? The DOM is the Document Object Model. Basically, the entire webpage (all the elements, from the `body` to each invividual `div`) is represented as a series of Javascript Objects that have methods and properties.
 
 JavaScript allows us to interact with HTML/CSS by directly manipulating items on the DOM - we can select DOM elements by using CSS/Element selectors and change them dynamically. We can also create elements on the fly. All of this functionality is accessed off of the `document` object in the browser. Let's check it out in our chrome developer console.
 
-Event listeners are one of the most important components of interactivity on a webpage. They allow us to execute code when a certain user action takes place, like a `click`. Let's get our "Player App" working. Add the following code into the `script` section in your HTML file:
+Event listeners are one of the most important components of interactivity on a webpage. They allow us to execute code when a certain user action takes place, like a `click`. 
+
+_Exercise Let's get our "Player App" working. Add the following code into the `script` section in your tester.html file after adding the above html_
 
  ```js
 var playerTitleElement = document.getElementById('player_title');
@@ -202,7 +204,44 @@ while (start < 10) {
 }
 ```
 
-**Exercise 4:**
+**Adding some functionality with javascript to our site**
+
+_Exercise- Follow along as we add a modal popup to our site for signup. This will be the first example of javascript being used on our site for some functionality that wouldn't have been possible with purely html and css. 
+
+Add the following before our closing `</body` tag: 
+```
+    <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Signup</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            [Form goes here]
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+```
+
+Now we just need to trigger to form popup. We can do this by adding the following attributes to our buttons:
+`data-toggle="modal" data-target="#exampleModal"`
+
+Let's add it to our signup buttons. Something to note is that even after using this modal several times in production apps, I still don't have this memorized. The fact that we need to add both data-toggle and data-target attributes to our buttons that trigger the popup is _not something that you are expected to have memorized._ Once you know what is possible, you take it step by step and do googling and referencing of previous projects you've built to build your new functionality. 
+
+**Exercise 4**
+
+Add a form to our modal popup. Right where it says `Enter form here`
+
+
+**BONUS Exercise 5:**
 
 Using a `while` loop, create a number guessing game. You will need two variables, one for the guess and one for the answer. To supercharge your game, give the user hints about whether their number is high or low depending on their guess - you can use conditionals and comparison operators for this. *Hint: The computer can choose a starting number between 0-100 by using `Math.round(Math.random()*100)`*
 

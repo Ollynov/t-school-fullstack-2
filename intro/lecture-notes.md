@@ -39,23 +39,25 @@ In case you feel lost... you're not the only one. Because of the nature of progr
 
 ### Get to know each other activity! [Link to Activity](https://ibm.box.com/s/n9h9ls4eixi79co3ezo1dnw7qj2ewtzq)
 
-
+### Exercise- So what is a fullstack app? 
 
 ### Initial Setup 
 **Dependencies**
 
-You will need to have 3 things already installed on your computers:
+You will need to have 5 things already installed on your computers:
 - Node
 - NPM
 - Git (almost all computers come with git already)
 - Sublime Text (or similar text editor)
+- Mongo
 
-To check if any of the 4 are installed, you can run 'which node', and you should get the path where it is installed. Typically they are installed within our bin folder. If they are located somewhere else, no need for immediate action, but something to keep in mind. 
+To check if any of the 5 are installed, you can run 'which node', and you should get the path where it is installed. Typically they are installed within our bin folder. If they are located somewhere else, no need for immediate action, but something to keep in mind. 
 
 * [Install Node](https://nodejs.org/en/)
 * [Install NPM](https://www.npmjs.com/)
 * [Install Git](https://git-scm.com/book/id/v2/Getting-Started-Installing-Git)
 * [Install Sublime](https://www.sublimetext.com/3)
+* [Install Mongo](https://docs.mongodb.com/manual/installation/)
 
 You also should already have an account on * [Github](https://github.com)
 
@@ -74,18 +76,26 @@ We are going to get an introduction to Shell Commands, while cloning down the re
     * `rm`
 [Here](http://www.galvanize.com/learn/learn-to-code/programming-101-how-to-use-the-terminal-command-line/) is a video that explains more in depth the use of the command line.
 
-*> Let's Try it!: follow along with me to learn some command line basics, and let's create the repo for our project*
+*> Exercise: follow along with me to learn some command line basics, and let's create the repo for our project*
 
 
-
-### Network Requests 
+### BONUS: Network Requests 
 - How does the client and backend communicate?
 - What is a network request? 
 - What is HTTP?
 - Can we make this communication between client and server faster? 
 
-/// SLIDES ///
- 
+In the most basic explanation, network request are the way that servers (computers) communicate. One server 'requests' some sort of information from another server, and that other server can choose whether to send back that information or not. The request can be for login credentials, for an html page, or for some unique information such as weather information. It is unique that we are already bringing up network requests now, because they certainly are not the most basic thing when it comes to programming. However, when you hit enter after typing in 'www.google.com' you are sending a network request, and that's the only way that we get back our webpage. In many ways, I see it as the first step to fullstack. 
+
+By far the most common form of web communication is through the HTTP protocol. Back in the 80s and early 90s everyone knew that there had to be a more unified way for the web to work. There is actually an organization that leads the standards developed for the world wide web, called W3C, founded and still led by Tim Berners-Lee. They established the first version of HTTP, and it was first used in production in 1997, and still used today. 
+
+A typical HTTP request has the following components:
+- A verb that indicates what sort of request it is. GET, POST, PUT, and DELETE are the most common. 
+- Headers. Accept, Content-Type, and Date are some of the most common ones. These can be viewed as the standard config parameters. 
+- Body. This is data unique to the request. For example, if we send a request to login, we need to include the username and password in the body. 
+
+Exercise: 
+- Check out this site: https://www.hurl.it/
 
 Advanced: 
 look into GraphQL http://graphql.org/learn/

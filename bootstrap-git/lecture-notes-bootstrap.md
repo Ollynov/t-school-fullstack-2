@@ -31,6 +31,48 @@ Add the viewport meta tag and the <a href="http://getbootstrap.com/getting-start
 </head>
 ```
 
+Then add the necessary javascript dependency right above the closing </body> tag: 
+
+```
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+```
+
+_Exercise Go ahead and add the dependencies to your index.html file. Does our page look different?_
+
+It actually doesn't look as good as it did before. Can anyone think of why this is? How can we fix it back to how it was before, while still keeping bootstrap? 
+
+_Exercise: Follow along as we upgrade our navbar and make it mobile friendly with bootstrap_
+
+[crazy coding happens now...]
+
+Now that we have our navbar in place, let's put in a placeholder that will represent a blog post. Bootstrap 4 recently came out, and one of the new features it includes are "cards." These are basically content containers that come with a lot of built-in responsive styling. Add the following after your closing header tag: 
+
+```
+    <div class="card text-center">
+      <div class="card-header">
+        Featured
+      </div>
+      <div class="card-body">
+        <h4 class="card-title">My First Blog Post</h4>
+        <p class="card-text">It is time to learn some fullstack programming. Are you ready?</p>
+        <a href="#" class="btn btn-primary">Read More</a>
+      </div>
+      <div class="card-footer text-muted">
+        2 days ago
+      </div>
+    </div>
+```
+
+It looks pretty good because it's responsive, but let's go ahead and make it more narrow. Cards come with a built in class adjusters such as `w-75` or `w-50` which will automatically modify the width of our cards. I'm going to go ahead and add `w-50` but you can already start to play around with alternatives if you think something else would look better.
+
+Looks better, but let's fix up the spacing. 
+
+_Excercise: pop open your Developer Tools in the browser and let's make it look cleaner. HINT: Check out the tab that says "computed"_
+
+Cool, now that looks good, but how else can we improve the spacing? Notice that when you drag the browser to mobile width the blog posts become very narrow. The 50% width looks great on desktops but not so good on mobile. Enter the grid system. 
+
 ### Bootstrap Grid System
 
 1.  `.container` class holds `.row` classes
@@ -56,16 +98,18 @@ Add the viewport meta tag and the <a href="http://getbootstrap.com/getting-start
 - <b><a href="https://www.lyft.com/">Lyft</a></b><br>
 - <b><a href="https://www.meteor.com/">Meteor</a></b>
 
-## Challenges
 
-1. Create an ```tester.html``` file and add the Bootstrap CDN.
-2. Add one container, one row, and three col-** classes (your columns can be any width that add up to 12).
-3. Make sure your three columns stack vertically when you are on mobile (xs) devices.
-4. Add content to your columns (or make them each a different color).
 
-NOTE: You might notice that this time around we had much less introductory lecture. That is intentional. It is important to get accostumed to googling the right way. We will go over the solution afterwards so give it your best. 
+## Challenge
 
-## Further Reading
+1. Make the blog posts stretch across the entire screen horizontally for mobile, but not for desktop
+2. Center the blog posts horizontally
+3. Add a top section on your homepage above the blog posts. This could be an image or header text with a color background. Sometimes this section is called a "hero."
+
+HINT: Bootstrap has a component called a "Jumbotron" that can help with Challenge #3
+
+
+## Some more resources
 
 * <a href="https://scotch.io/tutorials/understanding-the-bootstrap-3-grid-system">Understanding the Bootstrap System</a><br>
 
@@ -78,19 +122,6 @@ NOTE: You might notice that this time around we had much less introductory lectu
 * <a href="https://www.youtube.com/watch?v=gqOEoUR5RHg">YouTube Bootstrap Tutorial</a>
 
 
-### Let's add in some Bootstrap styling to our blog app
-
-**Exercise: add a `table` with a `table-hover` class(a bootstrap class) to your `blog.html` file.**
-
-**Exercise: add a 'new post' button with `btn-primary` to your `blog.html`.**
-
-
-### Using themes for inspiration:
+### BONUS: Using themes for inspiration:
 
 From here I would go to a website like: https://bootswatch.com/ in order to look at different styling elements. You can follow the source code and integrate it into your application.
-
-
-### Resources:
-https://www.railstutorial.org/book/filling_in_the_layout
-https://bootswatch.com/
-https://github.com/maxim/bootswatch-rails

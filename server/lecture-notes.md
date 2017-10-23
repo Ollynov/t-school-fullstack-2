@@ -21,7 +21,7 @@ Let's get straight into it. I want everyone to follow along, and install LearnYo
 - Run `npm install learnyounode -g` (the -g stands for 'global')
 - We will go ahead and complete the first activity together, then move onto the next
 
-**Practice 1: Setting Everything Up**
+## Setting Everything Up
 
 - Navigate to your project directory (confirm with `pwd`)
 - "Initiate" your project with `npm init`
@@ -55,7 +55,7 @@ var express = require("express");
 var path = require("path");
  
 var app = express();
-app.use(express.static(path.join(__dirname,"/html")));
+app.use(express.static(path.join(__dirname,"/static")));
 ```
 
 Assign a port number for the application to listen on. The following code is what creates the server:
@@ -65,6 +65,12 @@ app.listen(8000,function(){
 })
 ```
 
+We are having our app serve up (`app.use`) everything from the 'static' directory so we need to make a new directory 'static' with the command `mkdir`. Then we can move our 'index.html' and 'styles' directory into our new 'static' directory:
+- `mkdir static`
+- `mv styles static`
+- `mv index.html static`
+
+
 Now we are ready to check out the app running on our server! 
 First run the following command to download all of our dependencies such as Express: 
 - `npm install`
@@ -72,19 +78,12 @@ First run the following command to download all of our dependencies such as Expr
 Then we should be good to go, run the following command: 
 	- `node app.js`
 
-Go to http://localhost:8000/index.html and you will see your homepage.
-
-We will also need to incnclude the following script tags for React and React DOM: 
-```
-<script src="https://fb.me/react-15.1.0.js"></script>
-<script src="https://fb.me/react-dom-15.1.0.js"></script>
-```
-
-To transform JSX code to JavaScript, you'll need babel, a JavaScript compiler. Include babel in the index.html page. JSX is a special kind of javascript code that mimics html. It looks almost exactly like html- so we can write our components directly in our javascript files, to form our components. Later, we will need this JSX to be compiled to a language that our browser understands- javascript. For this there is some setup, but the heavy lifting is done by Babel or other similar libraries. Don't worry too much about JSX or anything React related quite yet- there will be two entire sessions dedicated to React (the frontend); for now we want to make sure we have everything setup correctl on our server.
-	
-<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+Go to http://localhost:8000/index.html and you will see your homepage. Boom! It doesn't look anymore exciting than before, but now an actual server is 'serving' up our html files. Previously we were just observing our site locally because we had the html files on our computer, and the browser can run html. Now we have a server sending over this html, which means that technically we are ready to deploy our app if we want; but we want to actually get it working first, so let's get right to it.
 
 
+## Endpoints
+
+Server endpoints dictate what the server should do when it gets a particular request to that 'endpoint' which is just a url. Aside from the path/url, there is also an HTTP verb associated to each endpoint. For example, we may want to perform different actions for a 'GET' request to 'www.myapp.com/user' vs. a 'DELETE' request to 'www.myapp.com/user'. 
 
 
 Let's create an 'endpoint' on the Node.js side to validate the user sign-in process. In the app.js file, create the following:
@@ -116,15 +115,19 @@ app.post('/signin', function (req, res) {
   var password=req.body.password;
   if(user_name=='admin' && password=='admin'){
       res.send('success');
+      console.log('success!);
   }
   else{
     res.send('Failure');
+    console.log('something went wrong')
   }
 })
 ```
 
+Right now our logic is very hard-coded- it will simply check to see if we have entered 'admin' as both the username and password, and then will send over a success message if that's the case. There's nothing wrong with starting functions with basic logic like this, because it will verify whether we have the first steps going. If we try to build out everything at once, it will be more difficult to figure out what it is that is breaking it. 
 
 
+In the next lesson on authentication we will build the logic to have our login actually send over this request, to see if we can get the success message back!
 
 
 

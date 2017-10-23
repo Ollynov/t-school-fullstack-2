@@ -5,23 +5,24 @@ TOTAL TIME: 2 HOURS
 GIT LECTURE - 15 MINUTES
 
 GIT EXERCISE: 
-- Git It! - 30 mins
-- Let's make our first project commit - 10 mins
+- Git It! - 25 mins
+- Let's make our first project commit - 5 mins
 
-10:55AM
+10:45AM
 
 10 Min Break
 
 BOOTSTRAP LECTURE - 10 mins
 
 Bootsrap Exercise: 
-- Build columns on the "tester.html document" 20 mins
-- Solution - 5 mins
+- Follow along to add navbar 10 mins
+- Follow along to add card 10 mins
 
-11:40AM
+11:25AM
 
-BOOTSTRAP LECTURE - Let's create our blog page - 20 mins
+BOOTSTRAP LECTURE Grid System - 10 mins
 
-Needs to be done: 
-- The Bootstrap "tester.html" exercise to verify
-- Perhaps one or two more tables for our blog posts
+Challenge: 
+- Add jumbotron and center content - 20 mins
+
+Solution - 5 mins
