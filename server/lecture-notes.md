@@ -14,11 +14,11 @@ Javascript is known as a browser-side language, and for good reason; it is the l
 
 Node is built on top of Chrome's V8 engine, which is the same used to execute javascript in the Chrome browser. One of the primary components of Node is that it runs asynchronously. This means it does not have to wait for the termination of a previous process/function to complete, before it continues to execute the code. This makes node incredibly efficient, and one of the only downsides to this asynchronous nature is that writing the code is a little more complicated. 
 
-**Lecture 1: helloWorld in NodeJS and require our first external module (15 min)
-converting our directory to a node app directory 
-use the moment library (practice looking at documentation) ***
+##### Lecture 1: helloWorld in NodeJS and require our first external module (15 min)
+converting our sample directory to a node app directory 
+use the moment library (practice looking at documentation)
 
-**Exercise 1: Load a easy to use node module from NPM **
+##### Exercise 1: Load a easy to use node module from NPM
 setup your node directory with npm init
 check that you have a package.json file 
 
@@ -32,8 +32,21 @@ https://www.npmjs.com/package/math-expression-evaluator
 
 run it and make sure it works 
 
-**Lecture 1.5: writing your own module and import it in your main app ***
+#### Lecture 1.5: writing your own module and import it in your main app ***
 I suggest writing is-even to check if a number is even or any other function that you might think is useful
+write another one that takes a word, turns it into all uppercase and reverse it. We will be using this one later 
+
+#### Lecture 2: Asynchronous 
+Introduction to asynchronous javascript by looking at the FS module of node, understand the common patterns of callback functions 
+Introduction to another asynchronous pattern called promises 
+
+#### Exercise 2: Treasure Hunt
+go to the treasure hunt folder, start with clue1.txt, can you get to the treasure?
+
+
+#### Lecture 3: ExpressJS and the WebServer
+
+
 
 
 ## Setting Everything Up
