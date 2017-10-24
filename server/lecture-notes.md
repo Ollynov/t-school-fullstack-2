@@ -16,7 +16,7 @@ Node is built on top of Chrome's V8 engine, which is the same used to execute ja
 
 **Lecture 1: helloWorld in NodeJS and require our first external module (15 min)
 converting our directory to a node app directory 
-use the moment library (practice looking at documentation)
+use the moment library (practice looking at documentation) ***
 
 **Exercise 1: Load a easy to use node module from NPM **
 setup your node directory with npm init
@@ -27,14 +27,13 @@ write a node app that uses a very simple external NPM module
 I recommend this one to start
 https://www.npmjs.com/package/is-odd
 
-if more ambitious try
+you can also look into
 https://www.npmjs.com/package/math-expression-evaluator
 
 run it and make sure it works 
 
 **Lecture 1.5: writing your own module and import it in your main app ***
-I suggest writing is-even to check if a number is even
-
+I suggest writing is-even to check if a number is even or any other function that you might think is useful
 
 
 ## Setting Everything Up
@@ -122,28 +121,6 @@ Add the following line of code to enable JSON parsing.
 `app.use(bodyParser.json());`
 
 These requests that we are referring to are the HTTP requests we learned about at the start of T-School. They are the primary form of communication between the client and server, and each request comes with an "HTTP Verb" that indicates what intention the request has- GET, POST, etc. You have to accomodate for these requests by creating endpoints.
-
-Modify the signin method as shown to validate the user sign-in.
-
-```
-app.post('/signin', function (req, res) {
-  var user_name=req.body.email;
-  var password=req.body.password;
-  if(user_name=='admin' && password=='admin'){
-      res.send('success');
-      console.log('success!);
-  }
-  else{
-    res.send('Failure');
-    console.log('something went wrong')
-  }
-})
-```
-
-Right now our logic is very hard-coded- it will simply check to see if we have entered 'admin' as both the username and password, and then will send over a success message if that's the case. There's nothing wrong with starting functions with basic logic like this, because it will verify whether we have the first steps going. If we try to build out everything at once, it will be more difficult to figure out what it is that is breaking it. 
-
-
-In the next lesson on authentication we will build the logic to have our login actually send over this request, to see if we can get the success message back!
 
 
 
