@@ -70,7 +70,8 @@ What is the DOM? The DOM is the Document Object Model. Basically, the entire web
 
 JavaScript allows us to interact with HTML/CSS by directly manipulating items on the DOM - we can select DOM elements by using CSS/Element selectors and change them dynamically. We can also create elements on the fly. All of this functionality is accessed off of the `document` object in the browser. Let's check it out in our chrome developer console.
 
-Event listeners are one of the most important components of interactivity on a webpage. They allow us to execute code when a certain user action takes place, like a `click`. 
+Event listeners are one of the most important components of interactivity on a webpage. They allow us to execute code when a certain user action takes place, like a `click` or `hover`. Let's take a look at the documentation on how to add a click "handler" https://www.w3schools.com/js/js_htmldom_events.asp ('handler' just refers to a function that executes when an event is triggered)
+
 
 **Exercise 1:**
 Let's get our "Player App" working. After a click of the button, we want to ask the user for a new name; after the user enters in a new name we want to update our "player 1".
@@ -84,8 +85,17 @@ HINT:
 
 Add another user prompt into the `updateName()` function. Then change the color of the playerTitle element's background. This time, use jQuery. But first, let's get a crash course in jQuery. 
 
- 
+**Exercise 2:**
 
+Let's move our JavaScript into an external file. Name it `script.js`. Reference it in the `<script>` tag by defining the relative path of the file in the `src` property. Make sure it's working by testing out the functionality of the `player` button.
+
+
+**Linking to external JavaScript files:**
+
+```html
+ <script src="/path-to-a-javascript-file"></script>
+ ```
+ 
 #### JS Functions
 
 JS functions take optional arguments and return values. The default return value is `undefined` and we must explicitly use the `return` keyword to return anything else. There are several ways to define a function:
@@ -102,15 +112,6 @@ JS functions take optional arguments and return values. The default return value
   console.log(multiplyByThree(5));
 ```
 
-**Linking to external JavaScript files:**
-
-```html
- <script src="/path-to-a-javascript-file"></script>
- ```
-
-**Exercise 2:**
-
-Let's move our JavaScript into an external file. Name it `script.js`. Reference it in the `<script>` tag by defining the relative path of the file in the `src` property. Make sure it's working by testing out the functionality of the `player` button.
 
 #### Data Types, Arithmetic Operators, & Comparisons
 JavaScript has many of the same datatypes as Ruby:
