@@ -100,7 +100,9 @@ Exercise:
  
 
 Advanced: 
-look into GraphQL http://graphql.org/learn/
+- look into GraphQL http://graphql.org/learn/
+- Check out websockets: https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API
+- [Socket.io](https://socket.io/) (easiest framework to implement socket technology)
 
 *> Let's Try it!: Let’s try it! Let’s make a request to the weather API!* 
 

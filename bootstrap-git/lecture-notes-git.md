@@ -25,6 +25,9 @@ The basic functionality of Git allows developers to track specific versions of t
 - Make sure you are in the root of your directory with `pwd` in the terminal
 - Hit `ls` to verify that you have index.html, pages, and styles
 - Check to see if git is installed `$ git --version`
+- Then check to see if your computer currently has your global git username registered. Run: `https://alvinalexander.com/git/git-show-change-username-email-address`
+- If not, then add it with: git config --global user.username myUserName (replace 'myUserName' with your username)
+- Just in case you don't see your username printed out [see this link](https://alvinalexander.com/git/git-show-change-username-email-address)
 - Create a git repository: `$ git init`
 
 
@@ -53,7 +56,7 @@ This is very useful when you have a new feature that you want to implement to a 
 - Make a new branch with `$ git checkout -b the-branch-will-be-named-whatever-you-type-here-no-spaces-use-hypens-plz`
 
 
-**Exercise: modify the new branch by adding your own gift to the list or by creating another file. Stage it. Commit it.**
+**Exercise: modify the new branch by creating another file. Stage it. Commit it.**
 
 - Look back at the history of the new branch
 - Switch branches using `$ git checkout master`. Look back at the history. Is it the same?
@@ -62,7 +65,6 @@ This is very useful when you have a new feature that you want to implement to a 
 Once you are done with all the changes you made in your branch, you are then ready to merge it with master branch.
 
 - On your master branch, merge our other branch `$ git merge the-branch-you-named`
-- What does fast-forward mean?
 
 Once you merged you branched you can safely delete it. You can also keep you branches if you want to keep track of the changes you made on each branches.
 
@@ -101,9 +103,10 @@ When you are working in a team and you want people to review your code before pu
 - Commit your changes
 - Push your branch and new commit to github: `$ git push origin [your-branch-name]`
 - Visit your github repo. You should see that your Github registered your pushing a new branch. Go ahead and click ‘Compare & pull request’ to submit a request to merge your code changes into your master code base. Don’t forget to include a message so that others know why they should include your changes.
+- Github will check for merge conflicts. A merge conflict is when the new code you are trying to push up is somehow interfering with your existing code. Oftentimes the merge conflict is very simple, and you just need to delete some old lines of code to "resolve the merge conflict". 
+- Occasionally merge conflicts can get really nasty. The best way to avoid any bad conflicts is to frequently pull down from the master repo. 
 - Once your pull request is open, go ahead and merge your code to the master code base.
-- Problem, when we visit gh-pages, we still see the old version of your code. To update gh-pages, in the terminal, lets return to our master branch (`$ git checkout master`), pull the latest master version from github to our local repository (`$ git pull`), checkout out gh-pages branch (`$ git checkout gh-pages`), merge the updated master code-base into our gh-pages branch (`$ git merge master`), and, finally, push that updated gh-pages branch commit to github (`$ git push`)
-- Visit your github gh-pages vanity url and you should see those newly made changes
+
 
 ## Extra Practice
 
