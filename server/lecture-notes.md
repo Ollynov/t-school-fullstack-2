@@ -1,8 +1,11 @@
 # The Server - Node with Express
 
+
 ## What you'll learn in this course
+Download the zip file and go to the server folder
+
 - What is a server
-- What is node, what are the pros and cons
+- What is node
 - How do we set up our own node server
 
 #### Background:
