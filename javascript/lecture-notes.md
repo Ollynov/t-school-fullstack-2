@@ -78,6 +78,12 @@ Let's get our "Player App" working. After a click of the button, we want to ask 
 HINT: 
 - Notice that we already have a '#player_title' id assigned
 - A prompt can ask the user for an input and also save it into a variable
+
+
+**Exercise 2:**
+
+Add another user prompt into the `updateName()` function. Then change the color of the playerTitle element's background. This time, use jQuery. But first, let's get a crash course in jQuery. 
+
  
 
 #### JS Functions
@@ -95,10 +101,6 @@ JS functions take optional arguments and return values. The default return value
 
   console.log(multiplyByThree(5));
 ```
-
-**Exercise 1:**
-
-Add another user prompt into the `updateName()` function. It should ask the user to enter a color. Store that color into a new variable called `color`. Then use that variable to change the color of the playerTitle element's background. *Hint: you can access an element's css through its `.style` property. You can change it by simply reassigning the value to the new color*
 
 **Linking to external JavaScript files:**
 
