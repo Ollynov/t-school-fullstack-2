@@ -53,7 +53,7 @@ This is very useful when you have a new feature that you want to implement to a 
 - Make a new branch with `$ git checkout -b the-branch-will-be-named-whatever-you-type-here-no-spaces-use-hypens-plz`
 
 
-**Exercise: modify the new branch by adding your own gift to the list or by creating another file. Stage it. Commit it.**
+**Exercise: modify the new branch by creating another file. Stage it. Commit it.**
 
 - Look back at the history of the new branch
 - Switch branches using `$ git checkout master`. Look back at the history. Is it the same?
@@ -62,7 +62,6 @@ This is very useful when you have a new feature that you want to implement to a 
 Once you are done with all the changes you made in your branch, you are then ready to merge it with master branch.
 
 - On your master branch, merge our other branch `$ git merge the-branch-you-named`
-- What does fast-forward mean?
 
 Once you merged you branched you can safely delete it. You can also keep you branches if you want to keep track of the changes you made on each branches.
 
