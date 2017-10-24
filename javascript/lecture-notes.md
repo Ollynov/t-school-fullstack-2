@@ -72,18 +72,12 @@ JavaScript allows us to interact with HTML/CSS by directly manipulating items on
 
 Event listeners are one of the most important components of interactivity on a webpage. They allow us to execute code when a certain user action takes place, like a `click`. 
 
-_Exercise Let's get our "Player App" working. Add the following code into the `script` section in your tester.html file after adding the above html_
+**Exercise 1:**
+Let's get our "Player App" working. After a click of the button, we want to ask the user for a new name; after the user enters in a new name we want to update our "player 1".
 
- ```js
-var playerTitleElement = document.getElementById('player_title');
-
-playerTitleElement.addEventListener('click', updateName);
-
-function updateName(event) {
-  var name = prompt('Enter a new name');
-  event.target.textContent = 'Player 1: ' + name;
-}
- ```
+HINT: 
+- Notice that we already have a '#player_title' id assigned
+- A prompt can ask the user for an input and also save it into a variable
  
 
 #### JS Functions
