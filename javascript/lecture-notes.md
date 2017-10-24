@@ -85,6 +85,8 @@ HINT:
 
 Add another user prompt into the `updateName()` function. Then change the color of the playerTitle element's background. This time, use jQuery. But first, let's get a crash course in jQuery. 
 
+# [jQuery](https://github.ibm.com/Aljosha-Novakovic/tschool_fullstack/blob/master/javascript/jquery-lecture-notes.md)
+
 **Exercise 2:**
 
 Let's move our JavaScript into an external file. Name it `script.js`. Reference it in the `<script>` tag by defining the relative path of the file in the `src` property. Make sure it's working by testing out the functionality of the `player` button.
