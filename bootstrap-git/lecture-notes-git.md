@@ -26,6 +26,7 @@ The basic functionality of Git allows developers to track specific versions of t
 - Hit `ls` to verify that you have index.html, pages, and styles
 - Check to see if git is installed `$ git --version`
 - Then check to see if your computer currently has your global git username registered. Run: `https://alvinalexander.com/git/git-show-change-username-email-address`
+- If not, then add it with: git config --global user.username myUserName (replace 'myUserName' with your username)
 - Just in case you don't see your username printed out [see this link](https://alvinalexander.com/git/git-show-change-username-email-address)
 - Create a git repository: `$ git init`
 
