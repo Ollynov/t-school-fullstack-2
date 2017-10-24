@@ -53,32 +53,3 @@
   </body>
 </html>
 ```
-
-## about.html
-```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>About</title>
-    <link rel="stylesheet" href="./../styles/main.css">
-  </head>
-  <body>
-  	<header id="topPortion">
-      <h1>Our App</h1>
-      <nav class='navContainer'>
-        <a href="./../index.html">Home</a> |
-        <a href="about.html">About</a> |
-        <a href="products.html">Products</a> |
-        <a href="contact_us.html">Contact Us</a>
-      </nav>
-      <div id='loginContainer' class='navContainer'>
-        <a href="#">Sign Up</a> |
-        <a href="#">Login</a>
-      </div>
-    </header>
-    <div class="image_container">
-      <img src="https://imgs.xkcd.com/comics/code_quality_2.png"/>
-    </div>
-  </body>
-</html>
-```
