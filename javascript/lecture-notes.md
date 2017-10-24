@@ -84,6 +84,7 @@ function updateName(event) {
   event.target.textContent = 'Player 1: ' + name;
 }
  ```
+ 
 
 #### JS Functions
 
@@ -160,7 +161,6 @@ Create a function called `AddTip` that has a `prompt` in it that asks the user w
 
 #### JS Objects:
 
-JS objects are similar to hashes in Ruby. One critical difference is that a JS object can have a functions as a value. The `this` keyword refers to the object itself, much like in ruby when `self` is used to refer to current Class or Instance.
 
 ```js
 var harry = {};
