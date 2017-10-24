@@ -245,8 +245,9 @@ Add a form to our modal popup. Right where it says `Enter form here`
 
 Using a `while` loop, create a number guessing game. You will need two variables, one for the guess and one for the answer. To supercharge your game, give the user hints about whether their number is high or low depending on their guess - you can use conditionals and comparison operators for this. *Hint: The computer can choose a starting number between 0-100 by using `Math.round(Math.random()*100)`*
 
-**Bonus**
-Complete 'Javascripting' (feel free to skip over the first few challenges) https://github.com/workshopper/javascripting
+**Complete 'Javascripting' (feel free to skip over the first few challenges) https://github.com/workshopper/javascripting
+
+**[Complete the functions here](https://www.teaching-materials.org/javascript/exercises/functions.html)
 
 #### Extra Resources
 * https://www.codecademy.com/learn/javascript
