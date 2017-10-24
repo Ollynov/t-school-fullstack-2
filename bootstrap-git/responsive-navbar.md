@@ -2,6 +2,14 @@
 
 To get a true appreciation for the power of bootstrap, let's first go ahead and create our own navbar for our app. We are now starting to build out the code that we will actually be using for our final blog.
 
+First, lets add a login and logout link right under our navbar: 
+```html
+<div>
+	<a href="#">Sign Up</a> |
+	<a href="#">Login</a>
+</div>
+```
+
 Go ahead and replace your main.css stylesheet with the following. Feel free to alter the css with your own touch, especially on colors, font, etc. 
 
 ```css
@@ -64,3 +72,5 @@ nav {
 
 /* END OF TOP PORTION */
 ```
+
+The step that is left is to inject the css styles into our html elements. Take a few minutes to do so now.
