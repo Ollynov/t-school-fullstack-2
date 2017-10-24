@@ -80,11 +80,6 @@ HINT:
 - Notice that we already have a '#player_title' id assigned
 - A prompt can ask the user for an input and also save it into a variable
 
-
-**Exercise 2:**
-
-Add another user prompt into the `updateName()` function. Then change the color of the playerTitle element's background. This time, use jQuery. But first, let's get a crash course in jQuery. 
-
 **Exercise 2:**
 
 Let's move our JavaScript into an external file. Name it `script.js`. Reference it in the `<script>` tag by defining the relative path of the file in the `src` property. Make sure it's working by testing out the functionality of the `player` button.
@@ -95,6 +90,15 @@ Let's move our JavaScript into an external file. Name it `script.js`. Reference 
 ```html
  <script src="/path-to-a-javascript-file"></script>
  ```
+
+
+**Exercise 3:**
+
+Add another user prompt into the `updateName()` function. Then change the color of the playerTitle element's background. This time, use jQuery. But first, let's get a crash course in jQuery. 
+
+# [jQuery Crash Course](https://github.ibm.com/Aljosha-Novakovic/tschool_fullstack/blob/master/javascript/jquery-lecture-notes.md)
+
+
  
 #### JS Functions
 
