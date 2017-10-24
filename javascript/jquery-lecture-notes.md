@@ -81,3 +81,45 @@ main.style.backgroundColor = "green";
 main.style.borderColor = "white";
 main.style.borderRadius = "20px";
 ```
+
+**Adding Event Listeners**
+
+```js
+// jquery
+$('.page-title').on('click', doTitleClickedActions)
+function doTitleClickedActions(event){
+  $(this).css({color: "green"});
+}
+
+// vanilla js
+var title = document.getElementsByClassName('page-title');
+title[0].addEventListener('click', doTitleClickedActions);
+function doTitleClickedActions(event){
+  event.target.style.color = "green";
+}
+```
+
+### Including jQuery
+
+To use jQuery, you must include the library in your page. The quickest way to include jQuery in your project is to copy the link to the CDN (content delivery network) and put it into a script tag at the bottom of your HTML `<body>`. You can get the CDN by searching for "jQuery" on <a href="https://cdnjs.com" target="_blank">cdnjs</a>.
+
+**Important:** Your JavaScript file MUST come after jQuery in the order you require scripts. This is because the page loads in order, so the jQuery library must be loaded before you can use any of its functionality.
+
+``` html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <!-- html code here -->
+  <div id="greeting">Hello There</div>
+
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+  <!-- custom script that relies on jQuery-->
+  <script src="main.js"></script>
+</body>
+</html>
+```
