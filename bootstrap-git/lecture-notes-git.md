@@ -100,9 +100,10 @@ When you are working in a team and you want people to review your code before pu
 - Commit your changes
 - Push your branch and new commit to github: `$ git push origin [your-branch-name]`
 - Visit your github repo. You should see that your Github registered your pushing a new branch. Go ahead and click ‘Compare & pull request’ to submit a request to merge your code changes into your master code base. Don’t forget to include a message so that others know why they should include your changes.
+- Github will check for merge conflicts. A merge conflict is when the new code you are trying to push up is somehow interfering with your existing code. Oftentimes the merge conflict is very simple, and you just need to delete some old lines of code to "resolve the merge conflict". 
+- Occasionally merge conflicts can get really nasty. The best way to avoid any bad conflicts is to frequently pull down from the master repo. 
 - Once your pull request is open, go ahead and merge your code to the master code base.
-- Problem, when we visit gh-pages, we still see the old version of your code. To update gh-pages, in the terminal, lets return to our master branch (`$ git checkout master`), pull the latest master version from github to our local repository (`$ git pull`), checkout out gh-pages branch (`$ git checkout gh-pages`), merge the updated master code-base into our gh-pages branch (`$ git merge master`), and, finally, push that updated gh-pages branch commit to github (`$ git push`)
-- Visit your github gh-pages vanity url and you should see those newly made changes
+
 
 ## Extra Practice
 
