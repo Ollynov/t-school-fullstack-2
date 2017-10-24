@@ -9,8 +9,8 @@ Go ahead and replace your main.css stylesheet with the following. Feel free to a
 
 body {
 	background-color: rgb(255, 255, 255);
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 300;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
 }
 
 h1 {
@@ -18,23 +18,22 @@ h1 {
 	font-weight: 700;
 }
 
-/* NAV STYLES
-*/
+/* NAV STYLES */
 
 .navContainer a {
 	text-decoration: none;   
 	border-bottom: 2px solid transparent;    
-  transition: 0.5s ease;
-  color: rgb(91, 91, 91);
+  	transition: 0.5s ease;
+  	color: rgb(91, 91, 91);
 }
 
 .navContainer a:hover {
-  border-bottom: 2px solid rgb(1, 209, 178);
-  color: rgb(0, 0, 0);
+  	border-bottom: 2px solid rgb(1, 209, 178);
+  	color: rgb(0, 0, 0);
 }
 
 .navContainer a:visited {
-  color: rgb(91, 91, 91);
+  	color: rgb(91, 91, 91);
 }
 
 nav {
@@ -44,11 +43,9 @@ nav {
 	flex-wrap: wrap;
 }
 
-/*END OF NAV STYLES
-*/
+/*END OF NAV STYLES */
 
-/* TOP PORTION
-*/
+/* TOP PORTION */
 #topPortion {
 	display: flex;
 	width: 90%;
@@ -65,6 +62,5 @@ nav {
 	flex-wrap: wrap;
 }
 
-/* END OF TOP PORTION
-*/
+/* END OF TOP PORTION */
 ```
