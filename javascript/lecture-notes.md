@@ -14,7 +14,7 @@ Like Java, Python, and Ruby, JavaScript is a scripting language that allows you 
 
 JavaScript was created in 1995 by Brendan Eich, an engineer at Netscape, and first released with Netscape 2 early in 1996. Legend has it that he made the language in 10 days. Because of that there have always been many quirks (more like bugs) in the language itself, but with releases it continues to improve. ES6 was the latest big improvement to the language in June 2015; the previous one was way back in 2009. 
 
-It continues to grow in popularity- especially with the emergence of popular frameworks such as Angular and React. Jquery is still the most popular framework, used in about 85% of websites today. It's a framework that makes it easier to manipulate the DOM. A button indenting as you click it, would be an example of manipulating the DOM. We will be doing some activities today where you will be challenged to manipulate the DOM, but with pure javascript. We won't be learning jQuery because we don't have enough time, and technically you can handle all the same things with pure javascript. 
+It continues to grow in popularity- especially with the emergence of popular frameworks such as Angular and React. Jquery is still the most popular framework, used in about 85% of websites today. It's a framework that makes it easier to manipulate the DOM. A button indenting as you click it, would be an example of manipulating the DOM. We will be doing some activities today where you will be challenged to manipulate the DOM, but with pure javascript. With jQuery you can most likely do the activities with less lines of code, but it is important to note that it includes its own syntax that is different from vanilla javascript. 
 
 
 
