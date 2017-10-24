@@ -41,7 +41,7 @@ Introduction to asynchronous javascript by looking at the FS module of node, und
 Introduction to another asynchronous pattern called promises 
 
 #### Exercise 2: Treasure Hunt
-go to the treasure hunt folder, start with clue1.txt, can you get to the treasure?
+go to the treasure hunt folder and edit the treasureHunt.js file, start with clue1.txt, can you get to the treasure?
 
 
 #### Lecture 3: ExpressJS and the WebServer
