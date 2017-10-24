@@ -1,5 +1,19 @@
 # Solutions
 
+## JS Lecture Exercises
+
+Player Title Exercise
+ ```js
+var playerTitleElement = document.getElementById('player_title');
+
+playerTitleElement.addEventListener('click', updateName);
+
+function updateName(event) {
+  var name = prompt('Enter a new name');
+  event.target.textContent = 'Player 1: ' + name;
+}
+ ```
+
 ## Javascript Basic
 
 - [Exercise 1](http://www.w3resource.com/javascript-exercises/javascript-basic-exercise-1.php)

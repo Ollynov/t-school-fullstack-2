@@ -14,7 +14,7 @@ Like Java, Python, and Ruby, JavaScript is a scripting language that allows you 
 
 JavaScript was created in 1995 by Brendan Eich, an engineer at Netscape, and first released with Netscape 2 early in 1996. Legend has it that he made the language in 10 days. Because of that there have always been many quirks (more like bugs) in the language itself, but with releases it continues to improve. ES6 was the latest big improvement to the language in June 2015; the previous one was way back in 2009. 
 
-It continues to grow in popularity- especially with the emergence of popular frameworks such as Angular and React. Jquery is still the most popular framework, used in about 85% of websites today. It's a framework that makes it easier to manipulate the DOM. A button indenting as you click it, would be an example of manipulating the DOM. We will be doing some activities today where you will be challenged to manipulate the DOM, but with pure javascript. We won't be learning jQuery because we don't have enough time, and technically you can handle all the same things with pure javascript. 
+It continues to grow in popularity- especially with the emergence of popular frameworks such as Angular and React. Jquery is still the most popular framework, used in about 85% of websites today. It's a framework that makes it easier to manipulate the DOM. A button indenting as you click it, would be an example of manipulating the DOM. We will be doing some activities today where you will be challenged to manipulate the DOM, but with pure javascript. With jQuery you can most likely do the activities with less lines of code, but it is important to note that it includes its own syntax that is different from vanilla javascript. 
 
 
 
@@ -70,22 +70,32 @@ What is the DOM? The DOM is the Document Object Model. Basically, the entire web
 
 JavaScript allows us to interact with HTML/CSS by directly manipulating items on the DOM - we can select DOM elements by using CSS/Element selectors and change them dynamically. We can also create elements on the fly. All of this functionality is accessed off of the `document` object in the browser. Let's check it out in our chrome developer console.
 
-Event listeners are one of the most important components of interactivity on a webpage. They allow us to execute code when a certain user action takes place, like a `click`. 
+Event listeners are one of the most important components of interactivity on a webpage. They allow us to execute code when a certain user action takes place, like a `click` or `hover`. Let's take a look at the documentation on how to add a click "handler" https://www.w3schools.com/js/js_htmldom_events.asp ('handler' just refers to a function that executes when an event is triggered)
 
-_Exercise Let's get our "Player App" working. Add the following code into the `script` section in your tester.html file after adding the above html_
 
- ```js
-var playerTitleElement = document.getElementById('player_title');
+**Exercise 1:**
+Let's get our "Player App" working. After a click of the button, we want to ask the user for a new name; after the user enters in a new name we want to update our "player 1".
 
-playerTitleElement.addEventListener('click', updateName);
+HINT: 
+- Notice that we already have a '#player_title' id assigned
+- A prompt can ask the user for an input and also save it into a variable
 
-function updateName(event) {
-  var name = prompt('Enter a new name');
-  event.target.textContent = 'Player 1: ' + name;
-}
+
+**Exercise 2:**
+
+Add another user prompt into the `updateName()` function. Then change the color of the playerTitle element's background. This time, use jQuery. But first, let's get a crash course in jQuery. 
+
+**Exercise 2:**
+
+Let's move our JavaScript into an external file. Name it `script.js`. Reference it in the `<script>` tag by defining the relative path of the file in the `src` property. Make sure it's working by testing out the functionality of the `player` button.
+
+
+**Linking to external JavaScript files:**
+
+```html
+ <script src="/path-to-a-javascript-file"></script>
  ```
  
-
 #### JS Functions
 
 JS functions take optional arguments and return values. The default return value is `undefined` and we must explicitly use the `return` keyword to return anything else. There are several ways to define a function:
@@ -102,19 +112,6 @@ JS functions take optional arguments and return values. The default return value
   console.log(multiplyByThree(5));
 ```
 
-**Exercise 1:**
-
-Add another user prompt into the `updateName()` function. It should ask the user to enter a color. Store that color into a new variable called `color`. Then use that variable to change the color of the playerTitle element's background. *Hint: you can access an element's css through its `.style` property. You can change it by simply reassigning the value to the new color*
-
-**Linking to external JavaScript files:**
-
-```html
- <script src="/path-to-a-javascript-file"></script>
- ```
-
-**Exercise 2:**
-
-Let's move our JavaScript into an external file. Name it `script.js`. Reference it in the `<script>` tag by defining the relative path of the file in the `src` property. Make sure it's working by testing out the functionality of the `player` button.
 
 #### Data Types, Arithmetic Operators, & Comparisons
 JavaScript has many of the same datatypes as Ruby:
@@ -245,8 +242,9 @@ Add a form to our modal popup. Right where it says `Enter form here`
 
 Using a `while` loop, create a number guessing game. You will need two variables, one for the guess and one for the answer. To supercharge your game, give the user hints about whether their number is high or low depending on their guess - you can use conditionals and comparison operators for this. *Hint: The computer can choose a starting number between 0-100 by using `Math.round(Math.random()*100)`*
 
-**Bonus**
-Complete 'Javascripting' (feel free to skip over the first few challenges) https://github.com/workshopper/javascripting
+**Complete 'Javascripting' (feel free to skip over the first few challenges) https://github.com/workshopper/javascripting
+
+**[Complete the functions here](https://www.teaching-materials.org/javascript/exercises/functions.html)
 
 #### Extra Resources
 * https://www.codecademy.com/learn/javascript
