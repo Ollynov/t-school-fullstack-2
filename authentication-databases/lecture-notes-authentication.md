@@ -67,7 +67,7 @@ app.listen(8000,function(){
 Finally, go ahead and run `node app.js`. You should get a message in your terminal that we are running on port 8000. Go ahead and visit http://localhost:8000/ and you should see your app! 
 
 
-**Exercise 2: Create a modal/form for our signup**
+**Exercise 1: Create a modal/form for our signup**
 
 We need to add a form for our signup button. Once again for this we can take advantage of bootstrap. To keep a page de-cluttered, one great option is to take advantage of modal windows, which are essentially styled popups. Let's go to the [bootstrap page for modals](https://v4-alpha.getbootstrap.com/components/modal/) and check out the first example they provide. 
 
@@ -109,15 +109,24 @@ HINT: This challenge has several steps, and it helps to break it down into easie
 5. Confirm whether we are hitting our endpoint at all with a simple console.log 
 
 
-Awesome!! We officially have a very naive implementation of logins. What else can we do to improve our auth? 
+Awesome!! We have sort of implemented a very naive version of logins. What else can we do to improve our auth? 
 
-- Make it so that you can't have the same user sign up twice
 - Make all three fields mandatory: name, email, password
 - Give some basic restrictions to passwords, more than 5 characters at least
 - Hash the passwords
+- Make it so that you can't have the same user sign up twice
+- Connect it to the database!!
+
 
 Our app.js file is getting pretty big. In general we want to keep our primary server file small and organized. Let's decouple our code, and move our endpoint logic somewhere else. 
 
 **Exercise: Let's refactor our code**
 
+In general, we want to keep our app.js file clean and organized. That means we don't want to continue adding all of our endpoints there, since in a real app you are going to have many more endpoints than just a couple for authentication. We already are using this line of code to serve our static files: 
+`app.use(express.static(path.join(__dirname,"/static")));`
+
+In a similar manner we are going to take advantage of the ".use" method that comes built in with express. Essentially what this does is route all the requests through whatever we pass in- which in this case happens to be `require('./server/endpoints.js')`. Just how we can "require" third party modules, in this case we are requiring our own file. We just need to remember, that if we ever intend on requiring a file, we need to also _export_ that file with "module.exports = router". Follow along as we refactor our code: 
+
+- `mkdir server`
+- `touch server/endpoints.js`
 
