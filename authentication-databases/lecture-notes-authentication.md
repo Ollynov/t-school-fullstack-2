@@ -67,7 +67,7 @@ app.listen(8000,function(){
 Finally, go ahead and run `node app.js`. You should get a message in your terminal that we are running on port 8000. Go ahead and visit http://localhost:8000/ and you should see your app! 
 
 
-**Exercise 2: Create a modal/form for our signup
+**Exercise 2: Create a modal/form for our signup**
 
 We need to add a form for our signup button. Once again for this we can take advantage of bootstrap. To keep a page de-cluttered, one great option is to take advantage of modal windows, which are essentially styled popups. Let's go to the [bootstrap page for modals](https://v4-alpha.getbootstrap.com/components/modal/) and check out the first example they provide. 
 
