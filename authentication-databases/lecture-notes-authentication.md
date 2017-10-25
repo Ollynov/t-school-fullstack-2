@@ -38,13 +38,15 @@ This will be the one place where we include all of the files that we serve direc
 Finally, go ahead and run `node app.js`. You should get a message in your terminal that we are running on port 8000. Go ahead and visit http://localhost:8000/ and you should see your app! 
 
 
-**Exercise 2: Follow along as we create a modal/form for our signup
+**Exercise 2: Create a modal/form for our signup
 
+We need to add a form for our signup button. Once again for this we can take advantage of bootstrap. To keep a page de-cluttered, one great option is to take advantage of modal windows, which are essentially styled popups. Let's go to the [bootstrap page for modals](https://v4-alpha.getbootstrap.com/components/modal/) and check out the first example they provide. 
 
+Now we can't forget to add `data-toggle="modal" data-target="#signupModal"` to any link or button that we want to actually trigger the modal popup.
 
+Now that we have this, there is a container that would serve perfect for a form. Go ahead and add a signup form within the "modal-body" div. 
 
-
-
+HINT: Try to take advantage of bootstrap again!
 
 ## Sending an HTTP request to signup
 
