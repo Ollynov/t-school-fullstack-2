@@ -77,7 +77,7 @@ Also, go ahead and remove the second submit button.
 
 Now that we have this, there is a container that would serve perfect for a form. Go ahead and add a signup form within the "modal-body" div. Use the following bootstrap form: 
 
-```
+```html
 <form>
   <div class="form-group">
     <label for="nameInputSignUp">Name</label>
