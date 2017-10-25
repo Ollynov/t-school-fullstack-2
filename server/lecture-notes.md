@@ -1,8 +1,11 @@
 # The Server - Node with Express
 
+
 ## What you'll learn in this course
+Download the zip file and go to the server folder
+
 - What is a server
-- What is node, what are the pros and cons
+- What is node
 - How do we set up our own node server
 
 #### Background:
@@ -18,7 +21,7 @@ Node is built on top of Chrome's V8 engine, which is the same used to execute ja
 converting our sample directory to a node app directory 
 use the moment library (practice looking at documentation)
 
-##### Exercise 1: Load a easy to use node module from NPM
+##### Exercise 1: Load a easy to use node module from NPM (15min)
 setup your node directory with npm init
 check that you have a package.json file 
 
@@ -32,22 +35,36 @@ https://www.npmjs.com/package/math-expression-evaluator
 
 run it and make sure it works 
 
-#### Lecture 1.5: writing your own module and import it in your main app ***
+##### Lecture 1.5 /  writing your own module and import it in your main app *** (15 min)
+##### Exercise writing your own module and import it in your main app *** (15 min)
 I suggest writing is-even to check if a number is even or any other function that you might think is useful
 write another one that takes a word, turns it into all uppercase and reverse it. We will be using this one later 
 
-#### Lecture 2: Asynchronous 
+##### Lecture 2: Asynchronous Node programming (15 min)
 Introduction to asynchronous javascript by looking at the FS module of node, understand the common patterns of callback functions 
 Introduction to another asynchronous pattern called promises 
 
-#### Exercise 2: Treasure Hunt
+##### Exercise 2: Treasure Hunt (25 min)
 go to the treasure hunt folder and edit the treasureHunt.js file, start with clue1.txt, can you get to the treasure?
 
 
-#### Lecture 3: ExpressJS and the WebServer
+
+##### Lecture 3: ExpressJS and the WebServer (15 minutes)
+Go over slides on Express
+Go over what a http request is 
+Go over a sample ExpressJS application
+
+##### Lecture 4: ExpressJS and the WebServer (15 minutes)
+Convert Blog to an Express App
+
+#### Lecture 4: APIs, request and response
+Write an API to the sample express app (reverse and upper case)
+Test it with Postman
+Add a frontend with an input and submit that sends a request to our endpoint and render the output 
 
 
-
+exercise: write an API for counting the number of times a word appears in the text of "Romeo and Juliet". Text file provided. 
+Add this functionality somewhere in your blog
 
 ## Setting Everything Up
 
