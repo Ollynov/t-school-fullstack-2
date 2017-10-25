@@ -149,7 +149,26 @@ router.post('/signup', function (req, res) {
 })
 ```
 
+## Let's get our app ready for database integration
 
+- `mkdir db`
+- `touch db/configuration.js`
+
+Add the following to our configuration.js file: 
+```javascript
+var mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost/test');
+
+var db = mongoose.connection;
+db.on('error', console.error.bind(console, 'connection error:'));
+db.once('open', function() {
+  // we're connected!
+  console.log('yay we are conected to our db')
+});
+
+
+module.exports = User
+```
 
 
 
