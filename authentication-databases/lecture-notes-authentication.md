@@ -12,6 +12,26 @@ One of the primary components to proper authentication is to have a proper hashi
 
 There are different underlying hashing functions, but SHA256 is the most common right now, and is the underlying hashing algorithm for bitcoin. Here you can play around with an actual SHA256 hashing algorithm: http://www.movable-type.co.uk/scripts/sha256.html
 
+
+## Setting our app up for authentication + database persistence
+
+First and foremost we need a server that will be running our application. Until now, we have been able to view our html files because our browser is able to execute the html, css, and javascript. However, if we plan on deploying our app, if we plan on serving these 'static' files in the first place, and if we plan on having data persistence and authentication, we need to instantiate our server. This will be a bit of a review from yesterday, and hopefully gives more perspective on how the node server ties into the rest of our app. 
+
+**Exercise 1: Follow along as we set up a server 
+
+- `touch .gitignore`
+Go into our new .gitignore file and simply add "node_modules". This is going to tell git to not track any of our node modules. This directory can get very heavy with all of the dependencies, and there is no reason to add them to git, since collaborators can easily pull in all of their own dependencies with an "npm install" command. 
+
+- `touch app.js`
+This will be our primary server file. We will spin up the server here, serve our static files (the html, css, and js), and link to other crucial node files. 
+
+- `mkdir static` 
+This will be the one place where we include all of the files that we serve directly to the client (html, css, and js)
+
+- `mv styles static`
+- `mv index.html static`
+- `mv pages static`
+
 ## Sending an HTTP request to login
 
 
@@ -30,7 +50,7 @@ axios.post('/signin', {
            })
  ```
  
-This will send a POST request to our '/signin' route. You need also include some sort of params, in this case the email and password. The '.then' and '.catch' are callbacks which we briefly touched upon in the previous lesson in regards to the asynchronous nature of node. 
+This will send a POST request to our '/signin' route. You need also include some sort of params, in this case the email and password. The '.then' and '.catch' are callbacks which we touched upon in the previous lesson in regards to the asynchronous nature of node. 
 
 **Challenge**
 Get our app to give a console.log of "SUCCESS!!" when we login with the hardcoded 'admin@gmail.com' and 'admin' for password. 
@@ -43,6 +63,10 @@ Awesome!! We officially have a very naive implementation of logins. What else ca
 - Make it so that you can't have the same user sign up twice
 - Make all three fields mandatory: name, email, password
 - Give some basic restrictions to passwords, more than 5 characters at least
-- Encrypt the passwords
+- Hash the passwords
 
 Our app.js file is getting pretty big. In general we want to keep our primary server file small and organized. Let's decouple our code, and move our endpoint logic somewhere else. 
+
+**Exercise: Let's refactor our code**
+
+
