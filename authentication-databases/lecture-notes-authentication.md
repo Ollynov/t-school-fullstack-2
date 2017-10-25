@@ -49,9 +49,9 @@ app.use(express.static(path.join(__dirname,"/static")));
 
 app.post('/signup', function (err, req, res) {
   if (err) {console.log('got an error: ' + err)}
-  var user_name=req.body.email;
-  var password=req.body.password;
-  if(user_name=='admin' && password=='admin'){
+  var email = req.body.email;
+  var password = req.body.password;
+  if(email == 'admin' && password=='admin'){
       console.log('success');
   }
   else{
