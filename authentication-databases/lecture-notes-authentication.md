@@ -267,3 +267,5 @@ The last thing we pass in is a callback, which gives us a "hash". Instead of sav
   })
 ```
 
+The "salt" is the cherry on top to authentication. It is a string that is added onto your password as a finishing touch (just like salt on a meal). When you hash your password "myDog" with salt, it is more like you are actually hashing "myDog44aslijla9uadf900". So theoretically if someone was somehow able to crack your hashing algorithm, they still wouldn't be able to get into your database if they don't now the salt... extra security is always a good investment. 
+
