@@ -51,7 +51,7 @@ app.post('/signup', function (err, req, res) {
   if (err) {console.log('got an error: ' + err)}
   var email = req.body.email;
   var password = req.body.password;
-  if(email == 'admin' && password=='admin'){
+  if(email == 'admin@gmail.com' && password=='admin'){
       console.log('success');
   }
   else{
