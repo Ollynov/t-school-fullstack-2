@@ -75,7 +75,6 @@ Now we can't forget to add `data-toggle="modal" data-target="#signupModal"` to a
 
 Now that we have this, there is a container that would serve perfect for a form. Go ahead and add a signup form within the "modal-body" div. 
 
-HINT: Try to take advantage of bootstrap again!
 
 ## Sending an HTTP request to signup
 
@@ -98,7 +97,7 @@ axios.post('/signup', {
 This will send a POST request to our '/signup' route. You need also include some sort of params, in this case the email and password. The '.then' and '.catch' are callbacks which we touched upon in the previous lesson in regards to the asynchronous nature of node. 
 
  
- **Challenge 1**
+ **Challenge 2**
 Get our app to send over a username and password to our backend when we hit the submit button on the signup form. It should console.log of "SUCCESS!!" when we login with the hardcoded 'admin@gmail.com' and 'admin' for password. Be sure to add your javascript code into an external .js file. 
 
 HINT: This challenge has several steps, and it helps to break it down into easier components: 
@@ -212,5 +211,22 @@ The next step is to actually save our users in our database (exciting stuff), bu
 
 Let's run our app (`node app.js`), we should get a console log of "yay we are conected to our db". If so, we are well on our way to saving our users in the database.
 
+Let's navigate back to our endpoints.js file. We should already be hitting out '/signup' endpoint on form submit, and getting some info from our client (email, name, password). What do we do with all that info? It's a two step process: 
+- Create a new model
+- Save that model to the database
+
+```javascript
+  var newUser = new User({
+  	name: name,
+  	email: email,
+  	password: password
+  })
+
+  newUser.save(function(err, user) {
+  	if (err) return console.error(err);
+  	console.log('saved user is ', user)
+  })
+  ```
+  
 
 
