@@ -35,6 +35,36 @@ This will be the one place where we include all of the files that we serve direc
 - `npm install express --save`
 - `npm install body-parser --save`
 
+Now go ahead and add the following code into your app.js file: 
+```javascript
+var express = require("express");
+var path = require("path");
+var bodyParser = require("body-parser");
+
+ 
+var app = express();
+app.use(bodyParser.json());
+
+app.use(express.static(path.join(__dirname,"/static")));
+
+
+app.post('/signup', function (req, res) {
+  var user_name=req.body.email;
+  var password=req.body.password;
+  if(user_name=='admin' && password=='admin'){
+      res.send('success');
+  }
+  else{
+    res.send('Failure');
+  }
+})
+
+
+app.listen(8000,function(){
+    console.log("Listening on Port: ", 8000);
+})
+```
+
 Finally, go ahead and run `node app.js`. You should get a message in your terminal that we are running on port 8000. Go ahead and visit http://localhost:8000/ and you should see your app! 
 
 
