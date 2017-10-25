@@ -1,3 +1,5 @@
+endpoints.js
+```javascript
 var express = require('express');
 var router = express.Router();
 var User = require('./../db/configuration.js')
@@ -46,3 +48,28 @@ router.post('/signup', function (req, res) {
 })
 
 module.exports = router
+```
+
+
+configuration.js
+```javascript
+var mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost/test');
+
+var db = mongoose.connection;
+db.on('error', console.error.bind(console, 'connection error:'));
+db.once('open', function() {
+  // we're connected!
+  console.log('yay we are conected to our db')
+});
+
+var userSchema = mongoose.Schema({
+    name: String, 
+    email: String,
+    password: String
+});
+
+var User = mongoose.model('User', userSchema);
+
+module.exports = User
+```
