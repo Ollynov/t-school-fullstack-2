@@ -73,7 +73,26 @@ We need to add a form for our signup button. Once again for this we can take adv
 
 Now we can't forget to add `data-toggle="modal" data-target="#signupModal"` to any link or button that we want to actually trigger the modal popup.
 
-Now that we have this, there is a container that would serve perfect for a form. Go ahead and add a signup form within the "modal-body" div. 
+Now that we have this, there is a container that would serve perfect for a form. Go ahead and add a signup form within the "modal-body" div. Use the following bootstrap form: 
+
+```
+<form>
+  <div class="form-group">
+    <label for="nameInputSignUp">Name</label>
+    <input type="text" class="form-control" id="nameInputSignUp">
+  </div>
+  <div class="form-group">
+    <label for="emailInputSignUp">Email address</label>
+    <input type="email" class="form-control" id="emailInputSignUp" aria-describedby="emailHelp">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="passwordInputSignUp">Password</label>
+    <input type="password" class="form-control" id="passwordInputSignUp">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+```
 
 
 ## Sending an HTTP request to signup
@@ -104,7 +123,7 @@ HINT: This challenge has several steps, and it helps to break it down into easie
 1. Confirm external js file is connected through a console.log when hitting the submit button
 2. You will want to include `<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.17.0/axios.js"></script>` right above the closing </body> tag of index.html but above our link to our js file, and will want to run `npm install axios --save`
 3. When should we trigger this axios.post method?
-4. Confirm we can grab the name, username, and password, through a console.log, before we try adding them as params to our post request
+4. Confirm we can grab the name, username, and password, through a console.log, before we try adding them as params to our post request. Use jQuery here.
 5. Confirm whether we are hitting our endpoint at all with a simple console.log 
 
 
