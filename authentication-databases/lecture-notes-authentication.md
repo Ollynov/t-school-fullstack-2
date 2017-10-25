@@ -228,5 +228,20 @@ Let's navigate back to our endpoints.js file. We should already be hitting out '
   })
   ```
   
+Did we get the success console log? If so, things look good, but let's confirm by actually observing our database. 
+- Go back to bluemix to the service credentials
+- Paste the "uri_cli" into your terminal
+- It will look something like this mongo --ssl --sslAllowInvalidCertificates sl-us-south-1-portal.10.dblayer.com:25678/admin -u admin -p UTUZBUMSRMYADTVP
 
+Now let's run some terminal database commands: 
+- `show databases`
+- `use db` (replace db with the actual db name)
+- `show collections`
+- `db.users.find()` the actual command 
+
+Do you see your user in there?!
+
+## Bonus
+
+Let's hash our passwords to make our app much more secure using bcrypt. 
 
