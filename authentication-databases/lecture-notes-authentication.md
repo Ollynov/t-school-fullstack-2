@@ -129,4 +129,10 @@ In a similar manner we are going to take advantage of the ".use" method that com
 
 - `mkdir server`
 - `touch server/endpoints.js`
+- add the following right above your "app.listen" on app.js: 
+```
+//Routes
+app.use(require('./server/endpoints.js'))
+```
+
 
