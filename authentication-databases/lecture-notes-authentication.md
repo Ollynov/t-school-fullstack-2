@@ -99,11 +99,11 @@ This will send a POST request to our '/signup' route. You need also include some
 
  
  **Challenge 1**
-Get our app to send over a username and password to our backend when we hit the submit button. It should console.log of "SUCCESS!!" when we login with the hardcoded 'admin@gmail.com' and 'admin' for password. Be sure to add your javascript code into an external .js file. 
+Get our app to send over a username and password to our backend when we hit the submit button on the signup form. It should console.log of "SUCCESS!!" when we login with the hardcoded 'admin@gmail.com' and 'admin' for password. Be sure to add your javascript code into an external .js file. 
 
 HINT: This challenge has several steps, and it helps to break it down into easier components: 
 1. Confirm external js file is connected through a console.log when hitting the submit button
-2. You will want to include `var axios = require('axios')` at the top of our js file, and will want to run `npm install axios --save`
+2. You will want to include `<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.17.0/axios.js"></script>` right above the closing </body> tag of index.html but above our link to our js file, and will want to run `npm install axios --save`
 3. When should we trigger this axios.post method?
 4. Confirm we can grab the name, username, and password, through a console.log, before we try adding them as params to our post request
 5. Confirm whether we are hitting our endpoint at all with a simple console.log 
