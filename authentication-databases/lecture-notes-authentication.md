@@ -35,12 +35,23 @@ This will be the one place where we include all of the files that we serve direc
 - `npm install express --save`
 - `npm install body-parser --save`
 
-## Sending an HTTP request to login
+Finally, go ahead and run `node app.js`. You should get a message in your terminal that we are running on port 8000. Go ahead and visit http://localhost:8000/ and you should see your app! 
+
+
+**Exercise 2: Follow along as we create a modal/form for our signup
+
+
+
+
+
+
+
+## Sending an HTTP request to signup
 
 
 We are going to use axios, a library that makes it easy to send HTTP requests. Here is the basic format: 
 ```
-axios.post('/signin', {
+axios.post('/signup', {
                params: {
                }
              })
