@@ -31,6 +31,9 @@ This will be the one place where we include all of the files that we serve direc
 - `mv styles static`
 - `mv index.html static`
 - `mv pages static`
+- `npm init`
+- `npm install express --save`
+- `npm install body-parser --save`
 
 ## Sending an HTTP request to login
 
