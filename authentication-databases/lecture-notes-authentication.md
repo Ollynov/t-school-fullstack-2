@@ -81,26 +81,32 @@ HINT: Try to take advantage of bootstrap again!
 
 
 We are going to use axios, a library that makes it easy to send HTTP requests. Here is the basic format: 
-```
+```javascript
 axios.post('/signup', {
-               params: {
-               }
-             })
-             .then(function (response) {
-               console.log(response);
-             })
-             .catch(function (error) {
-               console.log(error);
-             });
-           })
+    params: {
+    }
+  })
+  .then(function (response) {
+    console.log(response);
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
+})
  ```
  
-This will send a POST request to our '/signin' route. You need also include some sort of params, in this case the email and password. The '.then' and '.catch' are callbacks which we touched upon in the previous lesson in regards to the asynchronous nature of node. 
+This will send a POST request to our '/signup' route. You need also include some sort of params, in this case the email and password. The '.then' and '.catch' are callbacks which we touched upon in the previous lesson in regards to the asynchronous nature of node. 
 
-**Challenge**
-Get our app to give a console.log of "SUCCESS!!" when we login with the hardcoded 'admin@gmail.com' and 'admin' for password. 
+ 
+ **Challenge 1**
+Get our app to send over a username and password to our backend when we hit the submit button. It should console.log of "SUCCESS!!" when we login with the hardcoded 'admin@gmail.com' and 'admin' for password. Be sure to add your javascript code into an external .js file. 
 
-HINT: Take it in steps. When do we trigger this axios.post method? Let's first get a console.log triggering. Then let's confirm that we are successfully running our axios.post at the correct trigger point. Only then let's worry about getting the correct response back. 
+HINT: This challenge has several steps, and it helps to break it down into easier components: 
+1. Confirm external js file is connected through a console.log when hitting the submit button
+2. You will want to include `var axios = require('axios')` at the top of our js file, and will want to run `npm install axios --save`
+3. When should we trigger this axios.post method?
+4. Confirm we can grab the name, username, and password, through a console.log, before we try adding them as params to our post request
+5. Confirm whether we are hitting our endpoint at all with a simple console.log 
 
 
 Awesome!! We officially have a very naive implementation of logins. What else can we do to improve our auth? 
