@@ -170,6 +170,23 @@ db.once('open', function() {
 module.exports = User
 ```
 
+We need to replace the mongoose.connect('mongodb://localhost/test') with the url to our database in the cloud. 
+ - Log into bluemix and search for "mongo compose"
+ - Sign up for the service, and go into "credentials" 
+ - Scroll to the bottom and copy the "mongo uri". It should look something like this: (‘mongodb://admin:LEXMLDCRXHKWKNKL@sl-us-south-1-portal.10.dblayer.com:24919,sl-us-south-1-portal.11.dblayer.com:24919/admin?ssl=true')
+ - Now go back into our app and replace the url in mongoose.connect
+ - add the object `{
+  useMongoClient: true
+}`
+as the second argument to mongoose.connect. It should look like this: 
+```javascript
+mongoose.connect('mongodb://admin:LEXMLDCRXHKWKNKL@sl-us-south-1-portal.10.dblayer.com:24919,sl-us-south-1-portal.11.dblayer.com:24919/admin?ssl=true', {
+  useMongoClient: true
+})
+```
+
+ 
+
 
 
 
