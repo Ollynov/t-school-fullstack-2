@@ -134,5 +134,24 @@ In a similar manner we are going to take advantage of the ".use" method that com
 //Routes
 app.use(require('./server/endpoints.js'))
 ```
+- add the following three lines of code to the top of your endpoints.js file: 
+```
+var express = require('express');
+var router = express.Router();
+var User = require('./../db/configuration.js')
+```
+- add `module.exports = router` to the bottom of the endpoints.js file
+
+Great, now we are ready to create our endpoints! Here is the skeleton formatting: 
+```javascript
+router.post('/signup', function (req, res) {
+
+})
+```
+
+
+
+
+
 
 
