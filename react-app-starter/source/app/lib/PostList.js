@@ -5,7 +5,8 @@ import Post from '../components/Post'
 
 const LOCAL_POSTS = [
 	{
-    postID: '120498-AFH-af8yaf',
+    		postID: '120498-AFH-af8yaf',
+		postDate: 'Wed Oct 25 2017 14:33:51 GMT-0400 (EDT)',
 		postBody: 'This is the first post on the blog that was written by your professor Austin Riedel.'
 	}
 ]
