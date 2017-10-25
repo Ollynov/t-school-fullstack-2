@@ -47,18 +47,17 @@ app.use(bodyParser.json());
 
 app.use(express.static(path.join(__dirname,"/static")));
 
-
-app.post('/signup', function (req, res) {
+app.post('/signup', function (err, req, res) {
+  if (err) {console.log('got an error: ' + err)}
   var user_name=req.body.email;
   var password=req.body.password;
   if(user_name=='admin' && password=='admin'){
-      res.send('success');
+      console.log('success');
   }
   else{
-    res.send('Failure');
+    console.log('wrong login credentials!');
   }
 })
-
 
 app.listen(8000,function(){
     console.log("Listening on Port: ", 8000);
