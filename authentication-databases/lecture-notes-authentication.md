@@ -149,7 +149,9 @@ router.post('/signup', function (req, res) {
 })
 ```
 
-## Let's get our app ready for database integration
+# Databases
+
+**Let's get our app ready for database integration**
 
 - `mkdir db`
 - `touch db/configuration.js`
@@ -185,9 +187,26 @@ mongoose.connect('mongodb://admin:LEXMLDCRXHKWKNKL@sl-us-south-1-portal.10.dblay
 })
 ```
 
+We are going to be using an ORM called mongoose. An ORM allows you to read and write from the database directly through your code. You would be able to manually write and read from the database from the terminal, and that is the more traditional way of interacting with a database, but we need to have it go through our code. 
+
+- `npm install mongoose --save`
  
+Our first step is to create a database schema. The schema is the blueprint for the models that will be saved into our database. It is a series of properties and values. When you create the schema in the first place you simply define the properties and what sort of value you are expecting. There is also an "ObjectId" that is automatically added for each new document in the database. 
+
+There are two primary types of databases- relational and non-relational. A relational database such as MySQL also holds "keys" instead of just plain properties, which point to another table in the database. This allows for less duplication in your database, and can be a good approach for apps that have many items that are tightly related. The upside to a non-relational database such as Mongo is that it is faster and quicker to implement. Also, many startups choose to first go with a non-relational db because they don't yet know all of the models they will need in their app, and a relational db is much harder to later change. 
+
+```javascript
+var userSchema = mongoose.Schema({
+    name: String, 
+    email: String,
+    password: String
+});
+```
 
 
+
+
+Now when we run our app (`node app.js`), we should get a console log of "yay we are conected to our db". If so, we are well on our way to saving our users in the database.
 
 
 
