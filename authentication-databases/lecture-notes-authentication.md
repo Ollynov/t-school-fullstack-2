@@ -73,6 +73,8 @@ We need to add a form for our signup button. Once again for this we can take adv
 
 Now we can't forget to add `data-toggle="modal" data-target="#signupModal"` to any link or button that we want to actually trigger the modal popup.
 
+Also, go ahead and remove the second submit button.
+
 Now that we have this, there is a container that would serve perfect for a form. Go ahead and add a signup form within the "modal-body" div. Use the following bootstrap form: 
 
 ```
