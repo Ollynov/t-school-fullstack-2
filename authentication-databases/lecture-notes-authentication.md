@@ -203,10 +203,14 @@ var userSchema = mongoose.Schema({
 });
 ```
 
+Next, we need to create our actual model:
+`var User = mongoose.model('User', userSchema);`
 
+and this is the variable that we actually export, because we need to use it in other areas of our app, such as endpoints.js
 
+The next step is to actually save our users in our database (exciting stuff), but first....
 
-Now when we run our app (`node app.js`), we should get a console log of "yay we are conected to our db". If so, we are well on our way to saving our users in the database.
+Let's run our app (`node app.js`), we should get a console log of "yay we are conected to our db". If so, we are well on our way to saving our users in the database.
 
 
 
