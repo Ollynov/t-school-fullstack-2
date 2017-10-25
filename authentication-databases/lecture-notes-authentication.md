@@ -245,3 +245,25 @@ Do you see your user in there?!
 
 Let's hash our passwords to make our app much more secure using bcrypt. 
 
+Add the following to our endpoints.js node file: 
+```javascript
+var bcrypt = require('bcrypt');
+const saltRounds = 10;
+```
+This is how we hash our password: 
+```javascript
+bcrypt.genSalt(saltRounds, function(err, salt) {
+    bcrypt.hash(myPlaintextPassword, salt, function(err, hash) {
+        // Store hash in your password DB.
+    });
+});
+```
+The last thing we pass in is a callback, which gives us a "hash". Instead of saving our user with a plain text password, we do the following: 
+```javascript
+  var newUser = new User({
+  	name: name,
+  	email: email,
+  	password: hash
+  })
+```
+
