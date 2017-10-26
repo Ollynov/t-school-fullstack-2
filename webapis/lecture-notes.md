@@ -67,6 +67,7 @@ Create a reverse image search app, think about how you can go about accomplishin
 Practice using Watson Visual Recognition API, and research Google Custom Search API. Here are a couple of useful links for google
 
 https://developers.google.com/custom-search/docs/overview
+
 https://developers.google.com/custom-search/json-api/v1/overview
 Create an account with Google, and get an API Key, create a custom search engine using google.com. The following 2 links should help you get started with Google. 
 
