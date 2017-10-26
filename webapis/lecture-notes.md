@@ -44,9 +44,11 @@ body: {
 ## Part 1: 
 DOWNLOAD **simpleWebServerAPI** from slack, unzip and move it into desktop. 
 do 
-**npm install**
-**webpack -w**
-**npm run start**
+```
+npm install
+webpack -w
+npm run start
+```
 Our frontend is written in React
 Webserver is instantiated at server.js
 server.js delegates the endpoint routing to route.js using express router. 
