@@ -8,7 +8,7 @@ SDKs or software development kits are set of software tools or libraries that al
 A good SDK typically comes with instructions and is actively maintained. Watson 
 
 
-In this section we will practice looking up documentation for both IBM and other APIs (google). As a developer looking up documentation and digesting it quickly is a useful skill to have. 
+In this section we will practice looking up documentation for both IBM and other APIs (google). As a developer looking up documentation and digesting it quickly is a useful skill to have. We will also be looking at how different APIs can be combined together to become a coherent app that's orchestrated by Node. This task requires a bunch of javascript processing. It's up to the developer to decide how we want to process/use the data responses and how mix them in order to building interesting applications. 
 
 
 
@@ -29,14 +29,20 @@ body: {
 }
 
 
-Part 1: 
+## Part 1: 
 Check out the documentation for NLU, find out how to make a request to NLU and get something back. 
 https://www.ibm.com/watson/services/natural-language-understanding/
 I've already made the frontend for this website, currently it just returns null
+Play around with my deployed app in Postman to figure out what's the output of this API. Try to recreate this endpoint so when our frontend makes the call, it will display the results similar to what I have. 
 
-Play around with my deployed app in Postman to figure out what's the output of this API. Try to recreate this endpoint
 
+## Part 2: 
+Create a reverse image search app, think about how you can go about accomplishing this. 
 
-Part 2: Create a reverse image search app, practice using Watson Visual Recognition API, and practice using Google Custom Search API
+Practice using Watson Visual Recognition API, and research Google Custom Search API. Here are a couple of useful links for google
 
 https://developers.google.com/custom-search/docs/overview
+https://developers.google.com/custom-search/json-api/v1/overview
+Create an account with Google, and get an API Key, create a custom search engine using google.com. The following 2 links should help you get started with Google. 
+
+
