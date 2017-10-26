@@ -42,6 +42,17 @@ body: {
 ```
 
 ## Part 1: 
+DOWNLOAD **simpleWebServerAPI** from slack, unzip and move it into desktop. 
+do 
+**npm install**
+**webpack -w**
+**npm run start**
+Our frontend is written in React
+Webserver is instantiated at server.js
+server.js delegates the endpoint routing to route.js using express router. 
+So the file of interest is **route.js**
+
+
 Check out the documentation for NLU, find out how to make a request to NLU and get something back. 
 https://www.ibm.com/watson/services/natural-language-understanding/
 I've already made the frontend for this website, currently it just returns null
