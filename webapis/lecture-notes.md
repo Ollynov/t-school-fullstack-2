@@ -44,6 +44,7 @@ body: {
 DOWNLOAD **simpleWebServerAPI** from slack, unzip and move it into desktop. 
 
 do 
+cd into the simpleWebServerAPI_work directory
 ```
 npm install
 webpack -w
