@@ -69,6 +69,7 @@ Practice using Watson Visual Recognition API, and research Google Custom Search 
 https://developers.google.com/custom-search/docs/overview
 
 https://developers.google.com/custom-search/json-api/v1/overview
+
 Create an account with Google, and get an API Key, create a custom search engine using google.com. The following 2 links should help you get started with Google. 
 
 
