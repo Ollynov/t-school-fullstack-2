@@ -45,13 +45,10 @@ As you wait for it to deploy, you can open a new tab in your terminal and run `c
 Debugging: 
 - Run 'cf logs --recent'
 - In case you get an error: "no space targeted" try running: `cf spaces` to see your spaces, then `cf target [spacename] -s`)
+- In case you get "buildpackcompile failed cloud foundry" and don't see specific notes on why the build failed, you may want to delete your node modules folder. This is safe to do as long as you keep your package.json in the repo. 
 
-Now we need to make a manifest.yml file. This file is like a guide that our server will take into account when deploying. Since we are deploying onto bluemix, it already comes pre-packaged with a ton of features for us. One of them is this ability to just pick up on this file and recognize what sort of server it needs to set up. 
 
-
-## Let's integrate MongoDB
-
-- Search "Compose Mongo"
+## Let's integrate MongoDB (database lesson)
 
 
 ## Things not covered but worth looking into: 
