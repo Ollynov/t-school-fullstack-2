@@ -14,7 +14,7 @@ In this section we will practice looking up documentation for both IBM and other
 
 
 The Deployed App we will be making today is right here: https://www.ibm.com/watson/services/natural-language-understanding/
-the 2 API endpoints are 
+I have created 2 endpoints associated with the 2 task. The first is 
 
 ```
 /api/nlu 
@@ -27,6 +27,8 @@ body: {
 ```
 make a couple of postman calls to this endpoint and play around to see the return value. 
 
+
+The second endpoint is 
 
 ```
 /api/imgsearch 
