@@ -32,6 +32,8 @@ We can also view our actual computer's environment variables by simply hitting '
 
 There are a couple of reasons you may want to use environment variables- the first being for convenience. For example, in a production level app you may have multiple areas in the app that you need to reference the port number, and if it is hard coded we need to change every instance rather than just the one environment variable in one place. The second reason is for security, if we have a repo that we are pushing to github, and we have an area of our app that requires a password or security certificate file, then we don't want to send up those secrets to the cloud for the world to see. Instead, we just save the password to process.env.PW on our computer, which would then be accessed through an environment variable. Finally, for deployment we need them. We actually don't know which port cloud foundry is going to want to host our app on, and it might change, so we need it to be a dynamic variable. 
 
+**Bluemix**
+
 - Navigate to the bluemix console
 - Click up on the top right "Catalog"
 - Find "SDK for Node.js" (easiest to just search for it)
