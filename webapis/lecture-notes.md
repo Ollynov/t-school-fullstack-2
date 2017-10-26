@@ -16,13 +16,16 @@ In this section we will practice looking up documentation for both IBM and other
 The Deployed App we will be making today is right here: https://www.ibm.com/watson/services/natural-language-understanding/
 the 2 API endpoints are 
 
-
+```
 /api/nlu 
+```
 which takes an input of 
+```
 body: {
   url: article_url
 }
-make a couple of postman calls to this endpoint. 
+```
+make a couple of postman calls to this endpoint and play around to see the return value. 
 
 
 ```
