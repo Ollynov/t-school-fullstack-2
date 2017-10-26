@@ -25,15 +25,15 @@ body: {
 make a couple of postman calls to this endpoint. 
 
 
-'''
+```
 /api/imgsearch 
-'''
+```
 which takes an input of 
-'''
+```
 body: {
   img_url: image_url
 }
-'''
+```
 
 
 ## Part 1: 
