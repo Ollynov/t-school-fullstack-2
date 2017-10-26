@@ -70,7 +70,7 @@ Debugging:
 - In case you get "buildpackcompile failed cloud foundry" and don't see specific notes on why the build failed, you may want to delete your node modules folder. This is safe to do as long as you keep your package.json in the repo. 
 
 
-## Let's integrate MongoDB (database lesson)
+## Let's integrate MongoDB [(database lesson)](https://github.com/Ollynov/FullStack-TSchool/blob/master/authentication-databases/lecture-notes-authentication.md)
 
 
 ## Things not covered but worth looking into: 
