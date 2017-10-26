@@ -98,7 +98,7 @@ A sample response from the endpoint
     }
   }
 ]
-````
+```
 
 
 ## Part 2: 
