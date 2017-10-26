@@ -57,8 +57,48 @@ So the file of interest is **route.js**
 
 Check out the documentation for NLU, find out how to make a request to NLU and get something back. 
 https://www.ibm.com/watson/services/natural-language-understanding/
+
 I've already made the frontend for this website, currently it just returns null
 Play around with my deployed app in Postman to figure out what's the output of this API. Try to recreate this endpoint so when our frontend makes the call, it will display the results similar to what I have. 
+
+A sample response from the endpoint 
+```
+[
+  {
+    "entity": "President Trump",
+    "sentiment": "👎",
+    "emotion": {
+      "sadness": 0.217896,
+      "joy": 0.129113,
+      "fear": 0.052895,
+      "disgust": 0.50877,
+      "anger": 0.186486
+    }
+  },
+  {
+    "entity": "Kevin Brady",
+    "sentiment": "👎",
+    "emotion": {
+      "sadness": 0.210747,
+      "joy": 0.535617,
+      "fear": 0.052326,
+      "disgust": 0.499101,
+      "anger": 0.113137
+    }
+  },
+  {
+    "entity": "Tax Foundation",
+    "sentiment": "👍",
+    "emotion": {
+      "sadness": 0.006967,
+      "joy": 0.499539,
+      "fear": 0.043032,
+      "disgust": 0.041645,
+      "anger": 0.036562
+    }
+  }
+]
+````
 
 
 ## Part 2: 
