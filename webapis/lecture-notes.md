@@ -12,7 +12,7 @@ In this section we will practice looking up documentation for both IBM and other
 
 
 The Deployed App we will be making today is right here: 
-https://www.ibm.com/watson/services/natural-language-understanding/
+https://tschool-webapi.mybluemix.net/
 
 I have created 2 endpoints associated with the 2 tasks. The first is 
 
@@ -36,7 +36,7 @@ The second endpoint is
 which takes an input of 
 ```
 body: {
-  img_url: image_url
+  imgUrl: imageUrl
 }
 ```
 
