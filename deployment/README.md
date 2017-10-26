@@ -28,6 +28,7 @@ Before we are able to deploy, let's first create a new file in the top level of 
 applications:
 - name: fullStackApp
   random-route: true
+  command: node my-app.js
   memory: 128M
 ```
 
