@@ -47,7 +47,7 @@ do
 ```
 npm install
 webpack -w
-npm run start
+npm run dev
 ```
 - Our frontend is written in React
 - Our web server is instantiated in server.js
@@ -55,10 +55,10 @@ npm run start
 - So the file of interest is **route.js**
 
 
-Check out the documentation for NLU, find out how to make a request to NLU and get something back. 
+Create a bluemix service for NLU, then check out the documentation for NLU, find out how to make a request to NLU and get something back. If you run out of services in your bluemix account, borrow one from your neightbor. 
 https://www.ibm.com/watson/services/natural-language-understanding/
 
-I've already made the frontend for this website, currently it just returns null
+I've already made the frontend for this website, and our current API endpoints returns dummy data. 
 Play around with my deployed app in Postman to figure out what's the output of this API. Try to recreate this endpoint so when our frontend makes the call, it will display the results similar to what I have. 
 
 A sample response from the endpoint 
