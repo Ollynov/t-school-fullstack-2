@@ -71,3 +71,23 @@ https://developers.google.com/custom-search/json-api/v1/overview
 Create an account with Google, and get an API Key, create a custom search engine using google.com. The following 2 links should help you get started with Google. 
 
 
+Sample output from /api/imgsearch
+```
+{
+  'subject': 'Eiffel Tower',
+  'links': [
+    'https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Tour_Eiffel_Wikimedia_Commons_%28cropped%29.jpg/1200px-Tour_Eiffel_Wikimedia_Commons_%28cropped%29.jpg',
+    'http://cdn-image.travelandleisure.com/sites/default/files/styles/1600x1000/public/1487701021/eiffel-tower-paris-france-EIFFEL0217.jpg?itok=m0MZOYjh',
+    'http://www.toureiffel.paris/templates/tour_eiffel/img/home_360.jpg',
+    'http://cdn.history.com/sites/2/2015/04/hith-eiffel-tower-iStock_000016468972Large-A.jpeg',
+    'http://www.history.com/s3static/video-thumbnails/AETN-History_VMS/21/149/History_Deconstructed_Eiffel_Tower_reSF_HD.jpg',
+    'http://cdn.history.com/sites/2/2015/04/hith-eiffel-tower-iStock_000016468972Large.jpg',
+    'https://i.amz.mshcdn.com/YUpVquS8hRrKrX2MjbmzfGGyChE=/fit-in/1200x9600/https%3A%2F%2Fblueprint-api-production.s3.amazonaws.com%2Fuploads%2Fcard%2Fimage%2F92786%2FGettyImages-163244886.jpg',
+    'http://www.aviewoncities.com/img/paris/kvefr1243s.jpg',
+    'https://booking.parisinfo.com/InfoliveImages/cityvision/tour_eiffel/office_du_tourisme_de_paris_tour_eiffel_2.jpg?mode=crop&width=420&height=270&scale=both',
+    'https://www.toysonfire.ca/i/55037_224a39e/eiffel-tower-wood-kit-3811-55037.jpg'
+  ]
+}
+```
+
+
