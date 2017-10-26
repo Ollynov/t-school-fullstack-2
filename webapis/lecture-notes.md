@@ -1,9 +1,8 @@
 # Web APIs
 
-APIs are main way we acess companies services. Some prominent ones from IBM are the Watson APIs. In this section, we are going to practice using Watson APIs in our Node app to showcase some of their capabilities. 
+APIs are main way we acess a companie's services. Some prominent ones from IBM are all of the Watson APIs. In this section, we are going to practice using Watson APIs in our Node app to showcase some of their capabilities. 
 
-SDKs(software development kits) are set of software tools or libraries that allows developers to create applications using another piece of application or services. 
-A good SDK typically comes with instructions and is actively maintained. Watson SDKs are documents on our website and open sourced on github
+SDKs(software development kits) are a set of software bundles that allow developers to create applications using other pieces of applications or services. Basically they are there to get you running with the app right away- they include starter code, examples, and good README files. A good SDK typically comes with instructions and is actively maintained. Watson SDKs have README documents on our website and open sourced on github
 https://github.com/watson-developer-cloud
 Take a look at it and let's talk about how it makes a developer's job easier.
 
@@ -15,7 +14,7 @@ In this section we will practice looking up documentation for both IBM and other
 The Deployed App we will be making today is right here: 
 https://www.ibm.com/watson/services/natural-language-understanding/
 
-I have created 2 endpoints associated with the 2 task. The first is 
+I have created 2 endpoints associated with the 2 tasks. The first is 
 
 ```
 /api/nlu 
@@ -49,10 +48,10 @@ npm install
 webpack -w
 npm run start
 ```
-Our frontend is written in React
-Webserver is instantiated at server.js
-server.js delegates the endpoint routing to route.js using express router. 
-So the file of interest is **route.js**
+- Our frontend is written in React
+- Our web server is instantiated in server.js
+- server.js delegates the endpoint routing to route.js using express router. 
+- So the file of interest is **route.js**
 
 
 Check out the documentation for NLU, find out how to make a request to NLU and get something back. 
