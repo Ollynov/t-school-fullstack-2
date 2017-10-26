@@ -7,6 +7,11 @@ One thing to clarify- Bluemix is IBM's version of AWS or Rackspace, a place wher
 
 ## Let's deploy!
 
+In our app.js we were listening on port 8000 (code down at bottom of file). We need to change 8000 to be the following: 
+`process.env.PORT || 8000` 
+
+This process.env.PORT is an environment variable, which is a variable that is saved on your computer system, and then can be referenced. There are a couple of reasons you may want to use environment variables- the first being for convenience. For example, in a production level app you may have multiple areas in the app that you need to reference the port number, and if it is hard coded we need to change every instance rather than just the one environment variable. Also, for deployment we need them. We actually don't know which port cloud foundry is going to want to host our app on, and it might change, so we need it to be a dynamic variable. 
+
 - Navitage to the bluemix console
 - Click up on the top right "Catalog"
 - Find "SDK for Node.js" (easiest to just search)
