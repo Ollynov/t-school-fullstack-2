@@ -29,7 +29,7 @@ Schedule:
 | Day 3 Session 3 | [React II](react/lecture-notes-react-2.md)
 | Day 4 Session 1 | [React III and Web APIs](webapis/lecture-notes.md)
 | Day 4 Session 2 | [Watson APIs](deployment)
-| Day 4 Session 3 | [Deployment and Technical Interviews](technical-interviews/lecture-notes.md)
+| Day 4 Session 3 | [Deployment and Solution Architecting](technical-interviews/lecture-notes.md)
 
 
 
