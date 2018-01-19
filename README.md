@@ -19,17 +19,17 @@ Schedule:
 
 | Class | Topic |
 |-----|------|
-| Day 1 Session 1| [Welcome! Setup, Command Line, & Network Requests](intro/lecture-notes.md)
-| Day 1 Session 2 | [HTML + CSS](html-css)
-| Day 2 Session 1 | [Bootstrap + Git](bootstrap-git)
-| Day 2 Session 2 | [Javascript](javascript/lecture-notes.md)
+| Day 1 Session 1| [Welcome! Setup and Command Line and Git](intro/lecture-notes.md)
+| Day 1 Session 2 | [CSS and Bootstrap](html-css)
+| Day 2 Session 1 | [Javascript I](bootstrap-git)
+| Day 2 Session 2 | [Javascript II](javascript/lecture-notes.md)
 | Day 2 Session 3 | [Server - Node + Express](server/lecture-notes.md)
-| Day 3 Session 1| [Authentication + Databases](authentication-databases)
+| Day 3 Session 1| [Databases](authentication-databases)
 | Day 3 Session 2 | [React](react-1)
 | Day 3 Session 3 | [React II](react/lecture-notes-react-2.md)
-| Day 4 Session 1 | [Web APIs](webapis/lecture-notes.md)
-| Day 4 Session 2 | [Deployment](deployment)
-| Day 4 Session 3 | [Technical Interviews](technical-interviews/lecture-notes.md)
+| Day 4 Session 1 | [React III and Web APIs](webapis/lecture-notes.md)
+| Day 4 Session 2 | [Watson APIs](deployment)
+| Day 4 Session 3 | [Deployment and Technical Interviews](technical-interviews/lecture-notes.md)
 
 
 
