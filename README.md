@@ -22,7 +22,7 @@ Schedule:
 | Day 1 Session 1| [Welcome! Setup and Command Line and Git](intro/lecture-notes.md)
 | Day 1 Session 2 | [CSS and Bootstrap](html-css)
 | Day 2 Session 1 | [Javascript I](bootstrap-git)
-| Day 2 Session 2 | [Javascript II](javascript/lecture-notes.md)
+| Day 2 Session 2 | [Javascript II and making HTTP Requests](javascript/lecture-notes.md)
 | Day 2 Session 3 | [Server - Node + Express](server/lecture-notes.md)
 | Day 3 Session 1| [Databases](authentication-databases)
 | Day 3 Session 2 | [React](react-1)
