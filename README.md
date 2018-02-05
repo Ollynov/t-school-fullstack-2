@@ -19,7 +19,7 @@ Schedule:
 
 | Class | Topic |
 |-----|------|
-| Day 1 Session 1| [Welcome! Setup and Command Line and Git](intro/lecture-notes.md)
+| Day 1 Session 1| [Welcome! Setup and Command Line and Git](https://github.com/Ollynov/t-school-fullstack-2/tree/master/Welcome!%20Setup%20and%20Command%20Line%20and%20Git)
 | Day 1 Session 2 | [CSS and Bootstrap](html-css)
 | Day 2 Session 1 | [Javascript I](bootstrap-git)
 | Day 2 Session 2 | [Javascript II and making HTTP Requests](javascript/lecture-notes.md)
