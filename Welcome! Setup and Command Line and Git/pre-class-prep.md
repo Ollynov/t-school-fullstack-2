@@ -8,3 +8,6 @@ In case you need to brush up on some basic html, css, and core programming funda
 [Intro to HTML, CSS & JavaScript with LEGO](https://www.youtube.com/watch?v=gT0Lh1eYk78)
 
 [Learn HTML in 12 min](https://www.youtube.com/watch?v=bWPMSSsVdPk)
+
+[What is Git and Github](https://www.youtube.com/watch?v=uUuTYDg9XoI)
+
