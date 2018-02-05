@@ -5,17 +5,18 @@
 The goal of this first session is to get to know each other, provide some context on what we will be building, and to see if there are certain holes in our understanding of fullstack. We will structure the course about 30% lecture, and 70% hacking, because we are firm believers that the best way to learn, is by doing. Also- in case you are solid in certain portions of the stack, yet weak on others, you can be sure to put extra emphasis on those. The assumption is that you already know the fundamentals of programming, and html, so we can quickly move onwards to the interesting stuff!!
 
 ## What you will learn in this first section
+* How this course will be structured
 * What is fullstack?
-* Use basic commands of the Terminal
-* What a network request is
-* What a network request protocol is
-* The basics of what happens when you input 'google.com' and hit enter in your browser
+* How to use basic commands of the Terminal
+* What git is
+* How git differs from github
+* How to use git
 
 
 ### Our Project
-We are going to be building a fullstack app, with extra emphasis on the portions that can be duplicated for any web app (authentication, responsive design, etc.). We will move rapidly, but will be covering more or less everything that constitutes a one-page CRUD app. This stands for 'CREATE, READ, UPDATE, DELETE' - essentially we want our app to have database persistence, and functionality to update portions of the page as we navigate, perform actions, etc. If you can get comfortable implementing the most crucial components, you can always replace with different technologies, different APIs, different styles, etc. for the future app of your choice. We want you to get creative both during the course, and afterwards when you go home, and have this app to play around with.
+We are going to be building a fullstack app, with extra emphasis on the portions that can be duplicated for any web app (authentication, responsive design, etc.). We will move rapidly, but will be covering more or less everything that constitutes a one-page CRUD app. This stands for 'CREATE, READ, UPDATE, DELETE' - essentially we want our app to have database persistence, and functionality to actively update portions of the page as we navigate, perform actions, etc. If you can get comfortable implementing the most crucial components, you can always replace with different technologies, different APIs, different styles, etc. for the future app of your choice. We want you to get creative both during the course, and afterwards when you go home, and have this app to play around with.
 
-We will be building a simple blog, but feel free to build whatever app you would like. We ask that you follow along in the first two days where we will cover basics that should apply to any app- server setup, responsive navbar, database integration, authentication, etc. but feel free to get creative, especially during the hacking sessions!
+We will be building a simple community blog, and as we go along, if certain parts come easy to you since they are review, please feel free to customize however you want, just don't fall behind on the current topic we are covering. We ask that you follow along more closely in the first two days where we will cover basics that should apply to any app- server setup, responsive navbar, database integration, authentication, etc. but feel free to get creative, especially during the hacking sessions!
 
 ### Some Course Themes
 Some good rules of thumbs to remember during the class are:
@@ -44,22 +45,20 @@ In case you feel lost... you're not the only one. Because of the nature of progr
 ### Initial Setup 
 **Dependencies**
 
-You will need to have 5 things already installed on your computers:
+You will need to have 4 things already installed on your computers:
 - Node
 - NPM
 - Git (almost all computers come with git already)
 - Sublime Text (or similar text editor)
-- Mongo
 
-To check if any of the 5 are installed, you can run 'which node', and you should get the path where it is installed. Typically they are installed within our bin folder. If they are located somewhere else, no need for immediate action, but something to keep in mind. 
+To check if any of the 4 are installed, you can run 'which node', and you should get the path where it is installed. Typically they are installed within our bin folder. If they are located somewhere else, no need for immediate action, but something to keep in mind. 
 
 * [Install Node](https://nodejs.org/en/)
 * [Install NPM](https://www.npmjs.com/)
 * [Install Git](https://git-scm.com/book/id/v2/Getting-Started-Installing-Git)
 * [Install Sublime](https://www.sublimetext.com/3)
-* [Install Mongo](https://docs.mongodb.com/manual/installation/)
 
-You also should already have an account on * [Github](https://github.com)
+You also should already have an enterprise github account on * [Github](https://github.ibm.com)
 
 
 **Getting our Repo Locally**
@@ -78,40 +77,5 @@ We are going to get an introduction to Shell Commands, while cloning down the re
 
 *> Exercise: follow along with me to learn some command line basics, and let's create the repo for our project*
 
-
-### BONUS: Network Requests 
-- How does the client and backend communicate?
-- What is a network request? 
-- What is HTTP?
-- Can we make this communication between client and server faster? 
-
-In the most basic explanation, network request are the way that servers (computers) communicate. One server 'requests' some sort of information from another server, and that other server can choose whether to send back that information or not. The request can be for login credentials, for an html page, or for some unique information such as weather information. It is unique that we are already bringing up network requests now, because they certainly are not the most basic thing when it comes to programming. However, when you hit enter after typing in 'www.google.com' you are sending a network request, and that's the only way that we get back our webpage. In many ways, I see it as the first step to fullstack. 
-
-By far the most common form of web communication is through the HTTP protocol. Back in the 80s and early 90s everyone knew that there had to be a more unified way for the web to work. There is actually an organization that leads the standards developed for the world wide web, called W3C, founded and still led by Tim Berners-Lee. They established the first version of HTTP, and it was first used in production in 1997, and still used today. 
-
-A typical HTTP request has the following components:
-- A verb that indicates what sort of request it is. GET, POST, PUT, and DELETE are the most common. 
-- Headers. Accept, Content-Type, and Date are some of the most common ones. These can be viewed as the standard config parameters. 
-- Body. This is data unique to the request. For example, if we send a request to login, we need to include the username and password in the body. 
-
-Exercise: 
-- Check out this site: https://www.hurl.it/
-
- 
-
-Advanced: 
-- look into GraphQL http://graphql.org/learn/
-- Check out websockets: https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API
-- [Socket.io](https://socket.io/) (easiest framework to implement socket technology)
-
-*> Let's Try it!: Let’s try it! Let’s make a request to the weather API!* 
-
-HINT: There are websites that give you demo environments to send out API calls to other servers.
-
-Advanced: 
-- Get back the current hurricane info from around the world
-- Write the same request from postman
-- Write the same request from the terminal (using curl)
-- What other responses can you get? Reddit, Spotify, and Google Places are some ideas.
 
 
