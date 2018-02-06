@@ -2,15 +2,15 @@
 
 # INTRO TO FULLSTACK PROGRAMMING [Detail Agenda Link](https://ibm.box.com/s/d62vpz1j2cjfu3wlhh5nxqnc5u33445p)
 
-- Day 1 Session 1: 11:00AM - 12:30PM
-- Day 1 Session 2: 1:30PM - 4:00PM
-- Day 2 Session 1: 10:00AM - 12:00PM
+- Day 1 Session 1: 10:00AM - 12:00PM
+- Day 1 Session 2: 1:00PM - 4:00PM
+- Day 2 Session 1: 9:30AM - 12:00PM
 - Day 2 Session 2: 1:00PM - 3:00PM
 - Day 2 Session 3: 3:30PM - 6:00PM
-- Day 3 Session 1: 10:00AM - 12:00PM
+- Day 3 Session 1: 9:30AM - 12:00PM
 - Day 3 Session 2: 1:00PM - 3:00PM
 - Day 3 Session 3: 3:30PM - 6:00PM
-- Day 4 Session 1: 10:00AM - 12:00PM
+- Day 4 Session 1: 9:30AM - 12:00PM
 - Day 4 Session 2: 1:00PM - 3:00PM
 - Day 4 Session 3: 3:30PM - 6:00PM
 
