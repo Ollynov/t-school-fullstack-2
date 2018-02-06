@@ -19,4 +19,5 @@ In case you need to brush up on some basic html, css, and core programming funda
 
 [Media Queries Introduction](https://www.w3schools.com/css/css_rwd_mediaqueries.asp)
 
+(HTML lessons included in here, in case you are rusty on HTML, it is particularly crucial you watch the tutorials above)
 
