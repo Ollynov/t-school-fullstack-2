@@ -210,11 +210,12 @@ Let's create an About file: `$ touch about.html`
     <title>About</title>
   </head>
   <body>
-  	<header>
+  	 <header>
       <h1>Our App</h1>
       <nav>
         <a href="index.html">Home</a> |
         <a href="about.html">About</a> |
+        <a href="contact_us.html">Contact</a>
       </nav>
       <div>
         <a href="#">Sign Up</a> |
@@ -222,65 +223,27 @@ Let's create an About file: `$ touch about.html`
       </div>
     </header>
     <div>
-      <img src="#"/>
     </div>
-    <footer>All rights reserved</footer>
   </body>
 </html>
   ```
   Let's add some styling into our CSS file:
 
   ```css
-  #flex_main {
-    min-height: 800px;
-    margin: 0px;
-    padding: 0px;
-    display: flex;
-    flex-flow: row;
-  }
+#topPortion {
+	display: flex;
+	width: 90%;
+}
 
-  #flex_main > .flex-article {
-    margin: 4px;
-    padding: 5px;
-    border: 1px solid #cccc33;
-    border-radius: 7pt;
-    background: #dddd88;
-    flex: 3 1 60%;
-    order: 2;
-  }
+#loginContainer {
+	display: flex;
+	width: 200px;
+}
 
-  #flex_main > .flex-nav {
-    margin: 4px;
-    padding: 5px;
-    border: 1px solid #8888bb;
-    border-radius: 7pt;
-    background: #ccccff;
-    flex: 1 6 20%;
-    order: 1;
-  }
-
-  #flex_main > .flex-aside {
-    margin: 4px;
-    padding: 5px;
-    border: 1px solid #8888bb;
-    border-radius: 7pt;
-    background: #ccccff;
-    flex: 1 6 20%;
-    order: 3;
-  }
-
-  .flex-header, .flex-footer {
-    display: block;
-    margin: 4px;
-    padding: 5px;
-    min-height: 100px;
-    border: 1px solid #eebb55;
-    border-radius: 7pt;
-    background: #ffeebb;
-  }
   ```
+  
 
-  *Exercise: update your HTML to include the appropriate classes/ids so that our new CSS gets applied*
+  *Exercise: update your HTML to include the CSS ids above, but you may have to add/edit them to make your nav look good and stay responsive*
 
   Before we add some media queries, try collapsing your browser so it's too narrow for the layout. How does it look?
   ```css
