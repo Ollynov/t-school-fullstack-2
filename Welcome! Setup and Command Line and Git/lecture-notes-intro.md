@@ -2,7 +2,7 @@
 
 # TIME FOR SOME FULLSTACK PROGRAMMING
 
-The goal of this first session is to get to know each other, provide some context on what we will be building, and to see if there are certain holes in our understanding of fullstack. We will structure the course about 30% lecture, and 70% hacking, because we are firm believers that the best way to learn, is by doing. Also- in case you are solid in certain portions of the stack, yet weak on others, you can be sure to put extra emphasis on those. The assumption is that you already know the fundamentals of programming, and html, so we can quickly move onwards to the interesting stuff!!
+The goal of this first session is to get to know each other, provide some context on what we will be building, and to see if there are certain holes in our understanding of fullstack. We will structure the course about 30% lecture, and 70% hacking, because we are firm believers that the best way to learn, is by doing. Also- in case you are solid in certain portions of the stack, yet weak on others, you can be sure to put extra emphasis on those weaker ones. The assumption is that you already know the fundamentals of programming (especially html!), so we can quickly move onwards to the interesting stuff!!
 
 ## What you will learn in this first section
 * How this course will be structured
@@ -11,6 +11,8 @@ The goal of this first session is to get to know each other, provide some contex
 * What git is
 * How git differs from github
 * How to use git
+
+### Exercise- So what is a fullstack app? 
 
 
 ### Our Project
@@ -39,8 +41,6 @@ In case you feel lost... you're not the only one. Because of the nature of progr
 
 
 ### Get to know each other activity! [Link to Activity](https://ibm.box.com/s/n9h9ls4eixi79co3ezo1dnw7qj2ewtzq)
-
-### Exercise- So what is a fullstack app? 
 
 ### Initial Setup 
 **Dependencies**
@@ -76,5 +76,5 @@ We are going to get an introduction to Shell Commands, while cloning down the re
 
 *> Exercise: follow along with me to learn some command line basics, and let's create the repo for our project*
 
-
+**Great, let's start learning some [GIT](https://github.ibm.com/Aljosha-Novakovic/tschool_fullstack/blob/master/Welcome!%20Setup%20and%20Command%20Line%20and%20Git/lecture-notes-git.md)**
 
