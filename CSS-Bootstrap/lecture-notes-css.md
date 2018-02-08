@@ -201,32 +201,32 @@ If you want to align one item in a specific way, align self is the property you 
 
 #### Adding Flexbox to our website
 
-Let's create a blog file: `$ touch pages/blog.html`
+Let's create an About file: `$ touch about.html`
 
   ```html
-  <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <title>Blog</title>
-    </head>
-    <body>
-      <header>
-        Check out our awesome website
-      </header>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>About</title>
+  </head>
+  <body>
+  	<header>
+      <h1>Our App</h1>
+      <nav>
+        <a href="index.html">Home</a> |
+        <a href="about.html">About</a> |
+      </nav>
       <div>
-        <article>
-          Welcome to our blog! We will be discussing new and exciting technologies here.
-        </article>
-        <nav>
-          <a href="../index.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="contact_us.html">Contact Us</a>
-          <a href="blog.html">Blog</a>
-        </nav>
+        <a href="#">Sign Up</a> |
+        <a href="#">Login</a>
       </div>
-      <footer>All rights reserved</footer>
-    </body>
-  </html>
+    </header>
+    <div>
+      <img src="#"/>
+    </div>
+    <footer>All rights reserved</footer>
+  </body>
+</html>
   ```
   Let's add some styling into our CSS file:
 
