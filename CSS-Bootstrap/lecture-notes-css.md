@@ -244,28 +244,11 @@ Let's create an About file: `$ touch about.html`
   
 
   *Exercise: update your HTML to include the CSS ids above, but you may have to add/edit them to make your nav look good and stay responsive*
-
-  Before we add some media queries, try collapsing your browser so it's too narrow for the layout. How does it look?
-  ```css
-  @media all and (max-width: 640px) {
-    #flex_main, #flex_page {
-      flex-direction: column;
-    }
-
-    #flex_main > .flex-article, #flex_main > .flex-nav, #flex_main > .flex-aside {
-    /* Return them to document order */
-      order: 0;
-    }
-
-    #flex_main > .flexnav, #flex_main > .flexaside, .flexheader, .flexfooter {
-      min-height: 50px;
-      max-height: 50px;
-    }
-  }
-  ```
+  
+  *Exercise 2: make the Nav bar look good *
 
 
-## A little more practice
+## BONUS
 
 Go on [exercises.md](https://github.com/Ollynov/FullStack-TSchool/blob/master/html-css/exercises.md), we are going to do:
 
