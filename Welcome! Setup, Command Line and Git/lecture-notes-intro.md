@@ -76,5 +76,5 @@ We are going to get an introduction to Shell Commands, while cloning down the re
 
 *> Exercise: follow along with me to learn some command line basics, and let's create the repo for our project*
 
-**Great, let's start learning some [GIT](https://github.ibm.com/Aljosha-Novakovic/tschool_fullstack/blob/master/Welcome!%20Setup%20and%20Command%20Line%20and%20Git/lecture-notes-git.md)**
+**Great, let's start learning some [GIT](https://github.ibm.com/Aljosha-Novakovic/tschool_fullstack/blob/master/Welcome!%20Setup%2C%20Command%20Line%20and%20Git/lecture-notes-git.md)**
 
