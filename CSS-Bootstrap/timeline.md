@@ -12,7 +12,7 @@ CSS Exercises:
 
 BREAK - 5 mins
 
-CSS II Lecture - 20 mins (interactive Flexbox demo on our nav)
+CSS II Lecture - 20 mins (intro to flexbox and media queries)
 
 CSS II Exercises: 
 - Flexbox Froggy + Tower Defense - 30 mins
@@ -20,9 +20,12 @@ CSS II Exercises:
 2:25 PM
 
 CSSII Exercises: 
-- Box Positioning - 20 mins
+- Make our navbar responsive - 20 mins
+- Make navbar styled - 10 mins
 
-2:45 PM
+Navbar solution - 15 mins
+
+3:10 PM
 
 BOOTSTRAP
 
