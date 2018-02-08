@@ -14,7 +14,7 @@ h1 {
 /* NAV STYLES
 */
 
-/*.navContainer a {
+.navContainer a {
 	text-decoration: none;   
 	border-bottom: 2px solid transparent;    
   transition: 0.5s ease;
@@ -28,7 +28,7 @@ h1 {
 
 .navContainer a:visited {
   color: rgb(91, 91, 91);
-}*/
+}
 
 
 /*END OF NAV STYLES
