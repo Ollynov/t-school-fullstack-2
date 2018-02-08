@@ -72,10 +72,6 @@ When your webpage needs a lot of styling, you might prefer to link a separate st
 </head>
 ```
 
-let's create a stylesheet:
-
-`$ touch styles.css`
-
 
 Pseudo Selectors: styling that is assigned to a state of a page element or specific subset of elements:
 
