@@ -22,7 +22,7 @@ Within an element, you can write some styling. This method is called in-line sty
 
 `<tag style="attribute: value;">content</tag>`
 
-*Exercise: add a `color` and `font-family` to the heading on your home page*
+*Follow Along: add a `color` and `font-family` to the heading on your home page*
 
 ### Selectors
 First, you need to select an element to apply some style on it. You can either directly select an element or select a class or an id.
@@ -58,7 +58,7 @@ You can embed styling within the `<head>` tags of your webpage. It's useful when
   </style>
 </head>
 ```
-*Exercise: add a style tag in the head of your index.html then move your inline-styling into it. Next, use a selector to style all the nav items at once.*
+*Follow Along: add a style tag in the head of your index.html then move your inline-styling into it. Next, use a selector to style all the nav items at once.*
 
 
 ## Style Sheet
@@ -73,8 +73,6 @@ When your webpage needs a lot of styling, you might prefer to link a separate st
 let's create a stylesheet:
 
 `$ touch styles.css`
-
-_Exercise: link your stylesheet to your HTML pages and transfer all your styling into it. Now add a univeral style to your html like a background-color. Why might the styles not have been applied to your sub-pages?_
 
 
 Pseudo Selectors: styling that is assigned to a state of a page element or specific subset of elements:
@@ -92,18 +90,9 @@ Pseudo Selectors: styling that is assigned to a state of a page element or speci
 - E:first-child {}: Any E element that is the first child of its parent
 - B + E {}: Any E element that is the next sibling of a B element (that is: the next child of the same parent)
 
-_Exercise: Go ahead and style up your page a bit. Add an h1 and whatever styling you might like. Some tips would be to change the font family (checkout Google fonts), and remove the default underline on the nav links, as well as the purple color for visited links._
+_Exercise 1: link your stylesheet to your HTML pages and transfer all your styling into it. Now add a univeral style to your html like a background-color. Why might the styles not have been applied to your sub-pages?_
 
-
-**Resources:**
-
-- For more information on CSS selectors: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
-
-- For an example of a styleguide: https://developer.mozilla.org/en-US/docs/MDN/Contribute/Guidelines/CSS_style_guide
-
-**Other Resource for Practice**
-
-- https://www.codecademy.com/
+_Exercise 2: Go ahead and style up your page a bit. Add an h1 and whatever styling you might like. Some tips would be to change the font family (checkout Google fonts), and remove the default underline on the nav links, as well as the purple color for visited links._
 
 
 # CSS Part 2
