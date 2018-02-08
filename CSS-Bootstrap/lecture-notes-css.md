@@ -3,10 +3,10 @@ CSS stands for Cascading Style Sheets. It tells the browser how to display HTML 
 
 ## What you will learn in this course
 * Start styling your page with CSS
-  * Add inline styling
-  * Use different selectors
-  * Embed styling into your tag
-  * Link your html page to a style Sheet
+* Add inline styling
+* Use different selectors
+* Embed styling into your tag
+* Link your html page to a style Sheet
 
 ## Three ways to style a webpage
 
@@ -18,7 +18,7 @@ There are three ways to apply styling to a webpage:
 Depending on your needs and your webpage complexity, you will go for one of those three options.
 
 ## In-line Styling
-Within an element, you can write some styling. This method is called in-line styling. It is pretty useful if you have small style changes you want to make. Here is an example:
+Within an element, you can write some styling. This method is called in-line styling. It is pretty useful if you have small style changes you want to make quickly. Here is an example:
 
 `<tag style="attribute: value;">content</tag>`
 
@@ -72,9 +72,7 @@ When your webpage needs a lot of styling, you might prefer to link a separate st
 
 let's create a stylesheet:
 
-`$ mkdir styles`
-
-`$ touch styles/main.css`
+`$ touch styles.css`
 
 _Exercise: link your stylesheet to your HTML pages and transfer all your styling into it. Now add a univeral style to your html like a background-color. Why might the styles not have been applied to your sub-pages?_
 
