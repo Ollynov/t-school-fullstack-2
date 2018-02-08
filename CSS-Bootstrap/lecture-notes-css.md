@@ -7,6 +7,8 @@ CSS stands for Cascading Style Sheets. It tells the browser how to display HTML 
 * Use different selectors
 * Embed styling into your tag
 * Link your html page to a style Sheet
+* Use flexbox for responsive styling
+* Use media queries to make your site look good on various devices
 
 ## Three ways to style a webpage
 
@@ -209,25 +211,22 @@ Let's create a blog file: `$ touch pages/blog.html`
   <!DOCTYPE html>
   <html lang="en">
     <head>
-
       <title>Blog</title>
     </head>
     <body>
       <header>
-        Check out my awesome website
+        Check out our awesome website
       </header>
       <div>
         <article>
-          Welcome to my blog! I'll be writing a lot about exciting new technologies here.
+          Welcome to our blog! We will be discussing new and exciting technologies here.
         </article>
         <nav>
           <a href="../index.html">Home</a>
           <a href="about.html">About</a>
-          <a href="products.html">Products</a>
           <a href="contact_us.html">Contact Us</a>
           <a href="blog.html">Blog</a>
         </nav>
-        <aside>Donate if you can. It'll keepme (and my blog) alive!</aside>
       </div>
       <footer>All rights reserved</footer>
     </body>
@@ -313,9 +312,9 @@ Go on [exercises.md](https://github.com/Ollynov/FullStack-TSchool/blob/master/ht
 
 1) Box Positioning
 
-2) Computer Gallery
+Bonus 1: Computer Gallery
 
-Bonus: Astronaut Challenge
+Bonus 2: Astronaut Challenge
 
 
 ### Cross-Browser Compatibility
