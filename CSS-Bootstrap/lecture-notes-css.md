@@ -245,7 +245,7 @@ Let's create an About file: `$ touch about.html`
 
   *Exercise: update your HTML to include the CSS ids above, but you may have to add/edit them to make your nav look good and stay responsive*
   
-  *Exercise 2: make the Nav bar look good *
+  *Exercise 2: make the Nav bar look good. Then update your other two html files to use the same styling.*
 
 
 ## BONUS
