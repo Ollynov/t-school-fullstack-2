@@ -2,20 +2,52 @@
 
 
 ## What you'll learn in this course
-Download the zip file and go to the server folder
 
 - What is a server
 - What is node
+- What is "asynchronous"
 - How do we set up our own node server
+- What is an "endpoint"
+- How do we respond to a request from 
 
 #### Background:
 
 
-A server is basically just a computer that provides functionality for another computer - the client. Typically the client is what a user interacts with, and a server is behind the scenes. The server is where any logic concerned with data persistence would be found (reading and writing from the database), and is what serves up the client-side code in the first place. Clients and servers have a many to many relationship, meaning that a server can have multiple clients, but a client can also pull in from multiple servers. Also, the client and server can be on the same device (such as when you are developing 'locally' on your laptops), or it can be connected remotely (although there may need to be additional security considerations). 
+A server is basically just a computer that provides functionality for another computer - the client. Typically the client is what a user interacts with, and a server is behind the scenes. The server is where any logic concerned with data persistence would be found (reading and writing from the database), and is what serves up the client-side code in the first place. Clients and servers have a many-to-many relationship, meaning that a server can have multiple clients, but a client can also pull in information from multiple servers. Also, the client and server can be on the same device (such as when you are developing 'locally' on your laptops), or it can be connected remotely (although there may need to be additional security considerations). 
 
 Javascript is known as a browser-side language, and for good reason; it is the language of the web, and was designed for that purpose, it is executed by the browser. Despite it's immense market share across the web, occasionally some developers would not consider it a "true" programming language, as it was not as robust as Python or Java. Up until about 8 years ago, this may have been true since JS was exclusively for the web. But with the emergence of Node, an opensource Javascript runtime environement that executes on the server side, this all changed. Now you can use the same javascript syntax for server side code.  
 
 Node is built on top of Chrome's V8 engine, which is the same used to execute javascript in the Chrome browser. One of the primary components of Node is that it runs asynchronously. This means it does not have to wait for the termination of a previous process/function to complete, before it continues to execute the code. This makes node incredibly efficient, and one of the only downsides to this asynchronous nature is that writing the code is a little more complicated. 
+
+**Exercise 1 - Follow along as we convert our app 
+
+Up until now we have been working on a static site that consists of nothing more than html, css, and javascript. It has been fairly simple and has worked well up until this point, but now that we need some advanced functionality such as the ability to signup users, we need some data persistence, and therefore need to set up a server. 
+
+- First let's add a primary server file `touch app.js`
+- Paste the following inside: 
+```js
+// Pulling in our modules
+var express = require("express"); 
+var app = express();
+var bodyParser = require("body-parser");
+var path = require("path");
+
+// Invoking our middleware
+app.use(express.static(path.join(__dirname,"/static")));
+app.use(bodyParser.json());
+
+
+// Our first endpoint
+app.post('/signin', function (req, res) {
+
+})
+
+// Running our server on port 8000
+app.listen(8000,function(){
+    console.log("Listening on Port: ", 8000);
+})
+
+```
 
 ##### Lecture 1: helloWorld in NodeJS and require our first external module (15 min)
 converting our sample directory to a node app directory 
