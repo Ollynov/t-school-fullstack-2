@@ -62,3 +62,15 @@ nav {
 
 /* END OF TOP PORTION
 */
+
+
+/*MAIN CONTENT AREA (BLOG POSTS)
+*/
+.card {
+	margin-top: 50px;
+}
+.card-title, .card-footer {
+	margin-top: 20px;
+}
+
+/*END OF MAIN CONTENT AREA (BLOG POSTS)
