@@ -44,7 +44,7 @@ app.post('/signin', function (req, res) {
 
 // Running our server on port 8000
 app.listen(8000,function(){
-    console.log("Listening on Port: ", 8000);
+    console.log("Success, node server is running and listening on Port: ", 8000);
 })
 
 ```
@@ -56,6 +56,11 @@ NOTE: If we were to try and run `node app.js` right now we would get an error th
 This installed 'express' into our project directory so that we can use it. The `--save` portion added this "dependency" to our package.json 
 
 - run `npm install --save path`
+- run `node app.js`
+
+At this point node should be able to execute the file and start the server (check to see if you get your success message in your terminal), but something still isn't right, if we navigate to http://localhost:8000/ we will probably see an error message. What is wrong? 
+
+- `mkdir static`
 
 
 
