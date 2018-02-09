@@ -39,13 +39,21 @@ Then add the necessary javascript dependency right above the closing `</body>` t
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 ```
 
-_Exercise Go ahead and add the dependencies to your index.html file. Does our page look different?_
+_Exercise: Go ahead and add the dependencies to your index.html file. Does our page look different?_
 
 It actually doesn't look as good as it did before. Can anyone think of why this is? How can we fix it back to how it was before, while still keeping bootstrap? 
 
-_Exercise: Follow along as we upgrade our navbar and make it mobile friendly with bootstrap_
+_Exercise: Let's fix this. Follow along as we upgrade our navbar and make it mobile friendly with bootstrap_
 
-[crazy coding happens now...]
+First of all, we always want to be sure that our own styling is taking priority over the default bootstarp styles. Secondly, let's go ahead and fix up the spacing on the nav, add the following to our main.css: 
+```
+nav {
+	display: flex;
+	width: 400px;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+```
 
 Now that we have our navbar in place, let's put in a placeholder that will represent a blog post. Bootstrap 4 recently came out, and one of the new features it includes are "cards." These are basically content containers that come with a lot of built-in responsive styling. Add the following after your closing header tag: 
 
