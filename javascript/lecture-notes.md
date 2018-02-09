@@ -233,13 +233,13 @@ Add the following before our closing `</body` tag:
 ```
 
 Now we just need to trigger to form popup. We can do this by adding the following attributes to our buttons:
-`data-toggle="modal" data-target="#exampleModal"`
+`data-toggle="modal" data-target="#signupModal"`
 
 Let's add it to our signup buttons. Something to note is that even after using this modal several times in production apps, I still don't have this memorized. The fact that we need to add both data-toggle and data-target attributes to our buttons that trigger the popup is _not something that you are expected to have memorized._ Once you know what is possible, you take it step by step and do googling and referencing of previous projects you've built to build your new functionality. 
 
 **Exercise 4**
 
-Add a form to our modal popup. Right where it says `Enter form here`
+Add a form to our modal popup. Right where it says `Form gos here`
 
 
 **BONUS Exercise 5:**
