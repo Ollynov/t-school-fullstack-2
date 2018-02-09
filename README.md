@@ -22,7 +22,7 @@ Schedule:
 | Day 1 Session 1| [Welcome! Setup, Command Line and Git](https://github.ibm.com/Aljosha-Novakovic/tschool_fullstack/tree/master/Welcome!%20Setup%2C%20Command%20Line%20and%20Git)
 | Day 1 Session 2 | [CSS and Bootstrap](CSS-Bootstrap)
 | Day 2 Session 1 | [Javascript I](javascript)
-| Day 2 Session 2 | [Javascript II and making HTTP Requests](javascript/lecture-notes.md)
+| Day 2 Session 2 | [Javascript II and making HTTP Requests](javascript-II)
 | Day 2 Session 3 | [Server - Node + Express](server/lecture-notes.md)
 | Day 3 Session 1| [Databases](authentication-databases)
 | Day 3 Session 2 | [React](react-1)
