@@ -19,7 +19,7 @@ Javascript is known as a browser-side language, and for good reason; it is the l
 
 Node is built on top of Chrome's V8 engine, which is the same used to execute javascript in the Chrome browser. One of the primary components of Node is that it runs asynchronously. This means it does not have to wait for the termination of a previous process/function to complete, before it continues to execute the code. This makes node incredibly efficient, and one of the only downsides to this asynchronous nature is that writing the code is a little more complicated. 
 
-**Exercise 1 - Follow along as we convert our app 
+**Exercise 1 - Follow along as we convert our app**
 
 Up until now we have been working on a static site that consists of nothing more than html, css, and javascript. It has been fairly simple and has worked well up until this point, but now that we need some advanced functionality such as the ability to signup users, we need some data persistence, and therefore need to set up a server. 
 
@@ -48,6 +48,16 @@ app.listen(8000,function(){
 })
 
 ```
+NOTE: If we were to try and run `node app.js` right now we would get an error that it doesn't know what "express" is. We have not "required" it yet. As our app builds, we are not going to only need one or two of these modules, but hundreds or thousands of them (many of our modules have their own dependencies that they need as well). In order to stay sane, and keep everything organized, these are all bundled into a folder called "node modules". We can manage our node modules with a library and command line tool called "NPM"
+
+- run `npm init` from within the app directory (this creates a package.json file which dictates what modules/dependencies your app needs to be able to run)
+- run `npm install --save express` (you can also just use -s instead of --save)
+
+This installed 'express' into our project directory so that we can use it. The `--save` portion added this "dependency" to our package.json 
+
+- run `npm install --save path`
+
+
 
 ##### Lecture 1: helloWorld in NodeJS and require our first external module (15 min)
 converting our sample directory to a node app directory 
