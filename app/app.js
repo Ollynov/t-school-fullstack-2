@@ -16,5 +16,5 @@ app.post('/signin', function (req, res) {
 
 // Running our server on port 8000
 app.listen(8000,function(){
-    console.log("Listening on Port: ", 8000);
+    console.log("Success, node server is running and listening on Port: ", 8000);
 })
