@@ -61,6 +61,10 @@ This installed 'express' into our project directory so that we can use it. The `
 At this point node should be able to execute the file and start the server (check to see if you get your success message in your terminal), but something still isn't right, if we navigate to http://localhost:8000/ we will probably see an error message. What is wrong? 
 
 - `mkdir static`
+- `mv about.html static`, `mv styles static`, etc. (move all html, css, and javascript into this directory)
+- `touch .gitignore` 
+
+Open up this .gitignore file and simply add "node_modules". This assures that the node_modules folder will not be added to github (git will completely ignore it). It is very large and there's no reason to put it up there, because anyone who pulls down our code base can run "npm install" which will go through the package.json file and install all of the dependencies needed. 
 
 
 
