@@ -67,6 +67,17 @@ At this point node should be able to execute the file and start the server (chec
 Open up this .gitignore file and simply add "node_modules". This assures that the node_modules folder will not be added to github (git will completely ignore it). It is very large and there's no reason to put it up there, because anyone who pulls down our code base can run "npm install" which will go through the package.json file and install all of the dependencies needed. 
 
 
+**Exercise 2 - Let's respond to a client request**
+
+We left the signup unfinished. It should be sending a request, but who knows if it's working correctly?? After all... when it comes to coding, things usually never work the first time around. Anyways, the first step in correctly communicating between client and server is to set up an endpoint and see whether we are correctly hitting that endpoint in the first place. 
+
+On your own try to verify with a console log that you are hitting your server when signing up. You should also check whether the correct content is being sent (name, email, password). 
+
+HINT: the body-parser middleware automatically puts our important stuff onto the "body" property of our incoming request object.
+
+BONUS: Try to also send a response back to the client (you can then verify whether you got something back on the client side with a console.log but remember, it will appear on the browser rather than the terminal)
+
+
 
 ##### Lecture 1: helloWorld in NodeJS and require our first external module (15 min)
 converting our sample directory to a node app directory 
