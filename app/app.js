@@ -8,6 +8,10 @@ var path = require("path");
 app.use(express.static(path.join(__dirname,"/static")));
 app.use(bodyParser.json());
 
+var myModule = require('./server/myCustomModule.js');
+console.log('4 is even? ', myModule.isEven(4))
+console.log('yosh reversed is: ', myModule.reverseUppercase('yosh'))
+
 
 // Our first endpoint
 app.post('/signup', function (req, res) {
