@@ -102,6 +102,16 @@ Before we begin, to get started let's add the necessary files:
 - `mkdir server`
 - `touch server/myCustomModule.js`
 
+At the bottom of myCustomModule.js add the following: 
+```js
+module.exports = {
+  reverseUppercase: reverseUppercase,
+  isEven: isEven
+}
+```
+
+Any time you create a custom module that you plan to use elsewhere (such as in app.js), you need to be sure to export it. Here we are exporting an object that holds both of our functions. You still need to write the functions and use them inside of app.js
+
 
 ##### Lecture 2: Asynchronous Node programming (15 min)
 Introduction to asynchronous javascript by looking at the FS module of node, understand the common patterns of callback functions 
@@ -109,21 +119,6 @@ Introduction to another asynchronous pattern called promises
 
 ##### Exercise 2: Treasure Hunt (25 min)
 go to the treasure hunt folder and edit the treasureHunt.js file, start with clue1.txt, can you get to the treasure?
-
-
-
-##### Lecture 3: ExpressJS and the WebServer (15 minutes)
-Go over slides on Express
-Go over what a http request is 
-Go over a sample ExpressJS application
-
-##### Lecture 4: ExpressJS and the WebServer (15 minutes)
-Convert Blog to an Express App
-
-#### Lecture 4: APIs, request and response
-Write an API to the sample express app (reverse and upper case)
-Test it with Postman
-Add a frontend with an input and submit that sends a request to our endpoint and render the output 
 
 
 exercise: write an API for counting the number of times a word appears in the text of "Romeo and Juliet". Text file provided. 
