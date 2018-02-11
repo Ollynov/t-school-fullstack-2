@@ -77,25 +77,21 @@ HINT: the body-parser middleware automatically puts our important stuff onto the
 
 BONUS: Try to also send a response back to the client (you can then verify whether you got something back on the client side with a console.log but remember, it will appear on the browser rather than the terminal)
 
+### Modules
+
+Right now all of our server logic is in one file. One of the strengths of Node is that you can not only break up your own logic into multiple files (for organization), but you can easily pull in abilities from other external, 3rd party modules. In fact, with express, body-parser, and path, that's exactly what we're doing, we are "requiring" these modules, after installing them with npm. 
 
 
-##### Lecture 1: helloWorld in NodeJS and require our first external module (15 min)
-converting our sample directory to a node app directory 
-use the moment library (practice looking at documentation)
-
-##### Exercise 1: Load a easy to use node module from NPM (15min)
-setup your node directory with npm init
-check that you have a package.json file 
-
-write a node app that uses a very simple external NPM module
+##### Exercise 3: Load an easy to use node module from NPM (15min)
+Let's start with an absurdly simple node module, just to illustrate the concept. Go ahead and do this activity straight inside of app.js.
 
 I recommend this one to start
 https://www.npmjs.com/package/is-odd
 
-you can also look into
+BONUS:
+Get this module working instead
 https://www.npmjs.com/package/math-expression-evaluator
 
-run it and make sure it works 
 
 ##### Lecture 1.5 /  writing your own module and import it in your main app *** (15 min)
 ##### Exercise writing your own module and import it in your main app *** (15 min)
