@@ -27,22 +27,11 @@ db.once('open', function() {
 module.exports = User
 ```
 
-We need to replace the mongoose.connect('mongodb://localhost/test') with the url to our database in the cloud. 
- - Log into bluemix and search for "mongo compose"
- - Sign up for the service, and go into "credentials" 
- - Scroll to the bottom and copy the "mongo uri". It should look something like this: (‘mongodb://admin:LEXMLDCRXHKWKNKL@sl-us-south-1-portal.10.dblayer.com:24919,sl-us-south-1-portal.11.dblayer.com:24919/admin?ssl=true')
- - Now go back into our app and replace the url in mongoose.connect
-as the second argument to mongoose.connect. It should look like this: 
-```javascript
-mongoose.connect('mongodb://admin:LEXMLDCRXHKWKNKL@sl-us-south-1-portal.10.dblayer.com:24919,sl-us-south-1-portal.11.dblayer.com:24919/admin?ssl=true')
-```
-
 We are going to be using an ORM called mongoose. An ORM allows you to read and write from the database directly through your code. You would be able to manually write and read from the database from the terminal, and that is the more traditional way of interacting with a database, but we need to have it go through our code. 
 
 - `npm install mongoose --save`
  
 Our first step is to create a database schema. The schema is the blueprint for the models that will be saved into our database. It is a series of properties and values. When you create the schema in the first place you simply define the properties and what sort of value you are expecting. There is also an "ObjectId" that is automatically added for each new document in the database. 
-
 
 
 ```javascript
@@ -56,28 +45,22 @@ var userSchema = mongoose.Schema({
 Next, we need to create our actual model:
 `var User = mongoose.model('User', userSchema);`
 
-and this is the variable that we actually export, because we need to use it in other areas of our app, such as endpoints.js
+and this is the variable that we actually export, because we need to use it in other areas of our app, such as app.js
 
 The next step is to actually save our users in our database (exciting stuff), but first....
 
 Let's run our app (`node app.js`), we should get a console log of "yay we are conected to our db". If so, we are well on our way to saving our users in the database.
 
-Let's navigate back to our endpoints.js file. We should already be hitting out '/signup' endpoint on form submit, and getting some info from our client (email, name, password). What do we do with all that info? It's a two step process: 
-- Create a new model
-- Save that model to the database
+Let's navigate back to our app.js file. We should already be hitting out '/signup' endpoint on form submit, and getting some info from our client (email, name, password). What do we do with all that info? 
 
-```javascript
-  var newUser = new User({
-  	name: name,
-  	email: email,
-  	password: password
-  })
+***Exercise 1: Save users to the database***
 
-  newUser.save(function(err, user) {
-  	if (err) return console.error(err);
-  	console.log('saved user is ', user)
-  })
-  ```
+You will likely need to reference the (Mongoose documentation.)[http://mongoosejs.com/docs/index.html] 
+
+HINT: It's a two step process after you have :
+- Create a new instance of the User model
+- Save that instance to the database
+
   
 Did we get the success console log? If so, things look good, but let's confirm by actually observing our database. 
 - Go back to bluemix to the service credentials
