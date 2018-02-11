@@ -68,6 +68,11 @@ At this point node should be able to execute the file and start the server (chec
 
 Open up this .gitignore file and simply add "node_modules". This assures that the node_modules folder will not be added to github (git will completely ignore it). It is very large and there's no reason to put it up there, because anyone who pulls down our code base can run "npm install" which will go through the package.json file and install all of the dependencies needed. 
 
+## Endpoints
+
+Server endpoints dictate what the server should do when it gets a particular request to that 'endpoint' which is just a url. Aside from the path/url, there is also an HTTP verb associated to each endpoint. For example, we may want to perform different actions for a 'GET' request to 'www.myapp.com/user' vs. a 'DELETE' request to 'www.myapp.com/user'. 
+
+These requests that we are referring to are the HTTP requests we learned about at the start of T-School. They are the primary form of communication between the client and server, and each request comes with an "HTTP Verb" that indicates what intention the request has- GET, POST, etc. You have to accomodate for these requests by creating endpoints.
 
 **Exercise 2 - Let's respond to a client request**
 
@@ -114,43 +119,19 @@ module.exports = {
 
 Any time you create a custom module that you plan to use elsewhere (such as in app.js), you need to be sure to export it. Here we are exporting an object that holds both of our functions. You still need to write the functions and use them inside of app.js
 
+## Asynchronous Programming
 
-##### Lecture 2: Asynchronous Node programming (15 min)
+##### Exercise 5: Treasure Hunt (25 min)
 Introduction to asynchronous javascript by looking at the FS module of node, understand the common patterns of callback functions 
 Introduction to another asynchronous pattern called promises 
 
-##### Exercise 2: Treasure Hunt (25 min)
 go to the treasure hunt folder and edit the treasureHunt.js file, start with clue1.txt, can you get to the treasure?
 
 
 exercise: write an API for counting the number of times a word appears in the text of "Romeo and Juliet". Text file provided. 
 Add this functionality somewhere in your blog
 
-## Endpoints
 
-Server endpoints dictate what the server should do when it gets a particular request to that 'endpoint' which is just a url. Aside from the path/url, there is also an HTTP verb associated to each endpoint. For example, we may want to perform different actions for a 'GET' request to 'www.myapp.com/user' vs. a 'DELETE' request to 'www.myapp.com/user'. 
-
-
-Let's create an 'endpoint' on the Node.js side to validate the user sign-in process. In the app.js file, create the following:
-```
-app.post('/signin', function (req, res) {
-  
-})
-```
-
-You'll be making use of the body-parser module to parse the request sent from the React client side. Install the body-parser module in the project. 
- 
-`npm install body-parser --save`
-
-Require the body-parser module in the app.js file.
-  
-`var bodyParser = require("body-parser");`
-
-Add the following line of code to enable JSON parsing.
-  
-`app.use(bodyParser.json());`
-
-These requests that we are referring to are the HTTP requests we learned about at the start of T-School. They are the primary form of communication between the client and server, and each request comes with an "HTTP Verb" that indicates what intention the request has- GET, POST, etc. You have to accomodate for these requests by creating endpoints.
 
 
 
