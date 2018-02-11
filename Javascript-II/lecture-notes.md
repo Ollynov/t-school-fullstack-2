@@ -1,5 +1,47 @@
 
-### BONUS: Network Requests 
+## Sending an HTTP request to signup
+
+
+We are going to use axios, a library that makes it easy to send HTTP requests. Here is the basic format: 
+```javascript
+axios.post('/signup', {
+    params: {
+    }
+  })
+  .then(function (response) {
+    console.log(response);
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
+})
+ ```
+ 
+This will send a POST request to our '/signup' route. You need also include some sort of params, in this case the email and password. The '.then' and '.catch' are callbacks which we touched upon in the previous lesson in regards to the asynchronous nature of node. 
+
+ 
+ **Challenge 2**
+Get our app to send over a username and password to our backend when we hit the submit button on the signup form. It should console.log of "SUCCESS!!" when we login with the hardcoded 'admin@gmail.com' and 'admin' for password. Be sure to add your javascript code into an external .js file. 
+
+HINT: This challenge has several steps, and it helps to break it down into easier components: 
+1. Confirm external js file is connected through a console.log when hitting the submit button
+2. You will want to include `<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.17.0/axios.js"></script>` right above the closing </body> tag of index.html but above our link to our js file, and will want to run `npm install axios --save`
+3. When should we trigger this axios.post method?
+4. Confirm we can grab the name, username, and password, through a console.log, before we try adding them as params to our post request. Use jQuery here.
+5. Confirm whether we are hitting our endpoint at all with a simple console.log 
+
+
+Awesome!! We have sort of implemented a very naive version of logins. What else can we do to improve our auth? 
+
+- Make all three fields mandatory: name, email, password
+- Give some basic restrictions to passwords, more than 5 characters at least
+- Hash the passwords (for much later lesson)
+- Connect it to the database!!
+- Make it so that you can't have the same user sign up twice
+
+
+
+### Network Requests 
 - How does the client and backend communicate?
 - What is a network request? 
 - What is HTTP?
