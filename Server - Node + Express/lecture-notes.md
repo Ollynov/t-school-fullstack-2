@@ -121,15 +121,27 @@ Any time you create a custom module that you plan to use elsewhere (such as in a
 
 ## Asynchronous Programming
 
+Asynchronous essentially means that your code is able to execute, even when the code prior to it has not yet finished. In other words, it is non-blocking... if one function (let's say a call to an API) is taking long, that does not mean that it will stop other functions from executing. This asynchronous nature is one of the most powerful features of Node. One of the only downsides of aysnc is that it is a little more complicated to write the code. Oftentimes in Node you also have the option to make a function synchronous. Here are both: 
+
+```js
+const fs = require('fs');
+const data = fs.readFileSync('/file.md'); // blocks here until file is read
+
+And here is an equivalent asynchronous example:
+
+const fs = require('fs');
+fs.readFile('/file.md', (err, data) => {
+  if (err) throw err;
+});
+```
+
+In the second example, the asynchronous one, we are required to pass a callback function. A callback function is essentially a function which will execute once the first function has completed. An alternative to constantly passing callbacks is to use promises. 
+
 ##### Exercise 5: Treasure Hunt (25 min)
-Introduction to asynchronous javascript by looking at the FS module of node, understand the common patterns of callback functions 
-Introduction to another asynchronous pattern called promises 
-
-go to the treasure hunt folder and edit the treasureHunt.js file, start with clue1.txt, can you get to the treasure?
+Finally we get to see what this treasure folder is all about. Your starting point is treasureHunt.js, you're provided with two modules- one is a custom one that we have made, and the other is fs, a common node module used for reading files. Start by reading the first file clue1.txt, and go from there until you get to the treasure. 
 
 
-exercise: write an API for counting the number of times a word appears in the text of "Romeo and Juliet". Text file provided. 
-Add this functionality somewhere in your blog
+##### _BONUS_: write an API for counting the number of times a word appears in the text of "Romeo and Juliet". Text file provided. 
 
 
 
