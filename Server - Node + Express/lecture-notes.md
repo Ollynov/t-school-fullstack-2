@@ -82,7 +82,7 @@ BONUS: Try to also send a response back to the client (you can then verify wheth
 Right now all of our server logic is in one file. One of the strengths of Node is that you can not only break up your own logic into multiple files (for organization), but you can easily pull in abilities from other external, 3rd party modules. In fact, with express, body-parser, and path, that's exactly what we're doing, we are "requiring" these modules, after installing them with npm. 
 
 
-##### Exercise 3: Load an easy to use node module from NPM (15min)
+##### Exercise 3: Load an easy to use node module from NPM (10min)
 Let's start with an absurdly simple node module, just to illustrate the concept. Go ahead and do this activity straight inside of app.js.
 
 I recommend this one to start
@@ -93,10 +93,15 @@ Get this module working instead
 https://www.npmjs.com/package/math-expression-evaluator
 
 
-##### Lecture 1.5 /  writing your own module and import it in your main app *** (15 min)
-##### Exercise writing your own module and import it in your main app *** (15 min)
-I suggest writing is-even to check if a number is even or any other function that you might think is useful
-write another one that takes a word, turns it into all uppercase and reverse it. We will be using this one later 
+##### Exercise 4: Write your own module and import it in your main app *** (20 min)
+Write a module that has two abilities, the first is a function "is-even" which will simply return true, if the number passed to it is an even number. The second ability of our custom node module will be to take a string, and return that string reversed and in all upper case. 
+
+You can confirm whether you module is working by invoking the functions on app.js in a console log. 
+
+Before we begin, to get started let's add the necessary files: 
+- `mkdir server`
+- `touch server/myCustomModule.js`
+
 
 ##### Lecture 2: Asynchronous Node programming (15 min)
 Introduction to asynchronous javascript by looking at the FS module of node, understand the common patterns of callback functions 
