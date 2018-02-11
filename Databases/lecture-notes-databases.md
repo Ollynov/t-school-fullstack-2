@@ -32,14 +32,9 @@ We need to replace the mongoose.connect('mongodb://localhost/test') with the url
  - Sign up for the service, and go into "credentials" 
  - Scroll to the bottom and copy the "mongo uri". It should look something like this: (‘mongodb://admin:LEXMLDCRXHKWKNKL@sl-us-south-1-portal.10.dblayer.com:24919,sl-us-south-1-portal.11.dblayer.com:24919/admin?ssl=true')
  - Now go back into our app and replace the url in mongoose.connect
- - add the object `{
-  useMongoClient: true
-}`
 as the second argument to mongoose.connect. It should look like this: 
 ```javascript
-mongoose.connect('mongodb://admin:LEXMLDCRXHKWKNKL@sl-us-south-1-portal.10.dblayer.com:24919,sl-us-south-1-portal.11.dblayer.com:24919/admin?ssl=true', {
-  useMongoClient: true
-})
+mongoose.connect('mongodb://admin:LEXMLDCRXHKWKNKL@sl-us-south-1-portal.10.dblayer.com:24919,sl-us-south-1-portal.11.dblayer.com:24919/admin?ssl=true')
 ```
 
 We are going to be using an ORM called mongoose. An ORM allows you to read and write from the database directly through your code. You would be able to manually write and read from the database from the terminal, and that is the more traditional way of interacting with a database, but we need to have it go through our code. 
@@ -115,48 +110,6 @@ There are different underlying hashing functions, but SHA256 is the most common 
 
 
 
-
-## Sending an HTTP request to signup
-
-
-We are going to use axios, a library that makes it easy to send HTTP requests. Here is the basic format: 
-```javascript
-axios.post('/signup', {
-    params: {
-    }
-  })
-  .then(function (response) {
-    console.log(response);
-  })
-  .catch(function (error) {
-    console.log(error);
-  });
-})
- ```
- 
-This will send a POST request to our '/signup' route. You need also include some sort of params, in this case the email and password. The '.then' and '.catch' are callbacks which we touched upon in the previous lesson in regards to the asynchronous nature of node. 
-
- 
- **Challenge 2**
-Get our app to send over a username and password to our backend when we hit the submit button on the signup form. It should console.log of "SUCCESS!!" when we login with the hardcoded 'admin@gmail.com' and 'admin' for password. Be sure to add your javascript code into an external .js file. 
-
-HINT: This challenge has several steps, and it helps to break it down into easier components: 
-1. Confirm external js file is connected through a console.log when hitting the submit button
-2. You will want to include `<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.17.0/axios.js"></script>` right above the closing </body> tag of index.html but above our link to our js file, and will want to run `npm install axios --save`
-3. When should we trigger this axios.post method?
-4. Confirm we can grab the name, username, and password, through a console.log, before we try adding them as params to our post request. Use jQuery here.
-5. Confirm whether we are hitting our endpoint at all with a simple console.log 
-
-
-Awesome!! We have sort of implemented a very naive version of logins. What else can we do to improve our auth? 
-
-- Make all three fields mandatory: name, email, password
-- Give some basic restrictions to passwords, more than 5 characters at least
-- Hash the passwords
-- Make it so that you can't have the same user sign up twice
-- Connect it to the database!!
-
-
 Our app.js file is getting pretty big. In general we want to keep our primary server file small and organized. Let's decouple our code, and move our endpoint logic somewhere else. 
 
 **Exercise: Let's refactor our code**
@@ -218,6 +171,13 @@ The last thing we pass in is a callback, which gives us a "hash". Instead of sav
 
 The "salt" is the cherry on top to authentication. It is a string that is added onto your password as a finishing touch (just like salt on a meal). When you hash your password "myDog" with salt, it is more like you are actually hashing "myDog44aslijla9uadf900". So theoretically if someone was somehow able to crack your hashing algorithm, they still wouldn't be able to get into your database if they don't now the salt... extra security is always a good investment. 
 
-**Extra Bonus: Implement Sign In** 
+**Extra Bonus 1: Implement with your own bluemix database**
+We need to replace the mongoose.connect('mongodb://localhost/test') with the url to our database in the cloud. 
+ - Log into bluemix and search for "mongo compose"
+ - Sign up for the service, and go into "credentials" 
+ - Scroll to the bottom and copy the "mongo uri". It should look something like this: (‘mongodb://admin:LEXMLDCRXHKWKNKL@sl-us-south-1-portal.10.dblayer.com:24919,sl-us-south-1-portal.11.dblayer.com:24919/admin?ssl=true')
+ - Now go back into our app and replace the url in mongoose.connect
+
+**Extra Bonus 2: Implement Sign In** 
 
 HINT: What you can find as the '/signin' endpoint in the solutions.md file is only the starting point!
