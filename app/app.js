@@ -10,11 +10,13 @@ app.use(bodyParser.json());
 
 
 // Our first endpoint
-app.post('/signin', function (req, res) {
+app.post('/signup', function (req, res) {
 
+	 console.log('hit, and req.body is: ', JSON.stringify(req.body))
+	 res.send('awesome, just signed you up')
 })
 
 // Running our server on port 8000
-app.listen(8000,function(){
+app.listen(8000, function(){
     console.log("Success, node server is running and listening on Port: ", 8000);
 })
