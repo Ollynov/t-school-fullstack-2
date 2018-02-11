@@ -4,7 +4,7 @@ mongoose.connect('mongodb://admin:LEXMLDCRXHKWKNKL@sl-us-south-1-portal.10.dblay
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function() {
-  // we're connected!
+
   console.log('yay we are conected to our db')
 });
 
