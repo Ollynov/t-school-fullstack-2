@@ -1,4 +1,6 @@
-const readFilePromise = require('./readFilePromise')
-const fs = require('fs')
+var readFilePromise = require('./readFilePromise')
+var fs = require('fs')
+var decrypt = require('./../server/myCustomModule.js').reverseUppercase
 
-readFilePromise('./clue1.txt')
+readFilePromise('treasure.txt')
+console.log(decrypt('The Cat in The Hat'))
