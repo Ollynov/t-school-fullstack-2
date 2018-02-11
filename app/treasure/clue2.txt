@@ -1,0 +1,1 @@
+You will find an encryption of the treasure in treasure.txt. You must use a custom module to decrypt and get your treasure message.
