@@ -30,3 +30,19 @@ CSSII Exercises:
 LEFT TO DO: 
 - CSS II Lecture (part II) Build the blog
 - Verify that Box Positioning + Computer Gallery are good to go
+
+BOOTSTRAP LECTURE - 10 mins
+
+Bootsrap Exercise: 
+- Follow along to improve navbar 10 mins
+- Follow along to add card 10 mins
+
+11:30AM
+
+BOOTSTRAP LECTURE Grid System - 10 mins
+
+Challenge: 
+- Add jumbotron and center content - 20 mins
+
+Solution - 5 mins
+

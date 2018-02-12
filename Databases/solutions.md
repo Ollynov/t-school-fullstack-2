@@ -1,3 +1,21 @@
+To Save a New User: 
+```js
+	 var newUser = new User({
+	  	name: name,
+	  	email: email,
+	  	password: password
+	 })
+
+	  newUser.save(function(err, user) {
+	  	if (err) return console.error(err);
+	  	console.log('saved user is ', user)
+	  })
+```
+
+
+
+
+
 endpoints.js
 ```javascript
 var express = require('express');
