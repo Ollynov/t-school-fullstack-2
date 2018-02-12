@@ -201,33 +201,7 @@ If you want to align one item in a specific way, align self is the property you 
 
 #### Adding Flexbox to our website
 
-Let's create an About file: `$ touch about.html`
-
-  ```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>About</title>
-  </head>
-  <body>
-  	 <header>
-      <h1>Our App</h1>
-      <nav>
-        <a href="index.html">Home</a> |
-        <a href="about.html">About</a> |
-        <a href="contact_us.html">Contact</a>
-      </nav>
-      <div>
-        <a href="#">Sign Up</a> |
-        <a href="#">Login</a>
-      </div>
-    </header>
-    <div>
-    </div>
-  </body>
-</html>
-  ```
-  Let's add some styling into our CSS file:
+Let's add some styling into our CSS file:
 
   ```css
 #topPortion {
