@@ -117,7 +117,6 @@ Cool, now that looks good, but how else can we improve the spacing? Notice that 
 HINT: Bootstrap has a component called a "Jumbotron" that can help with Challenge #3
 
 
-**Bonus: [Wild + Wacky Vegetables](https://github.com/Ollynov/FullStack-TSchool/blob/master/bootstrap-git/exercises.md)**
 
 ## Some more resources
 
