@@ -22,13 +22,13 @@ The basic functionality of Git allows developers to track specific versions of t
 
 ## Getting started with Git
 
-- Make sure you are in the root of your directory with `pwd` in the terminal
-- Hit `ls` to verify that you have index.html, pages, and styles
-- Check to see if git is installed `$ git --version`
-- Then check to see if your computer currently has your global git username registered. Run: `https://alvinalexander.com/git/git-show-change-username-email-address`
+- Check to see if your computer currently has your global git username registered. Run: `https://alvinalexander.com/git/git-show-change-username-email-address`
 - If not, then add it with: git config --global user.username myUserName (replace 'myUserName' with your username)
 - Just in case you don't see your username printed out [see this link](https://alvinalexander.com/git/git-show-change-username-email-address)
-- Create a git repository: `$ git init`
+- Make sure you are in the root of your directory with `pwd` in the terminal
+- Go ahead and clone the 'Setup' branch of this repo 
+- Hit `ls` to verify that you have index.html, about.html, contact.html, styles, and treasure
+- Feel free to check out the files, but ignore treasure for now, it's a secret that we will get to in a later lesson
 
 
 ### Staging and committing
@@ -41,7 +41,9 @@ Committing means that you are actually making and saving your changes. Each comm
 - To add individual files: `$ git add file_name`
 - Make your first commit: `$ git commit -m “Some descriptive notes surrounded by quotation marks"`
 
-**Exercise: change your README.md file, check the status of the repo. Then stage it. Finally, commit it.**
+**Exercise: Add a README.md file, check the status of the repo. Then stage it. Finally, commit it.**
+
+(use the README.md file to add your notes and instructions on how to run your app as we go along building it)
 
 - Use `$ git log` to look back at the history of this branch
 
@@ -50,7 +52,7 @@ NOTE: In this interactive git tutorial be sure that you do all of the exercises 
 
 ### Branching
 
-Branching is what you will use all the time. When you create a new branch, you make an **exact copy** of your repo. Each time you are making changes, it will affect this specific branch **without** affecting the master branch.
+Branching is what you will use all the time. When you create a new branch, you make an **exact copy** of your repo. Each time you are making changes, it will affect this specific branch **without** affecting the master branch (or any other branches).
 This is very useful when you have a new feature that you want to implement to a website. You will create a new branch for this specific feature, work on the code and commit changes. However the initial code from the master branch will remain unchanged. Therefore, all potential crashes are avoided.
 
 - Make a new branch with `$ git checkout -b the-branch-will-be-named-whatever-you-type-here-no-spaces-use-hypens-plz`
