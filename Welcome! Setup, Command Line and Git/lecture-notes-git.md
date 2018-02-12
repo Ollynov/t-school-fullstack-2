@@ -25,10 +25,16 @@ The basic functionality of Git allows developers to track specific versions of t
 - Check to see if your computer currently has your global git username registered. Run: `https://alvinalexander.com/git/git-show-change-username-email-address`
 - If not, then add it with: git config --global user.username myUserName (replace 'myUserName' with your username)
 - Just in case you don't see your username printed out [see this link](https://alvinalexander.com/git/git-show-change-username-email-address)
+
 - Make sure you are in the root of your directory with `pwd` in the terminal
-- Go ahead and clone the 'Setup' branch of this repo 
+- Go ahead and 'fork' this repo (be sure you have the master branch selected)
+
+A fork makes an exact copy onto your account. 
+
+- Go ahead and clone the 'Setup' branch of your fork. This will make an exact copy on your local machine, which points to your fork as it's remote repo.
 - Hit `ls` to verify that you have index.html, about.html, contact.html, styles, and treasure
 - Feel free to check out the files, but ignore treasure for now, it's a secret that we will get to in a later lesson
+- Hit git remote -v (you should see your fork as the "origin")
 
 
 ### Staging and committing
@@ -58,7 +64,7 @@ This is very useful when you have a new feature that you want to implement to a 
 - Make a new branch with `$ git checkout -b the-branch-will-be-named-whatever-you-type-here-no-spaces-use-hypens-plz`
 
 
-**Exercise: modify the new branch by creating another file. Stage it. Commit it.**
+**Exercise: modify the new branch by editing your README.md Stage it. Commit it.**
 
 - Look back at the history of the new branch
 - Switch branches using `$ git checkout master`. Look back at the history. Is it the same?
