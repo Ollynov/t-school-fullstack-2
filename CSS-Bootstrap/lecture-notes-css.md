@@ -250,7 +250,7 @@ Let's create an About file: `$ touch about.html`
 
 ## BONUS
 
-Go on [exercises.md](https://github.com/Ollynov/FullStack-TSchool/blob/master/html-css/exercises.md), we are going to do:
+Go on [exercises.md](https://github.ibm.com/Aljosha-Novakovic/tschool_fullstack/blob/master/CSS-Bootstrap/exercises.md), we are going to do:
 
 1) Box Positioning
 
