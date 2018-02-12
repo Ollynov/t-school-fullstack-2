@@ -14,9 +14,9 @@ import { getPosts } from '../services/posts'
 class App extends Component {
   state = {
     user: {
-      name: 'Austin Riedel', 
-      email: 'Austin.Riedel@ibm.com', 
-      ibmID: '0J5916897'
+      name: '', 
+      email: '', 
+      ibmID: ''
     },
     renderPostInterface: true, 
     posts: [], 

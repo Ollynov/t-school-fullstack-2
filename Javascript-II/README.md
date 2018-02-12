@@ -17,7 +17,14 @@ https://www.wunderground.com/weather/api/d/docs
 https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
 
 ## Section 7
-### Using Fetch + Dot Notation
+### Handling Async with Promises
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises
 
 ## Section 8
+### Using Fetch + Dot Notation
+
+## Section 9
 ### Weather App
+
+## Section 10
+### Server Call

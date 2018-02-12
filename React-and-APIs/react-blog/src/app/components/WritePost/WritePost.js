@@ -1,14 +1,12 @@
 import React, { Component } from 'react';
-// import { savePost } from '../../../services/posts'
-import { savePost, savePostWithNLU } from '../../../services/posts'
+import { savePost } from '../../../services/posts'
 import { getNLUAnalysis } from '../../../services/nlu'
 
 import shortid from 'shortid'
 
 class WritePost extends Component { 
   state = {
-    postBody: `Elon Musk, the entrepreneur behind Tesla and SpaceX, put on a stunning show Tuesday with the inaugural launch of SpaceX's Falcon Heavy, which became the most powerful operational rocket in the world.`,
-    entities: [], 
+    postBody: ``,
   }
 
   handleChangeBody = (event) => {
