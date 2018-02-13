@@ -13,6 +13,17 @@ function updateName(event) {
   event.target.textContent = 'Player 1: ' + name;
 }
  ```
+ 
+ Tip Calculator
+ ```js
+       document.getElementById('add_tip').onclick = function() {
+        var originalMeal = document.getElementById('meal_cost').value
+        var tipPercent = prompt('what percent tip would you like to add?')
+        var tipAmount = parseInt(tipPercent)/100 * originalMeal
+        var total = parseInt(tipAmount) + parseInt(originalMeal);
+        document.getElementById('total_cost').innerHTML = total;
+      }
+ ```
 
 ## Javascript Basic
 
