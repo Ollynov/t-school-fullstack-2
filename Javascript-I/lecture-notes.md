@@ -94,7 +94,9 @@ Let's move our JavaScript into an external file. Name it `script.js`. Reference 
 
 **Exercise 3:**
 
-Add another user prompt into the `updateName()` function. Then change the color of the playerTitle element's background. This time, use jQuery. But first, let's get a crash course in jQuery. 
+Add another user prompt into the `updateName()` function. Then change the color of the playerTitle element's background. 
+
+This time, if you already are comofortable with javascript, you can use jQuery. Here's a crash course: 
 
 # [jQuery Crash Course](https://github.ibm.com/Aljosha-Novakovic/tschool_fullstack/blob/master/javascript/jquery-lecture-notes.md)
 
