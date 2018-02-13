@@ -1,6 +1,4 @@
 var readFilePromise = require('./readFilePromise')
 var fs = require('fs')
-var decrypt = require('./../server/myCustomModule.js').reverseUppercase
 
-readFilePromise('treasure.txt')
-console.log(decrypt('The Cat in The Hat'))
+console.log('go ahead and run node on this file and check your terminal. You need to use readFilePromise on your first clue, inside of clue1.txt')
