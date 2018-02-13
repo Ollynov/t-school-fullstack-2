@@ -74,6 +74,28 @@
         </div>
       </div>
     </div>
+    
+    <script>
+      var name = document.getElementById('inputName')
+      var email = document.getElementById('inputEmail')
+      var password = document.getElementById('inputPassword')
+      $.ajax({
+          url : '/signup',
+          type : 'GET',
+          data : {
+              'NAME!' : JSON.stringify(name),
+              'email' : JSON.stringify(email),
+              'password' : JSON.stringify(password)
+          },
+          dataType:'json',
+          success : function(data) {              
+              alert('Data back: '+data);
+          },
+          error : function(error) {
+              alert("Error on Request: "+JSON.stringify(error));
+          }
+      });
+    </script>
 
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
