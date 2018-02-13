@@ -43,3 +43,19 @@ var myModule = require('./server/myCustomModule.js');
 console.log('4 is even? ', myModule.isEven(4))
 console.log('t-school is awesome reversed is: ', myModule.reverseUppercase('yosh'))
 ```
+
+Romeo Word Count
+```js
+const countWordsPromise = (file) => {
+  return new Promise((resolve, reject) => {
+    fs.readFile(file, 'utf8', (err, data) => {
+      if (err) {
+        reject(err)
+      } else {
+      	var wordsArray = data.split(/\s+/);
+        resolve(console.log('ok there are this many words in romeo.txt ', wordsArray.length))
+      }
+    })
+  })
+}
+```
