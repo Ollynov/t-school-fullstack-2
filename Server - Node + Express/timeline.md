@@ -4,16 +4,14 @@ TOTAL TIME: 2:30PM
 
 Background lecture - 15 mins
 
-EXERCISE:
-- Learnyounode - 30 mins
+EXERCISE 1: Refactor and create our app.js - 20 mins
 
-Learnyounode solution on the last couple - 15 mins
+EXERCISE 2: Custom Module - 25 mins
 
-Break - 10 mins
+4:30
 
-4:40PM
+5 min break
 
-Lecture and guided setup of server - 20 mins
+Intro to Async - 10 mins
 
-STILL TO DO:
-- Fill up 1 more hour, preferably with an activity where they will add another endpoint or something similar
+Treasure hunt - 25 mins
