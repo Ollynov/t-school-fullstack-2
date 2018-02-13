@@ -15,3 +15,5 @@ EXERCISE 2: Custom Module - 25 mins
 Intro to Async - 10 mins
 
 Treasure hunt - 25 mins
+
+Any extra time- Romeo and Juliet
