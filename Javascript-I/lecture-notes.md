@@ -33,6 +33,7 @@ JavaScript is powerful because it allows us to interact with the user through th
 <!DOCTYPE html>
 <html>
  <head>
+    <meta charset="utf-8"/>
     <title>JS Test</title>
     <style>
       #player_title {
@@ -153,7 +154,7 @@ Let's create a simple tip calculator. Under the `player_title` `div`, let's add:
 
 ```html
 <br/>
-<input id="meal_cost" type="number"/>
+<input id="meal_cost" type="number" placeholder="meal cost"/>
 <br/>
 <button id="add_tip">Add Tip</button>
 <br/>
@@ -166,15 +167,15 @@ Create a function called `AddTip` that has a `prompt` in it that asks the user w
 
 
 ```js
-var harry = {};
-harry.height = "6 feet";
-harry.weight = "190 lbs";
-harry.profession = "Barber";
-harry.children = ["Jack", "Jill", "Gretta"];
-harry.praiseChildren = function(){
-  var praises = ["kind", "curious", "adventurous", "hard working", "musically gifted"];
+var Ronaldo = {};
+Ronaldo.height = "6 feet";
+Ronaldo.weight = "190 lbs";
+Ronaldo.profession = "Soccer Player";
+Ronaldo.abilities = ["shoot", "pass", "dribble"];
+harry.shoot = function(){
+  var types = ["driven low", "top corner", "curve", "toe poke", "chip"];
   for (var i = 0; i < this.children.length; i++){
-    console.log(this.children[i], "is so", praises[Math.floor(Math.random()*3)])
+    console.log("And here comes Ronaldo with a beautiful" + types[i] + " shot!")
   }
 }
 ```
